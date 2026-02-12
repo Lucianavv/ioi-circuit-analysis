@@ -59,7 +59,7 @@ SINGLE_TOKEN_NAMES = [
     "John", "Mary", "Michael", "Sarah", "David", "Emma",
     "James", "Lisa", "Robert", "Anna", "William", "Emily",
     "Thomas", "Alice", "Daniel", "Sophie", "Matthew", "Grace",
-    "Joseph", "Hannah", "Christopher", "Olivia", "Andrew", "Lucy"
+    "Joseph", "Hannah", "Christopher", "Olivia", "Andrew", "Lucy",
     "Joshua", "Sophia", "Ryan", "Charlotte", "Nicholas", "Amelia"
 ]
 
