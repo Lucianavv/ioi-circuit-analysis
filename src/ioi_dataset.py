@@ -146,3 +146,50 @@ def load_dataset(path: str) -> list:
     """Load dataset from JSON."""
     with open(path, "r") as f:
         return json.load(f)
+
+
+def generate_abc_dataset(
+    n_total: int = 1000,
+    names: Optional[list] = None,
+    seed: int = 123
+) -> list:
+    """
+    Generate a pABC reference dataset for mean ablation.
+
+    Each prompt uses three distinct names (A, B, C) with no repetition,
+    preserving the grammatical structure of IOI templates but removing
+    the duplicate token signal. 
+    """
+    if names is None:
+        names = SINGLE_TOKEN_NAMES
+
+    random.seed(seed)
+
+    prompts_per_template = {
+        name: int(n_total * tmpl["weight"])
+        for name, tmpl in TEMPLATES.items()
+    }
+
+    dataset = []
+    for template_name, n_prompts in prompts_per_template.items():
+        for _ in range(n_prompts):
+            name_a, name_b, name_c = random.sample(names, 3)
+            place = random.choice(PLACES)
+            obj   = random.choice(OBJECTS)
+
+            prompt = TEMPLATES[template_name]["structure"].format(
+                name1=name_a, name2=name_b,
+                place=place, obj=obj,
+                duplicated=name_c
+            )
+            dataset.append({
+                "prompt":   prompt,
+                "name_a":   name_a,
+                "name_b":   name_b,
+                "name_c":   name_c,
+                "template": template_name,
+                "place":    place,
+                "object":   obj
+            })
+
+    return dataset
