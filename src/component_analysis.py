@@ -1,52 +1,74 @@
-"""
-component_analysis.py
 
-Reusable methods to classify attention heads in discovered circuits
-by functional type, following Wang et al. (2022) methodology.
-
-Supports: name movers, negative name movers, S-inhibition,
-          induction, duplicate token, previous token heads.
-"""
 
 import torch
 import numpy as np
 from transformer_lens import HookedTransformer
-from typing import Tuple, List, Dict
+from typing import Tuple, List, Dict, Optional
 
 
-#  Attention pattern utilities
+def find_token_positions(model: HookedTransformer, prompt_data: dict) -> dict:
+    """
+    Find S1, S2, IO, END positions for a prompt.
+    Template-agnostic — works for all three IOI templates.
+    Returns dict with keys: io, s1, s2, end (None if not found).
+    """
+    tokens = model.to_tokens(prompt_data["prompt"], prepend_bos=True)[0]
+    token_list = tokens.tolist()
+
+    io_id = model.to_single_token(" " + prompt_data["correct_answer"])
+    s_id  = model.to_single_token(" " + prompt_data["incorrect_answer"])
+
+    s_positions  = [i for i, t in enumerate(token_list) if t == s_id]
+    io_positions = [i for i, t in enumerate(token_list) if t == io_id]
+
+    return {
+        "io":  io_positions[0] if io_positions else None,
+        "s1":  s_positions[0]  if len(s_positions) > 0 else None,
+        "s2":  s_positions[1]  if len(s_positions) > 1 else None,
+        "end": len(token_list) - 1
+    }
+
 
 def get_mean_attention_pattern(
     model: HookedTransformer,
     layer: int,
     head: int,
     dataset: list,
-    token_position: int = -1,
+    source_key: str = "end",
+    target_key: str = "io",
     batch_size: int = 50
-) -> np.ndarray:
+) -> float:
     """
-    Compute mean attention pattern for a head across a dataset.
-    
-    Returns array of shape [seq_len] — mean attention weights from
-    token_position to all other positions.
-    """
-    all_patterns = []
-    prompts = [d['prompt'] for d in dataset]
+    Compute mean attention from source_key position to target_key position
+    across a dataset, using dynamic token position lookup per prompt.
 
-    for i in range(0, len(prompts), batch_size):
-        batch = model.to_tokens(prompts[i:i+batch_size], prepend_bos=True)
+    source_key, target_key: keys from find_token_positions output
+    ('io', 's1', 's2', 'end')
+    Returns mean attention probability.
+    """
+    attention_values = []
+
+    for i in range(0, len(dataset), batch_size):
+        batch = dataset[i:i+batch_size]
+        prompts = [d["prompt"] for d in batch]
+        tokens = model.to_tokens(prompts, prepend_bos=True)
+
         with torch.no_grad():
             _, cache = model.run_with_cache(
-                batch.to(model.cfg.device),
+                tokens.to(model.cfg.device),
                 names_filter=f"blocks.{layer}.attn.hook_pattern"
             )
-        # pattern shape: [batch, heads, seq_len, seq_len]
-        pattern = cache[f"blocks.{layer}.attn.hook_pattern"]
-        # attention from token_position to all positions
-        attn = pattern[:, head, token_position, :].cpu().numpy()
-        all_patterns.append(attn)
+        pattern = cache[f"blocks.{layer}.attn.hook_pattern"].cpu()
 
-    return np.concatenate(all_patterns, axis=0).mean(axis=0)
+        for j, prompt_data in enumerate(batch):
+            pos = find_token_positions(model, prompt_data)
+            src = pos[source_key]
+            tgt = pos[target_key]
+            if src is not None and tgt is not None:
+                attn_val = pattern[j, head, src, tgt].item()
+                attention_values.append(attn_val)
+
+    return float(np.mean(attention_values)) if attention_values else 0.0
 
 
 def compute_copy_score(
@@ -57,214 +79,148 @@ def compute_copy_score(
     top_k: int = 5
 ) -> float:
     """
-    Compute copy score 
-    
-    For each name, compute: residual_stream_at_name_position @ OV @ W_U
-    Check if input name appears in top-k logits.
-    Returns fraction of names where the head copies correctly.
+    Copy score: fraction of names where head's OV matrix
+    places the input name in top-k output logits.
     """
-    W_O = model.W_O[layer, head]       # [d_head, d_model]
-    W_V = model.W_V[layer, head]       # [d_model, d_head]
-    W_U = model.W_U                    # [d_model, vocab]
-    OV  = W_V @ W_O                   # [d_model, d_model]
+    W_O = model.W_O[layer, head]
+    W_V = model.W_V[layer, head]
+    W_U = model.W_U
+    OV  = W_V @ W_O
 
     correct = 0
     for name in name_list:
-        token_id = model.to_single_token(" " + name)
-        token_embed = model.W_E[token_id]          # [d_model]
-        # Simulate head attending perfectly to this token
-        output = token_embed @ OV @ W_U            # [vocab]
-        top_tokens = output.topk(top_k).indices.tolist()
+        token_id   = model.to_single_token(" " + name)
+        token_embed = model.W_E[token_id]
+        output      = token_embed @ OV @ W_U
+        top_tokens  = output.topk(top_k).indices.tolist()
         if token_id in top_tokens:
             correct += 1
 
     return correct / len(name_list)
 
 
-# Head classification tests 
-
-def test_name_mover(
+def compute_neg_copy_score(
     model: HookedTransformer,
     layer: int,
     head: int,
-    dataset: list,
     name_list: List[str],
-    io_position: int = 1,    # position of IO token in prompt
-    final_position: int = -1
-) -> Dict:
+    top_k: int = 5
+) -> float:
     """
-    Name mover signature:
-    - At final position, attends to IO token
+    Negative copy score: checks if head writes in opposite direction.
     """
-    attn = get_mean_attention_pattern(
-        model, layer, head, dataset, token_position=final_position
-    )
-    io_attn = float(attn[io_position])
-    copy_score = compute_copy_score(model, layer, head, name_list)
-
-    return {
-        "io_attention":  io_attn,
-        "copy_score":    copy_score,
-        "is_name_mover": io_attn > 0.2 and copy_score > 0.5
-    }
-
-
-def test_negative_name_mover(
-    model: HookedTransformer,
-    layer: int,
-    head: int,
-    dataset: list,
-    name_list: List[str],
-    io_position: int = 1,
-    final_position: int = -1
-) -> Dict:
-    """
-    Negative name mover: attends to IO but writes in opposite direction.
-    Copy score computed with negated OV output.
-    """
-    attn = get_mean_attention_pattern(
-        model, layer, head, dataset, token_position=final_position
-    )
-    io_attn = float(attn[io_position])
-
-    # Negative copy score: check if name appears in *bottom* k logits
     W_O = model.W_O[layer, head]
     W_V = model.W_V[layer, head]
     W_U = model.W_U
     OV  = W_V @ W_O
 
-    neg_correct = 0
+    correct = 0
     for name in name_list:
-        token_id = model.to_single_token(" " + name)
+        token_id    = model.to_single_token(" " + name)
         token_embed = model.W_E[token_id]
-        output = -(token_embed @ OV @ W_U)   # negated
-        top_tokens = output.topk(5).indices.tolist()
+        output      = -(token_embed @ OV @ W_U)
+        top_tokens  = output.topk(top_k).indices.tolist()
         if token_id in top_tokens:
-            neg_correct += 1
-    neg_copy_score = neg_correct / len(name_list)
+            correct += 1
 
-    return {
-        "io_attention":       io_attn,
-        "neg_copy_score":     neg_copy_score,
-        "is_negative_mover":  io_attn > 0.2 and neg_copy_score > 0.5
-    }
+    return correct / len(name_list)
 
 
-def test_s_inhibition(
-    model: HookedTransformer,
-    layer: int,
-    head: int,
-    dataset: list,
-    s2_position: int = 7,    # position of S2 token
-    final_position: int = -1
-) -> Dict:
-    """
-    At final position, attends to S2 token (the repeated subject)
-    """
-    attn = get_mean_attention_pattern(
-        model, layer, head, dataset, token_position=final_position
-    )
-    s2_attn = float(attn[s2_position])
-
-    return {
-        "s2_attention":    s2_attn,
-        "is_s_inhibition": s2_attn > 0.2
-    }
-
-
-def test_duplicate_token(
-    model: HookedTransformer,
-    layer: int,
-    head: int,
-    dataset: list,
-    s1_position: int = 3,   # position of first S occurrence
-    s2_position: int = 7    # position of second S occurrence
-) -> Dict:
-
-    attn = get_mean_attention_pattern(
-        model, layer, head, dataset, token_position=s2_position
-    )
-    s1_attn = float(attn[s1_position])
-
-    return {
-        "s1_from_s2_attention": s1_attn,
-        "is_duplicate_token":   s1_attn > 0.2
-    }
-
-
-def test_previous_token(
-    model: HookedTransformer,
-    layer: int,
-    head: int,
-    dataset: list
-) -> Dict:
-    """
-    Mean attention on the off-diagonal (position i attends to i-1)
-    """
-    attn_patterns = []
-    prompts = [d['prompt'] for d in dataset]
-
-    for i in range(0, min(100, len(prompts)), 50):
-        batch = model.to_tokens(prompts[i:i+50], prepend_bos=True)
-        with torch.no_grad():
-            _, cache = model.run_with_cache(
-                batch.to(model.cfg.device),
-                names_filter=f"blocks.{layer}.attn.hook_pattern"
-            )
-        pattern = cache[f"blocks.{layer}.attn.hook_pattern"]
-        attn_patterns.append(pattern[:, head, :, :].cpu())
-
-    patterns = torch.cat(attn_patterns, dim=0)  # [n, seq, seq]
-    seq_len = patterns.shape[-1]
-
-    # Off-diagonal: attention from position i to position i-1
-    prev_token_scores = []
-    for pos in range(1, seq_len):
-        prev_token_scores.append(patterns[:, pos, pos-1].mean().item())
-    prev_token_score = float(np.mean(prev_token_scores))
-
-    return {
-        "prev_token_score":  prev_token_score,
-        "is_previous_token": prev_token_score > 0.3
-    }
-
-
-def test_induction(
+def compute_induction_score(
     model: HookedTransformer,
     layer: int,
     head: int,
     seq_len: int = 50,
     n_seqs: int = 20
-) -> Dict:
-  
+) -> float:
+   
     vocab_size = model.cfg.d_vocab
     half = seq_len // 2
+    scores = []
 
-    induction_scores = []
     for _ in range(n_seqs):
         rand_tokens = torch.randint(0, vocab_size, (1, half))
-        repeated = torch.cat([rand_tokens, rand_tokens], dim=1).to(model.cfg.device)
+        repeated    = torch.cat([rand_tokens, rand_tokens], dim=1).to(model.cfg.device)
 
         with torch.no_grad():
             _, cache = model.run_with_cache(
                 repeated,
                 names_filter=f"blocks.{layer}.attn.hook_pattern"
             )
-        pattern = cache[f"blocks.{layer}.attn.hook_pattern"][0, head]
-        # For each position i in second half, check attention to i-half+1
+        pattern = cache[f"blocks.{layer}.attn.hook_pattern"][0, head].cpu()
+
         score = 0.0
         for pos in range(half, seq_len):
             target = pos - half + 1
             if target < seq_len:
                 score += pattern[pos, target].item()
-        induction_scores.append(score / half)
+        scores.append(score / half)
 
-    induction_score = float(np.mean(induction_scores))
+    return float(np.mean(scores))
 
-    return {
-        "induction_score":  induction_score,
-        "is_induction":     induction_score > 0.3
-    }
+
+def compute_prev_token_score(
+    model: HookedTransformer,
+    layer: int,
+    head: int,
+    dataset: list,
+    n_samples: int = 100,
+    batch_size: int = 50
+) -> float:
+    """
+    Previous token score: mean off-diagonal attention (pos i → pos i-1).
+    """
+    scores = []
+    for i in range(0, min(n_samples, len(dataset)), batch_size):
+        batch   = dataset[i:i+batch_size]
+        prompts = [d["prompt"] for d in batch]
+        tokens  = model.to_tokens(prompts, prepend_bos=True)
+
+        with torch.no_grad():
+            _, cache = model.run_with_cache(
+                tokens.to(model.cfg.device),
+                names_filter=f"blocks.{layer}.attn.hook_pattern"
+            )
+        pattern = cache[f"blocks.{layer}.attn.hook_pattern"].cpu()
+        seq_len = pattern.shape[-1]
+
+        for b in range(pattern.shape[0]):
+            prev = [pattern[b, head, pos, pos-1].item()
+                    for pos in range(1, seq_len)]
+            scores.append(np.mean(prev))
+
+    return float(np.mean(scores))
+
+
+def compute_duplicate_score(
+    model: HookedTransformer,
+    layer: int,
+    head: int,
+    dataset: list,
+    batch_size: int = 50
+) -> float:
+    """
+    Duplicate token score: from S2 position, mean attention to S1 position.
+    """
+    scores = []
+    for i in range(0, len(dataset), batch_size):
+        batch   = dataset[i:i+batch_size]
+        prompts = [d["prompt"] for d in batch]
+        tokens  = model.to_tokens(prompts, prepend_bos=True)
+
+        with torch.no_grad():
+            _, cache = model.run_with_cache(
+                tokens.to(model.cfg.device),
+                names_filter=f"blocks.{layer}.attn.hook_pattern"
+            )
+        pattern = cache[f"blocks.{layer}.attn.hook_pattern"].cpu()
+
+        for j, prompt_data in enumerate(batch):
+            pos = find_token_positions(model, prompt_data)
+            if pos["s1"] is not None and pos["s2"] is not None:
+                scores.append(pattern[j, head, pos["s2"], pos["s1"]].item())
+
+    return float(np.mean(scores)) if scores else 0.0
 
 
 def classify_head(
@@ -273,43 +229,60 @@ def classify_head(
     head: int,
     dataset: list,
     name_list: List[str],
-    io_position: int = 1,
-    s1_position: int = 3,
-    s2_position: int = 7,
-    final_position: int = -1
-) -> Dict:
+    thresholds: dict = None
+) -> dict:
     """
-    Run all classification tests on a single head and return
-    best functional label with all supporting scores.
+    Run all classification tests on a single head.
+    Returns scores and best functional label.
     """
-    results = {
-        "head": (layer, head),
-        "name_mover":       test_name_mover(model, layer, head, dataset,
-                                             name_list, io_position, final_position),
-        "negative_mover":   test_negative_name_mover(model, layer, head, dataset,
-                                                      name_list, io_position, final_position),
-        "s_inhibition":     test_s_inhibition(model, layer, head, dataset,
-                                               s2_position, final_position),
-        "duplicate_token":  test_duplicate_token(model, layer, head, dataset,
-                                                  s1_position, s2_position),
-        "previous_token":   test_previous_token(model, layer, head, dataset),
-        "induction":        test_induction(model, layer, head),
+    if thresholds is None:
+        thresholds = {
+            "io_attn":       0.15,
+            "s2_attn":       0.15,
+            "copy_score":    0.50,
+            "neg_copy":      0.50,
+            "induction":     0.30,
+            "prev_token":    0.30,
+            "duplicate":     0.15,
+        }
+
+    # Compute all scores
+    io_attn    = get_mean_attention_pattern(model, layer, head, dataset,
+                                            source_key="end", target_key="io")
+    s2_attn    = get_mean_attention_pattern(model, layer, head, dataset,
+                                            source_key="end", target_key="s2")
+    s1_from_s2 = compute_duplicate_score(model, layer, head, dataset)
+    copy       = compute_copy_score(model, layer, head, name_list)
+    neg_copy   = compute_neg_copy_score(model, layer, head, name_list)
+    induction  = compute_induction_score(model, layer, head)
+    prev_token = compute_prev_token_score(model, layer, head, dataset)
+
+    # Classification logic
+    labels = []
+    if io_attn > thresholds["io_attn"] and copy > thresholds["copy_score"]:
+        labels.append("name_mover")
+    if io_attn > thresholds["io_attn"] and neg_copy > thresholds["neg_copy"]:
+        labels.append("negative_mover")
+    if s2_attn > thresholds["s2_attn"]:
+        labels.append("s_inhibition")
+    if s1_from_s2 > thresholds["duplicate"]:
+        labels.append("duplicate_token")
+    if prev_token > thresholds["prev_token"]:
+        labels.append("previous_token")
+    if induction > thresholds["induction"]:
+        labels.append("induction")
+
+    return {
+        "head":           (layer, head),
+        "io_attn":        io_attn,
+        "s2_attn":        s2_attn,
+        "duplicate_score": s1_from_s2,
+        "copy_score":     copy,
+        "neg_copy_score": neg_copy,
+        "induction_score": induction,
+        "prev_token_score": prev_token,
+        "classification": labels if labels else ["unclassified"]
     }
-
-    # Determine best label
-    label_map = {
-        "name_mover":      results["name_mover"]["is_name_mover"],
-        "negative_mover":  results["negative_mover"]["is_negative_mover"],
-        "s_inhibition":    results["s_inhibition"]["is_s_inhibition"],
-        "duplicate_token": results["duplicate_token"]["is_duplicate_token"],
-        "previous_token":  results["previous_token"]["is_previous_token"],
-        "induction":       results["induction"]["is_induction"],
-    }
-
-    matched = [k for k, v in label_map.items() if v]
-    results["classification"] = matched if matched else ["unclassified"]
-
-    return results
 
 
 def classify_circuit(
@@ -317,13 +290,14 @@ def classify_circuit(
     circuit_heads: list,
     dataset: list,
     name_list: List[str],
-    **kwargs
-) -> Dict:
+    thresholds: dict = None
+) -> dict:
 
-    classifications = {}
-    for layer, head in sorted(circuit_heads):
-        print(f"  Classifying ({layer}, {head})...")
-        classifications[(layer, head)] = classify_head(
-            model, layer, head, dataset, name_list, **kwargs
+    results = {}
+    total = len(circuit_heads)
+    for i, (layer, head) in enumerate(sorted(circuit_heads)):
+        print(f"  [{i+1}/{total}] Classifying ({layer},{head})...")
+        results[(layer, head)] = classify_head(
+            model, layer, head, dataset, name_list, thresholds
         )
-    return classifications
+    return results
