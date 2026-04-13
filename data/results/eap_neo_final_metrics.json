@@ -1,0 +1,13 @@
+{
+  "model": "GPT-Neo 125M",
+  "algorithm": "EAP (Syed et al. 2023)",
+  "optimal_k": 2000,
+  "faithfulness_k2000": 0.988,
+  "faithfulness_minimal": 1.302,
+  "sparsity_edge_k2000": 0.9739,
+  "n_minimal_edges": 110,
+  "n_minimal_heads": 32,
+  "forward_passes": 300,
+  "clean_ld": 1.2934340236783028,
+  "corrupted_ld": -1.3670509489178657
+}
