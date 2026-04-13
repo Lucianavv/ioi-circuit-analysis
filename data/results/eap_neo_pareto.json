@@ -1,0 +1,110 @@
+[
+  {
+    "top_k": 10,
+    "circuit_ld": 1.1646770609617234,
+    "faithfulness": 0.951603950391445,
+    "sparsity": 0.9998694653299917,
+    "n_total_edges": 76608,
+    "n_unique_heads": 1,
+    "sparsity_head": 0.9930555555555556
+  },
+  {
+    "top_k": 25,
+    "circuit_ld": -2.3641807236373427,
+    "faithfulness": -0.37479248520109193,
+    "sparsity": 0.9996736633249791,
+    "n_total_edges": 76608,
+    "n_unique_heads": 1,
+    "sparsity_head": 0.9930555555555556
+  },
+  {
+    "top_k": 50,
+    "circuit_ld": -6.894865055471659,
+    "faithfulness": -2.07774678808263,
+    "sparsity": 0.9993473266499582,
+    "n_total_edges": 76608,
+    "n_unique_heads": 2,
+    "sparsity_head": 0.9861111111111112
+  },
+  {
+    "top_k": 100,
+    "circuit_ld": -2.1922072945833206,
+    "faithfulness": -0.3101526053200167,
+    "sparsity": 0.9986946532999165,
+    "n_total_edges": 76608,
+    "n_unique_heads": 12,
+    "sparsity_head": 0.9166666666666666
+  },
+  {
+    "top_k": 200,
+    "circuit_ld": -2.8480489318966864,
+    "faithfulness": -0.5566646676202142,
+    "sparsity": 0.9973893065998329,
+    "n_total_edges": 76608,
+    "n_unique_heads": 26,
+    "sparsity_head": 0.8194444444444444
+  },
+  {
+    "top_k": 500,
+    "circuit_ld": -0.2723173278719187,
+    "faithfulness": 0.4114789718123002,
+    "sparsity": 0.9934732664995823,
+    "n_total_edges": 76608,
+    "n_unique_heads": 44,
+    "sparsity_head": 0.6944444444444444
+  },
+  {
+    "top_k": 1000,
+    "circuit_ld": 0.8112705981135369,
+    "faithfulness": 0.8187685965035697,
+    "sparsity": 0.9869465329991646,
+    "n_total_edges": 76608,
+    "n_unique_heads": 75,
+    "sparsity_head": 0.47916666666666663
+  },
+  {
+    "top_k": 2000,
+    "circuit_ld": 1.2621665667295456,
+    "faithfulness": 0.9882474596658799,
+    "sparsity": 0.9738930659983291,
+    "n_total_edges": 76608,
+    "n_unique_heads": 107,
+    "sparsity_head": 0.2569444444444444
+  },
+  {
+    "top_k": 5000,
+    "circuit_ld": -0.08904752443730832,
+    "faithfulness": 0.48036483484943326,
+    "sparsity": 0.9347326649958229,
+    "n_total_edges": 76608,
+    "n_unique_heads": 142,
+    "sparsity_head": 0.01388888888888884
+  },
+  {
+    "top_k": 10000,
+    "circuit_ld": 0.7561415185928345,
+    "faithfulness": 0.7980471565824465,
+    "sparsity": 0.8694653299916457,
+    "n_total_edges": 76608,
+    "n_unique_heads": 144,
+    "sparsity_head": 0.0
+  },
+  {
+    "top_k": 20000,
+    "circuit_ld": 0.4123973984122276,
+    "faithfulness": 0.668843600192811,
+    "sparsity": 0.7389306599832915,
+    "n_total_edges": 76608,
+    "n_unique_heads": 144,
+    "sparsity_head": 0.0
+  },
+  {
+    "top_k": 50000,
+    "circuit_ld": -0.1514607756137848,
+    "faithfulness": 0.45690548370881323,
+    "sparsity": 0.34732664995822893,
+    "n_total_edges": 76608,
+    "n_unique_heads": 144,
+    "sparsity_head": 0.0
+  }
+]
