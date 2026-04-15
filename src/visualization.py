@@ -193,7 +193,7 @@ def plot_head_heatmap(
     plt.tight_layout()
     plt.savefig(output_path, dpi=150, bbox_inches='tight')
     plt.show()
-    print(f"✓ Saved: {output_path}")
+    print(f"Saved: {output_path}")
     plt.close()
 
 
@@ -255,8 +255,7 @@ def plot_heatmap_suite(
         cbar_label='Induction score (repeated sequences)'
     )
 
-    print(f"
- All heatmaps saved to {output_dir}/")
+    print(f"All heatmaps saved to {output_dir}/")
     return {
         'io_matrix':  io_mat,
         'dla_matrix': dla_mat,
