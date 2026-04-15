@@ -227,7 +227,7 @@ def plot_heatmap_suite(
     plot_head_heatmap(
         io_mat, circuit_heads,
         output_path=f"{output_dir}/{prefix}_heatmap_io_attn.png",
-        colormap='PRGn', center=0,
+        colormap='Greens', vmin=0,
         cbar_label='Mean IO attention at END position'
     )
 
@@ -235,7 +235,7 @@ def plot_heatmap_suite(
     plot_head_heatmap(
         dla_mat, circuit_heads,
         output_path=f"{output_dir}/{prefix}_heatmap_dla.png",
-        colormap='PRGn', center=0,
+        colormap='RdBu', center=0,
         cbar_label='Direct Logit Attribution (IO - S)'
     )
 
@@ -243,7 +243,7 @@ def plot_heatmap_suite(
     plot_head_heatmap(
         s2_mat, circuit_heads,
         output_path=f"{output_dir}/{prefix}_heatmap_s2_attn.png",
-        colormap='BuPu', vmin=0,
+        colormap='Greens', vmin=0,
         cbar_label='Mean S2 attention at END position'
     )
 
@@ -251,7 +251,7 @@ def plot_heatmap_suite(
     plot_head_heatmap(
         ind_mat, circuit_heads,
         output_path=f"{output_dir}/{prefix}_heatmap_induction.png",
-        colormap='BuPu', vmin=0,
+        colormap='Greens', vmin=0,
         cbar_label='Induction score (repeated sequences)'
     )
 
