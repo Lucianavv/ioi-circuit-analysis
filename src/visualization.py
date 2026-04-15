@@ -11,17 +11,17 @@ from typing import List, Tuple, Dict, Optional, Set
 NODE_COLORS = {
     "head":  "#F4A460",   
     "mlp":   "#87CEEB",  
-    "resid": "#90EE90",   
-    "head_q": "#FFD700",  
+    "resid": "#BD8AD0",   
+    "head_q": "#FFEA70",  
     "head_k": "#FFA07A",  
-    "head_v": "#FF8C00",  
+    "head_v": "#B2DBBF",  
 
-    "name_mover":      "#E74C3C",  
+    "name_mover":      "#EB6A5C",  
     "negative_mover":  "#8E44AD",  
     "s_inhibition":    "#16A085",  
     "induction":       "#2980B9",  
-    "duplicate_token": "#27AE60", 
-    "previous_token":  "#F39C12",  
+    "duplicate_token": "#7EC97E", 
+    "previous_token":  "#FFD6E0",  
     "unclassified":    "#BDC3C7",  
 }
 
