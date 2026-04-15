@@ -3,7 +3,9 @@
 import torch
 import numpy as np
 from transformer_lens import HookedTransformer
-from typing import Tuple, List, Dict, Optional
+from typing import List, Dict, Tuple, Optional
+from src.attention_analysis import get_attention_pattern
+from src.patching import path_patch_head
 
 
 def find_token_positions(model: HookedTransformer, prompt_data: dict) -> dict:
@@ -29,29 +31,20 @@ def find_token_positions(model: HookedTransformer, prompt_data: dict) -> dict:
     }
 
 
-def get_mean_attention_pattern(
+def compute_attention_scores(
     model: HookedTransformer,
     layer: int,
     head: int,
     dataset: list,
-    source_key: str = "end",
-    target_key: str = "io",
     batch_size: int = 50
-) -> float:
-    """
-    Compute mean attention from source_key position to target_key position
-    across a dataset, using dynamic token position lookup per prompt.
-
-    source_key, target_key: keys from find_token_positions output
-    ('io', 's1', 's2', 'end')
-    Returns mean attention probability.
-    """
-    attention_values = []
+) -> dict:
+  
+    io_attns, s2_attns, dup_attns, prev_attns = [], [], [], []
 
     for i in range(0, len(dataset), batch_size):
-        batch = dataset[i:i+batch_size]
+        batch   = dataset[i:i+batch_size]
         prompts = [d["prompt"] for d in batch]
-        tokens = model.to_tokens(prompts, prepend_bos=True)
+        tokens  = model.to_tokens(prompts, prepend_bos=True)
 
         with torch.no_grad():
             _, cache = model.run_with_cache(
@@ -59,71 +52,30 @@ def get_mean_attention_pattern(
                 names_filter=f"blocks.{layer}.attn.hook_pattern"
             )
         pattern = cache[f"blocks.{layer}.attn.hook_pattern"].cpu()
+        seq_len = pattern.shape[-1]
 
         for j, prompt_data in enumerate(batch):
             pos = find_token_positions(model, prompt_data)
-            src = pos[source_key]
-            tgt = pos[target_key]
-            if src is not None and tgt is not None:
-                attn_val = pattern[j, head, src, tgt].item()
-                attention_values.append(attn_val)
 
-    return float(np.mean(attention_values)) if attention_values else 0.0
+            if pos["io"] is not None and pos["end"] is not None:
+                io_attns.append(pattern[j, head, pos["end"], pos["io"]].item())
 
+            if pos["s2"] is not None and pos["end"] is not None:
+                s2_attns.append(pattern[j, head, pos["end"], pos["s2"]].item())
 
-def compute_copy_score(
-    model: HookedTransformer,
-    layer: int,
-    head: int,
-    name_list: List[str],
-    top_k: int = 5
-) -> float:
-    """
-    Copy score: fraction of names where head's OV matrix
-    places the input name in top-k output logits.
-    """
-    W_O = model.W_O[layer, head]
-    W_V = model.W_V[layer, head]
-    W_U = model.W_U
-    OV  = W_V @ W_O
+            if pos["s1"] is not None and pos["s2"] is not None:
+                dup_attns.append(pattern[j, head, pos["s2"], pos["s1"]].item())
 
-    correct = 0
-    for name in name_list:
-        token_id   = model.to_single_token(" " + name)
-        token_embed = model.W_E[token_id]
-        output      = token_embed @ OV @ W_U
-        top_tokens  = output.topk(top_k).indices.tolist()
-        if token_id in top_tokens:
-            correct += 1
+            # Previous token: mean off-diagonal
+            prev = [pattern[j, head, p, p-1].item() for p in range(1, seq_len)]
+            prev_attns.append(np.mean(prev))
 
-    return correct / len(name_list)
-
-
-def compute_neg_copy_score(
-    model: HookedTransformer,
-    layer: int,
-    head: int,
-    name_list: List[str],
-    top_k: int = 5
-) -> float:
-    """
-    Negative copy score: checks if head writes in opposite direction.
-    """
-    W_O = model.W_O[layer, head]
-    W_V = model.W_V[layer, head]
-    W_U = model.W_U
-    OV  = W_V @ W_O
-
-    correct = 0
-    for name in name_list:
-        token_id    = model.to_single_token(" " + name)
-        token_embed = model.W_E[token_id]
-        output      = -(token_embed @ OV @ W_U)
-        top_tokens  = output.topk(top_k).indices.tolist()
-        if token_id in top_tokens:
-            correct += 1
-
-    return correct / len(name_list)
+    return {
+        "io_attn":        float(np.mean(io_attns))   if io_attns  else 0.0,
+        "s2_attn":        float(np.mean(s2_attns))   if s2_attns  else 0.0,
+        "duplicate_attn": float(np.mean(dup_attns))  if dup_attns else 0.0,
+        "prev_token_attn": float(np.mean(prev_attns)) if prev_attns else 0.0,
+    }
 
 
 def compute_induction_score(
@@ -133,7 +85,7 @@ def compute_induction_score(
     seq_len: int = 50,
     n_seqs: int = 20
 ) -> float:
-   
+
     vocab_size = model.cfg.d_vocab
     half = seq_len // 2
     scores = []
@@ -149,78 +101,84 @@ def compute_induction_score(
             )
         pattern = cache[f"blocks.{layer}.attn.hook_pattern"][0, head].cpu()
 
-        score = 0.0
-        for pos in range(half, seq_len):
-            target = pos - half + 1
-            if target < seq_len:
-                score += pattern[pos, target].item()
-        scores.append(score / half)
+        score = sum(pattern[pos, pos-half+1].item() 
+                   for pos in range(half, seq_len) 
+                   if pos-half+1 < seq_len) / half
+        scores.append(score)
 
     return float(np.mean(scores))
 
 
-def compute_prev_token_score(
-    model: HookedTransformer,
-    layer: int,
-    head: int,
-    dataset: list,
-    n_samples: int = 100,
-    batch_size: int = 50
-) -> float:
-    """
-    Previous token score: mean off-diagonal attention (pos i → pos i-1).
-    """
-    scores = []
-    for i in range(0, min(n_samples, len(dataset)), batch_size):
-        batch   = dataset[i:i+batch_size]
-        prompts = [d["prompt"] for d in batch]
-        tokens  = model.to_tokens(prompts, prepend_bos=True)
 
-        with torch.no_grad():
-            _, cache = model.run_with_cache(
-                tokens.to(model.cfg.device),
-                names_filter=f"blocks.{layer}.attn.hook_pattern"
-            )
-        pattern = cache[f"blocks.{layer}.attn.hook_pattern"].cpu()
-        seq_len = pattern.shape[-1]
-
-        for b in range(pattern.shape[0]):
-            prev = [pattern[b, head, pos, pos-1].item()
-                    for pos in range(1, seq_len)]
-            scores.append(np.mean(prev))
-
-    return float(np.mean(scores))
-
-
-def compute_duplicate_score(
+def compute_dla(
     model: HookedTransformer,
     layer: int,
     head: int,
     dataset: list,
     batch_size: int = 50
 ) -> float:
-    """
-    Duplicate token score: from S2 position, mean attention to S1 position.
-    """
-    scores = []
+
+    dla_scores = []
+
     for i in range(0, len(dataset), batch_size):
         batch   = dataset[i:i+batch_size]
         prompts = [d["prompt"] for d in batch]
-        tokens  = model.to_tokens(prompts, prepend_bos=True)
+        tokens  = model.to_tokens(prompts, prepend_bos=True).to(model.cfg.device)
 
         with torch.no_grad():
             _, cache = model.run_with_cache(
-                tokens.to(model.cfg.device),
-                names_filter=f"blocks.{layer}.attn.hook_pattern"
+                tokens,
+                names_filter=f"blocks.{layer}.attn.hook_result"
             )
-        pattern = cache[f"blocks.{layer}.attn.hook_pattern"].cpu()
+        # hook_result: [batch, seq, n_heads, d_model]
+        head_out = cache[f"blocks.{layer}.attn.hook_result"][:, -1, head, :]
 
         for j, prompt_data in enumerate(batch):
-            pos = find_token_positions(model, prompt_data)
-            if pos["s1"] is not None and pos["s2"] is not None:
-                scores.append(pattern[j, head, pos["s2"], pos["s1"]].item())
+            io_token = model.to_single_token(" " + prompt_data["correct_answer"])
+            s_token  = model.to_single_token(" " + prompt_data["incorrect_answer"])
 
-    return float(np.mean(scores)) if scores else 0.0
+            # Logit difference direction in vocab space
+            logit_diff_dir = model.W_U[:, io_token] - model.W_U[:, s_token]
+            logit_diff_dir = logit_diff_dir.to(model.cfg.device)
+
+            dla = (head_out[j] @ logit_diff_dir).item()
+            dla_scores.append(dla)
+
+    return float(np.mean(dla_scores))
+
+
+def compute_patching_effect(
+    model: HookedTransformer,
+    layer: int,
+    head: int,
+    dataset: list,
+    n_samples: int = 100
+) -> float:
+
+    from src.metrics import compute_logit_difference
+
+    recoveries = []
+    for d in dataset[:n_samples]:
+        clean_tokens     = model.to_tokens(d["prompt"], prepend_bos=True)
+        corrupted_tokens = model.to_tokens(d["corrupted_prompt"], prepend_bos=True)
+
+        clean_ld, _, _ = compute_logit_difference(
+            model, d["prompt"], d["correct_answer"], d["incorrect_answer"]
+        )
+
+        patched_logits = path_patch_head(
+            model, clean_tokens, corrupted_tokens, layer, head
+        )
+        patched_ld = (
+            patched_logits[0, -1, model.to_single_token(" " + d["correct_answer"])]
+          - patched_logits[0, -1, model.to_single_token(" " + d["incorrect_answer"])]
+        ).item()
+
+        if abs(clean_ld) > 0.1:
+            recoveries.append(patched_ld / clean_ld)
+
+    return float(np.mean(recoveries)) if recoveries else 0.0
+
 
 
 def classify_head(
@@ -228,60 +186,50 @@ def classify_head(
     layer: int,
     head: int,
     dataset: list,
-    name_list: List[str],
-    thresholds: dict = None
+    thresholds: dict = None,
+    run_patching: bool = False
 ) -> dict:
-    """
-    Run all classification tests on a single head.
-    Returns scores and best functional label.
-    """
+  
     if thresholds is None:
         thresholds = {
             "io_attn":       0.15,
             "s2_attn":       0.15,
-            "copy_score":    0.50,
-            "neg_copy":      0.50,
-            "induction":     0.30,
+            "duplicate_attn": 0.15,
             "prev_token":    0.30,
-            "duplicate":     0.15,
+            "induction":     0.30,
+            "dla_positive":  0.10,   # DLA > threshold - name mover
+            "dla_negative":  -0.10,  # DLA < threshold - negative mover
         }
 
-    # Compute all scores
-    io_attn    = get_mean_attention_pattern(model, layer, head, dataset,
-                                            source_key="end", target_key="io")
-    s2_attn    = get_mean_attention_pattern(model, layer, head, dataset,
-                                            source_key="end", target_key="s2")
-    s1_from_s2 = compute_duplicate_score(model, layer, head, dataset)
-    copy       = compute_copy_score(model, layer, head, name_list)
-    neg_copy   = compute_neg_copy_score(model, layer, head, name_list)
-    induction  = compute_induction_score(model, layer, head)
-    prev_token = compute_prev_token_score(model, layer, head, dataset)
+    attn  = compute_attention_scores(model, layer, head, dataset)
+    dla   = compute_dla(model, layer, head, dataset)
+    ind   = compute_induction_score(model, layer, head)
+    patch = compute_patching_effect(model, layer, head, dataset) if run_patching else None
 
-    # Classification logic
     labels = []
-    if io_attn > thresholds["io_attn"] and copy > thresholds["copy_score"]:
+    if attn["io_attn"] > thresholds["io_attn"] and dla > thresholds["dla_positive"]:
         labels.append("name_mover")
-    if io_attn > thresholds["io_attn"] and neg_copy > thresholds["neg_copy"]:
+    if attn["io_attn"] > thresholds["io_attn"] and dla < thresholds["dla_negative"]:
         labels.append("negative_mover")
-    if s2_attn > thresholds["s2_attn"]:
+    if attn["s2_attn"] > thresholds["s2_attn"]:
         labels.append("s_inhibition")
-    if s1_from_s2 > thresholds["duplicate"]:
+    if attn["duplicate_attn"] > thresholds["duplicate_attn"]:
         labels.append("duplicate_token")
-    if prev_token > thresholds["prev_token"]:
+    if attn["prev_token_attn"] > thresholds["prev_token"]:
         labels.append("previous_token")
-    if induction > thresholds["induction"]:
+    if ind > thresholds["induction"]:
         labels.append("induction")
 
     return {
-        "head":           (layer, head),
-        "io_attn":        io_attn,
-        "s2_attn":        s2_attn,
-        "duplicate_score": s1_from_s2,
-        "copy_score":     copy,
-        "neg_copy_score": neg_copy,
-        "induction_score": induction,
-        "prev_token_score": prev_token,
-        "classification": labels if labels else ["unclassified"]
+        "head":             (layer, head),
+        "io_attn":          attn["io_attn"],
+        "s2_attn":          attn["s2_attn"],
+        "duplicate_attn":   attn["duplicate_attn"],
+        "prev_token_attn":  attn["prev_token_attn"],
+        "induction_score":  ind,
+        "dla":              dla,
+        "patching_effect":  patch,
+        "classification":   labels if labels else ["unclassified"]
     }
 
 
@@ -289,15 +237,16 @@ def classify_circuit(
     model: HookedTransformer,
     circuit_heads: list,
     dataset: list,
-    name_list: List[str],
-    thresholds: dict = None
+    thresholds: dict = None,
+    run_patching: bool = False
 ) -> dict:
 
     results = {}
     total = len(circuit_heads)
     for i, (layer, head) in enumerate(sorted(circuit_heads)):
-        print(f"  [{i+1}/{total}] Classifying ({layer},{head})...")
+        print(f"  [{i+1}/{total}] ({layer},{head})...", end=" ")
         results[(layer, head)] = classify_head(
-            model, layer, head, dataset, name_list, thresholds
+            model, layer, head, dataset, thresholds, run_patching
         )
+        print(f"→ {results[(layer,head)]['classification']}")
     return results
