@@ -1,55 +1,50 @@
 
+
 import graphviz
-from typing import List, Tuple, Dict, Optional
+import numpy as np
+import matplotlib.pyplot as plt
+import matplotlib.colors as mcolors
+from typing import List, Tuple, Dict, Optional, Set
+
+
 
 NODE_COLORS = {
-    "head":            "#FFB347",  
-    "head_q":          "#FFD700",  # query input
-    "head_k":          "#FFA07A",  # key input  
-    "head_v":          "#FF8C00",  # value input
-    "mlp":             "#87CEEB",  
-    "resid":           "#90EE90",  
-    # functional type colors 
-    "name_mover":      "#FF6B6B",
-    "negative_mover":  "#C0392B",
-    "s_inhibition":    "#4ECDC4",
-    "induction":       "#45B7D1",
-    "duplicate_token": "#96CEB4",
-    "previous_token":  "#FFEAA7",
-    "unclassified":    "#DDA0DD",
+    "head":  "#F4A460",   
+    "mlp":   "#87CEEB",  
+    "resid": "#90EE90",   
+    "head_q": "#FFD700",  
+    "head_k": "#FFA07A",  
+    "head_v": "#FF8C00",  
+
+    "name_mover":      "#E74C3C",  
+    "negative_mover":  "#8E44AD",  
+    "s_inhibition":    "#16A085",  
+    "induction":       "#2980B9",  
+    "duplicate_token": "#27AE60", 
+    "previous_token":  "#F39C12",  
+    "unclassified":    "#BDC3C7",  
 }
 
-def parse_node(node_name: str):
-    """
-    Parse EAP node name into (base_name, node_type, layer, head, qkv).
-    Examples:
-      'head.9.4.v'    base='head.9.4', type='head_v',  layer=9,  head=4
-      'head.9.4'      base='head.9.4', type='head',    layer=9,  head=4
-      'mlp.5'         base='mlp.5',    type='mlp',     layer=5
-    """
+
+
+def _parse_node(node_name: str):
+
     parts = node_name.split(".")
     if node_name.startswith("head"):
-        layer = int(parts[1])
-        head  = int(parts[2])
-        base  = f"head.{layer}.{head}"
-        if len(parts) == 4:
-            qkv = parts[3]
-            return base, f"head_{qkv}", layer, head, qkv
-        return base, "head", layer, head, None
+        layer, head = int(parts[1]), int(parts[2])
+        base = f"head.{layer}.{head}"
+        qkv  = parts[3] if len(parts) == 4 else None
+        return base, f"head_{qkv}" if qkv else "head", layer, head, qkv
     elif node_name.startswith("mlp"):
         layer = int(parts[1])
         return node_name, "mlp", layer, None, None
     else:
-        # resid_pre or resid_post
         layer = int(parts[-1]) if parts[-1].isdigit() else 0
         return node_name, "resid", layer, None, None
 
 
-def get_node_color(node_type: str,
-                   base_name: str,
-                   head_classifications: Optional[Dict]) -> str:
-
-    #Only full head nodes (not q/k/v inputs) get classification colors.
+def _node_color(node_type: str, base_name: str,
+                head_classifications: Optional[Dict]) -> str:
 
     if head_classifications and node_type == "head":
         parts = base_name.split(".")
@@ -64,13 +59,13 @@ def get_node_color(node_type: str,
 def draw_circuit(
     edges: List[Tuple],
     output_path: str = "circuit",
-    title: str = "IOI Circuit",
+    title: str = "",
     head_classifications: Optional[Dict] = None,
     min_score: Optional[float] = None,
     show_scores: bool = False,
     format: str = "png"
-) -> graphviz.Digraph:
- 
+):
+  
     if min_score is not None:
         edges = [(f, t, s) for f, t, s in edges if abs(s) >= min_score]
 
@@ -78,19 +73,19 @@ def draw_circuit(
         comment=title,
         graph_attr={
             'rankdir':  'TB',
-            'ranksep':  '0.8',
-            'nodesep':  '0.4',
+            'ranksep':  '0.6',
+            'nodesep':  '0.35',
+            'splines':  'curved',
             'fontname': 'Helvetica',
-            'label':    title,
-            'fontsize': '16',
-            'splines':  'ortho',
+            'bgcolor':  'white',
         },
         node_attr={
             'style':    'filled,rounded',
             'shape':    'box',
             'fontname': 'Helvetica',
             'fontsize': '9',
-            'margin':   '0.1,0.05',
+            'margin':   '0.08,0.04',
+            'penwidth': '1.2',
         },
         edge_attr={
             'arrowsize': '0.5',
@@ -98,92 +93,175 @@ def draw_circuit(
         }
     )
 
-    # Collect all nodes and group by layer 
-    nodes_seen = {}  # node_name - (base, node_type, layer, head, qkv)
-    for from_node, to_node, score in edges:
-        for n in [from_node, to_node]:
+    # Collect nodes grouped by layer
+    nodes_seen = {}
+    for fn, tn, score in edges:
+        for n in [fn, tn]:
             if n not in nodes_seen:
-                nodes_seen[n] = parse_node(n)
+                nodes_seen[n] = _parse_node(n)
 
-    # Group by layer for subgraph layout
     layer_nodes = {}
-    for node_name, (base, ntype, layer, head, qkv) in nodes_seen.items():
+    for node_name, parsed in nodes_seen.items():
+        base, ntype, layer, head, qkv = parsed
         layer_nodes.setdefault(layer, []).append((node_name, base, ntype, head, qkv))
 
-    # Add nodes grouped into layer subgraphs 
+    # Add nodes in layer subgraphs for alignment
     for layer in sorted(layer_nodes.keys()):
         with dot.subgraph(name=f"cluster_layer_{layer}") as sub:
-            sub.attr(
-                rank='same',
-                style='invis',
-                label=f"Layer {layer}"
-            )
+            sub.attr(rank='same', style='invis')
             for node_name, base, ntype, head, qkv in layer_nodes[layer]:
-                color = get_node_color(ntype, base, head_classifications)
-                # Label: show short name
+                color = _node_color(ntype, base, head_classifications)
                 if ntype.startswith("head"):
-                    if qkv:
-                        label = f"a{layer}.{head}_{qkv}"
-                    else:
-                        label = f"a{layer}.{head}"
+                    label = f"a{layer}.{head}_{qkv}" if qkv else f"a{layer}.{head}"
                 elif ntype == "mlp":
                     label = f"m{layer}"
                 else:
-                    prefix = "r_pre" if "pre" in node_name else "r_post"
-                    label = f"{prefix}.{layer}"
+                    prefix = "r↑" if "pre" in node_name else "r↓"
+                    label  = f"{prefix}{layer}"
+                sub.node(node_name, label=label, fillcolor=color, color="#555555")
 
-                sub.node(
-                    node_name,
-                    label=label,
-                    fillcolor=color,
-                    color="#444444",
-                    penwidth="1.2"
-                )
+    # Add edges — color matches source node type
+    for fn, tn, score in edges:
+        _, ntype, _, _, _ = _parse_node(fn)
+        base_color = NODE_COLORS.get(ntype, "#555555")
+        edge_style = "dashed" if score < 0 else "solid"
+        penwidth   = str(max(0.5, min(4.0, abs(score) * 15)))
+        label      = f"{score:.3f}" if show_scores else ""
 
-    # Add implicit head output nodes 
-    head_outputs_needed = set()
-    for from_node, to_node, score in edges:
-        base, ntype, layer, head, qkv = parse_node(from_node)
-        if ntype == "head" and qkv is None:
-            head_outputs_needed.add(from_node)
-
-    for node_name in head_outputs_needed:
-        if node_name not in nodes_seen:
-            base, ntype, layer, head, qkv = parse_node(node_name)
-            color = get_node_color("head", base, head_classifications)
-            dot.node(node_name,
-                     label=f"a{layer}.{head}",
-                     fillcolor=color,
-                     color="#444444",
-                     style="filled,rounded",
-                     shape="box")
-
-    # Add edges 
-    for from_node, to_node, score in edges:
-        edge_style   = "dashed" if score < 0 else "solid"
-        penwidth     = str(max(0.5, min(4.0, abs(score) * 15)))
-        edge_color   = "#CC3333" if score < 0 else "#333333"
-        label        = f"{score:.3f}" if show_scores else ""
-
-        dot.edge(
-            from_node, to_node,
-            label=label,
-            style=edge_style,
-            penwidth=penwidth,
-            color=edge_color,
-            arrowhead="vee"
-        )
+        dot.edge(fn, tn,
+                 label=label,
+                 style=edge_style,
+                 penwidth=penwidth,
+                 color=base_color,
+                 arrowhead="vee")
 
     dot.render(output_path, format=format, cleanup=True)
-    print(f"Saved: {output_path}.{format}")
+    print(f"Circuit saved: {output_path}.{format}")
     return dot
 
 
-def draw_legend(output_path: str = "circuit_legend"):
-    #Generate a standalone color legend for circuit graphs.
-    dot = graphviz.Digraph(graph_attr={'rankdir': 'LR', 'label': 'Legend'})
-    for label, color in NODE_COLORS.items():
-        dot.node(label, fillcolor=color, style='filled,rounded',
-                 shape='box', fontname='Helvetica', fontsize='10')
-    dot.render(output_path, format='png', cleanup=True)
-    print(f"Legend saved: {output_path}.png")
+# Head heatmaps 
+
+def plot_head_heatmap(
+    score_matrix: np.ndarray,
+    circuit_heads: Set[Tuple[int, int]],
+    output_path: str,
+    colormap: str = "PRGn",
+    vmin: Optional[float] = None,
+    vmax: Optional[float] = None,
+    center: Optional[float] = None,
+    cbar_label: str = "",
+    figsize: Tuple = (5.5, 5.0)
+):
+   
+    fig, ax = plt.subplots(figsize=figsize)
+
+    if center is not None:
+        abs_max = max(abs(float(score_matrix.max())),
+                      abs(float(score_matrix.min())), 1e-6)
+        norm = mcolors.TwoSlopeNorm(vmin=-abs_max, vcenter=center, vmax=abs_max)
+        im = ax.imshow(score_matrix, cmap=colormap, norm=norm, aspect='auto')
+    else:
+        im = ax.imshow(score_matrix, cmap=colormap,
+                       vmin=vmin, vmax=vmax, aspect='auto')
+
+    # Mark circuit heads
+    for (layer, head) in circuit_heads:
+        if 0 <= layer < 12 and 0 <= head < 12:
+            ax.plot(head, layer, 'o',
+                    color='white', markersize=7,
+                    markeredgecolor='black', markeredgewidth=1.2,
+                    zorder=5)
+
+    ax.set_xlabel('Head', fontsize=11)
+    ax.set_ylabel('Layer', fontsize=11)
+    ax.set_xticks(range(12))
+    ax.set_yticks(range(12))
+    ax.set_xticklabels(range(12), fontsize=8)
+    ax.set_yticklabels(range(12), fontsize=8)
+    ax.tick_params(length=0)
+
+    # Clean border
+    for spine in ax.spines.values():
+        spine.set_linewidth(0.8)
+        spine.set_color('#888888')
+
+    cbar = plt.colorbar(im, ax=ax, fraction=0.046, pad=0.04)
+    cbar.set_label(cbar_label, fontsize=10)
+    cbar.ax.tick_params(labelsize=8)
+
+    plt.tight_layout()
+    plt.savefig(output_path, dpi=150, bbox_inches='tight')
+    plt.show()
+    print(f"✓ Saved: {output_path}")
+    plt.close()
+
+
+def plot_heatmap_suite(
+    all_classifications: Dict,
+    circuit_heads: Set[Tuple[int, int]],
+    output_dir: str = "figures",
+    prefix: str = "neo_eap"
+):
+   
+    import os
+    os.makedirs(output_dir, exist_ok=True)
+
+    # Build 12x12 matrices
+    io_mat  = np.zeros((12, 12))
+    s2_mat  = np.zeros((12, 12))
+    dla_mat = np.zeros((12, 12))
+    ind_mat = np.zeros((12, 12))
+    dup_mat = np.zeros((12, 12))
+    prev_mat = np.zeros((12, 12))
+
+    for (layer, head), r in all_classifications.items():
+        io_mat[layer][head]   = r.get('io_attn', 0)
+        s2_mat[layer][head]   = r.get('s2_attn', 0)
+        dla_mat[layer][head]  = r.get('dla', 0)
+        ind_mat[layer][head]  = r.get('induction_score', 0)
+        dup_mat[layer][head]  = r.get('duplicate_attn', 0)
+        prev_mat[layer][head] = r.get('prev_token_attn', 0)
+
+    # IO attention
+    plot_head_heatmap(
+        io_mat, circuit_heads,
+        output_path=f"{output_dir}/{prefix}_heatmap_io_attn.png",
+        colormap='PRGn', center=0,
+        cbar_label='Mean IO attention at END position'
+    )
+
+    # DLA 
+    plot_head_heatmap(
+        dla_mat, circuit_heads,
+        output_path=f"{output_dir}/{prefix}_heatmap_dla.png",
+        colormap='PRGn', center=0,
+        cbar_label='Direct Logit Attribution (IO - S)'
+    )
+
+    # S2 attention 
+    plot_head_heatmap(
+        s2_mat, circuit_heads,
+        output_path=f"{output_dir}/{prefix}_heatmap_s2_attn.png",
+        colormap='BuPu', vmin=0,
+        cbar_label='Mean S2 attention at END position'
+    )
+
+    # Induction score 
+    plot_head_heatmap(
+        ind_mat, circuit_heads,
+        output_path=f"{output_dir}/{prefix}_heatmap_induction.png",
+        colormap='BuPu', vmin=0,
+        cbar_label='Induction score (repeated sequences)'
+    )
+
+    print(f"
+ All heatmaps saved to {output_dir}/")
+    return {
+        'io_matrix':  io_mat,
+        'dla_matrix': dla_mat,
+        's2_matrix':  s2_mat,
+        'ind_matrix': ind_mat,
+        'dup_matrix': dup_mat,
+        'prev_matrix': prev_mat,
+    }
