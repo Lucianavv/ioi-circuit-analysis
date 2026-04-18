@@ -1,0 +1,5122 @@
+[
+  [
+    "blocks.11.attn.hook_result[[:, :, 11]]",
+    "blocks.11.hook_resid_post[[:]]",
+    0.004869639873504639
+  ],
+  [
+    "blocks.11.attn.hook_result[[:, :, 9]]",
+    "blocks.11.hook_resid_post[[:]]",
+    0.01641768217086792
+  ],
+  [
+    "blocks.11.attn.hook_result[[:, :, 8]]",
+    "blocks.11.hook_resid_post[[:]]",
+    0.0014965534210205078
+  ],
+  [
+    "blocks.11.attn.hook_result[[:, :, 6]]",
+    "blocks.11.hook_resid_post[[:]]",
+    0.37909114360809326
+  ],
+  [
+    "blocks.11.attn.hook_result[[:, :, 5]]",
+    "blocks.11.hook_resid_post[[:]]",
+    0.0014771223068237305
+  ],
+  [
+    "blocks.11.attn.hook_result[[:, :, 0]]",
+    "blocks.11.hook_resid_post[[:]]",
+    0.016358524560928345
+  ],
+  [
+    "blocks.10.attn.hook_result[[:, :, 10]]",
+    "blocks.11.hook_resid_post[[:]]",
+    0.015811413526535034
+  ],
+  [
+    "blocks.10.attn.hook_result[[:, :, 9]]",
+    "blocks.11.hook_resid_post[[:]]",
+    0.0035043656826019287
+  ],
+  [
+    "blocks.10.attn.hook_result[[:, :, 8]]",
+    "blocks.11.hook_resid_post[[:]]",
+    0.0020643919706344604
+  ],
+  [
+    "blocks.10.attn.hook_result[[:, :, 7]]",
+    "blocks.11.hook_resid_post[[:]]",
+    0.012230023741722107
+  ],
+  [
+    "blocks.10.attn.hook_result[[:, :, 2]]",
+    "blocks.11.hook_resid_post[[:]]",
+    0.00636059045791626
+  ],
+  [
+    "blocks.9.attn.hook_result[[:, :, 11]]",
+    "blocks.11.hook_resid_post[[:]]",
+    0.002714097499847412
+  ],
+  [
+    "blocks.9.attn.hook_result[[:, :, 6]]",
+    "blocks.11.hook_resid_post[[:]]",
+    0.002581179141998291
+  ],
+  [
+    "blocks.9.attn.hook_result[[:, :, 1]]",
+    "blocks.11.hook_resid_post[[:]]",
+    0.003477811813354492
+  ],
+  [
+    "blocks.8.attn.hook_result[[:, :, 9]]",
+    "blocks.11.hook_resid_post[[:]]",
+    0.00877392292022705
+  ],
+  [
+    "blocks.8.attn.hook_result[[:, :, 8]]",
+    "blocks.11.hook_resid_post[[:]]",
+    0.0010955333709716797
+  ],
+  [
+    "blocks.8.attn.hook_result[[:, :, 6]]",
+    "blocks.11.hook_resid_post[[:]]",
+    0.08099091053009033
+  ],
+  [
+    "blocks.8.attn.hook_result[[:, :, 5]]",
+    "blocks.11.hook_resid_post[[:]]",
+    0.0017844438552856445
+  ],
+  [
+    "blocks.7.hook_mlp_out[[:]]",
+    "blocks.11.hook_resid_post[[:]]",
+    0.005160927772521973
+  ],
+  [
+    "blocks.7.attn.hook_result[[:, :, 10]]",
+    "blocks.11.hook_resid_post[[:]]",
+    0.007500767707824707
+  ],
+  [
+    "blocks.7.attn.hook_result[[:, :, 8]]",
+    "blocks.11.hook_resid_post[[:]]",
+    0.0015174150466918945
+  ],
+  [
+    "blocks.7.attn.hook_result[[:, :, 5]]",
+    "blocks.11.hook_resid_post[[:]]",
+    0.002460002899169922
+  ],
+  [
+    "blocks.7.attn.hook_result[[:, :, 3]]",
+    "blocks.11.hook_resid_post[[:]]",
+    0.002295255661010742
+  ],
+  [
+    "blocks.7.attn.hook_result[[:, :, 2]]",
+    "blocks.11.hook_resid_post[[:]]",
+    0.001203298568725586
+  ],
+  [
+    "blocks.7.attn.hook_result[[:, :, 0]]",
+    "blocks.11.hook_resid_post[[:]]",
+    0.002397298812866211
+  ],
+  [
+    "blocks.6.attn.hook_result[[:, :, 6]]",
+    "blocks.11.hook_resid_post[[:]]",
+    0.0012562274932861328
+  ],
+  [
+    "blocks.6.attn.hook_result[[:, :, 2]]",
+    "blocks.11.hook_resid_post[[:]]",
+    0.0012860298156738281
+  ],
+  [
+    "blocks.5.attn.hook_result[[:, :, 8]]",
+    "blocks.11.hook_resid_post[[:]]",
+    0.0010848045349121094
+  ],
+  [
+    "blocks.5.attn.hook_result[[:, :, 1]]",
+    "blocks.11.hook_resid_post[[:]]",
+    0.0013294219970703125
+  ],
+  [
+    "blocks.4.attn.hook_result[[:, :, 6]]",
+    "blocks.11.hook_resid_post[[:]]",
+    0.0016870498657226562
+  ],
+  [
+    "blocks.4.attn.hook_result[[:, :, 0]]",
+    "blocks.11.hook_resid_post[[:]]",
+    0.0012151002883911133
+  ],
+  [
+    "blocks.3.attn.hook_result[[:, :, 8]]",
+    "blocks.11.hook_resid_post[[:]]",
+    0.0010013580322265625
+  ],
+  [
+    "blocks.3.attn.hook_result[[:, :, 0]]",
+    "blocks.11.hook_resid_post[[:]]",
+    0.001373887062072754
+  ],
+  [
+    "blocks.2.attn.hook_result[[:, :, 6]]",
+    "blocks.11.hook_resid_post[[:]]",
+    0.0060302019119262695
+  ],
+  [
+    "blocks.1.attn.hook_result[[:, :, 0]]",
+    "blocks.11.hook_resid_post[[:]]",
+    0.0013184547424316406
+  ],
+  [
+    "blocks.11.hook_q_input[[:, :, 6]]",
+    "blocks.11.attn.hook_q[[:, :, 6]]",
+    0.43179166316986084
+  ],
+  [
+    "blocks.11.hook_k_input[[:, :, 9]]",
+    "blocks.11.attn.hook_k[[:, :, 9]]",
+    0.0021857023239135742
+  ],
+  [
+    "blocks.11.hook_k_input[[:, :, 0]]",
+    "blocks.11.attn.hook_k[[:, :, 0]]",
+    0.004419088363647461
+  ],
+  [
+    "blocks.11.hook_v_input[[:, :, 11]]",
+    "blocks.11.attn.hook_v[[:, :, 11]]",
+    0.004422783851623535
+  ],
+  [
+    "blocks.11.hook_v_input[[:, :, 9]]",
+    "blocks.11.attn.hook_v[[:, :, 9]]",
+    0.020180821418762207
+  ],
+  [
+    "blocks.11.hook_v_input[[:, :, 5]]",
+    "blocks.11.attn.hook_v[[:, :, 5]]",
+    0.0037343502044677734
+  ],
+  [
+    "blocks.11.hook_v_input[[:, :, 0]]",
+    "blocks.11.attn.hook_v[[:, :, 0]]",
+    0.02107417583465576
+  ],
+  [
+    "blocks.10.hook_mlp_out[[:]]",
+    "blocks.11.hook_q_input[[:, :, 6]]",
+    0.07403397560119629
+  ],
+  [
+    "blocks.10.attn.hook_result[[:, :, 11]]",
+    "blocks.11.hook_q_input[[:, :, 6]]",
+    0.0045272111892700195
+  ],
+  [
+    "blocks.10.attn.hook_result[[:, :, 6]]",
+    "blocks.11.hook_q_input[[:, :, 6]]",
+    0.008184313774108887
+  ],
+  [
+    "blocks.10.attn.hook_result[[:, :, 5]]",
+    "blocks.11.hook_q_input[[:, :, 6]]",
+    0.006805539131164551
+  ],
+  [
+    "blocks.10.attn.hook_result[[:, :, 3]]",
+    "blocks.11.hook_q_input[[:, :, 6]]",
+    0.023160934448242188
+  ],
+  [
+    "blocks.10.attn.hook_result[[:, :, 1]]",
+    "blocks.11.hook_q_input[[:, :, 6]]",
+    0.007067680358886719
+  ],
+  [
+    "blocks.10.attn.hook_result[[:, :, 0]]",
+    "blocks.11.hook_q_input[[:, :, 6]]",
+    0.026648640632629395
+  ],
+  [
+    "blocks.9.hook_mlp_out[[:]]",
+    "blocks.11.hook_q_input[[:, :, 6]]",
+    0.010475873947143555
+  ],
+  [
+    "blocks.9.attn.hook_result[[:, :, 9]]",
+    "blocks.11.hook_q_input[[:, :, 6]]",
+    0.003493666648864746
+  ],
+  [
+    "blocks.9.attn.hook_result[[:, :, 4]]",
+    "blocks.11.hook_q_input[[:, :, 6]]",
+    0.10979259014129639
+  ],
+  [
+    "blocks.9.attn.hook_result[[:, :, 2]]",
+    "blocks.11.hook_q_input[[:, :, 6]]",
+    0.007372260093688965
+  ],
+  [
+    "blocks.8.attn.hook_result[[:, :, 5]]",
+    "blocks.11.hook_q_input[[:, :, 6]]",
+    0.0011303424835205078
+  ],
+  [
+    "blocks.8.attn.hook_result[[:, :, 4]]",
+    "blocks.11.hook_q_input[[:, :, 6]]",
+    0.002515077590942383
+  ],
+  [
+    "blocks.8.attn.hook_result[[:, :, 1]]",
+    "blocks.11.hook_q_input[[:, :, 6]]",
+    0.019890427589416504
+  ],
+  [
+    "blocks.8.attn.hook_result[[:, :, 0]]",
+    "blocks.11.hook_q_input[[:, :, 6]]",
+    0.0053490400314331055
+  ],
+  [
+    "blocks.9.hook_mlp_out[[:]]",
+    "blocks.11.hook_k_input[[:, :, 0]]",
+    0.0017420053482055664
+  ],
+  [
+    "blocks.8.hook_mlp_out[[:]]",
+    "blocks.11.hook_k_input[[:, :, 0]]",
+    0.0016149282455444336
+  ],
+  [
+    "blocks.8.hook_mlp_out[[:]]",
+    "blocks.11.hook_v_input[[:, :, 9]]",
+    0.0026769638061523438
+  ],
+  [
+    "blocks.7.hook_mlp_out[[:]]",
+    "blocks.11.hook_v_input[[:, :, 9]]",
+    0.001959562301635742
+  ],
+  [
+    "blocks.0.hook_mlp_out[[:]]",
+    "blocks.11.hook_v_input[[:, :, 9]]",
+    0.0023245811462402344
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 11]]",
+    "blocks.11.hook_v_input[[:, :, 9]]",
+    0.0010911226272583008
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 10]]",
+    "blocks.11.hook_v_input[[:, :, 9]]",
+    0.001146078109741211
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 7]]",
+    "blocks.11.hook_v_input[[:, :, 9]]",
+    0.0012645721435546875
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 6]]",
+    "blocks.11.hook_v_input[[:, :, 9]]",
+    0.0013140439987182617
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 2]]",
+    "blocks.11.hook_v_input[[:, :, 9]]",
+    0.0011515617370605469
+  ],
+  [
+    "blocks.8.hook_mlp_out[[:]]",
+    "blocks.11.hook_v_input[[:, :, 5]]",
+    0.001583695411682129
+  ],
+  [
+    "blocks.10.hook_mlp_out[[:]]",
+    "blocks.11.hook_v_input[[:, :, 0]]",
+    0.0012536048889160156
+  ],
+  [
+    "blocks.8.hook_mlp_out[[:]]",
+    "blocks.11.hook_v_input[[:, :, 0]]",
+    0.0075768232345581055
+  ],
+  [
+    "blocks.7.hook_mlp_out[[:]]",
+    "blocks.11.hook_v_input[[:, :, 0]]",
+    0.0014925003051757812
+  ],
+  [
+    "blocks.5.attn.hook_result[[:, :, 1]]",
+    "blocks.11.hook_v_input[[:, :, 0]]",
+    0.0026471614837646484
+  ],
+  [
+    "blocks.4.hook_mlp_out[[:]]",
+    "blocks.11.hook_v_input[[:, :, 0]]",
+    0.001309514045715332
+  ],
+  [
+    "blocks.0.hook_mlp_out[[:]]",
+    "blocks.11.hook_v_input[[:, :, 0]]",
+    0.00279843807220459
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 6]]",
+    "blocks.11.hook_v_input[[:, :, 0]]",
+    0.0012608766555786133
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 2]]",
+    "blocks.11.hook_v_input[[:, :, 0]]",
+    0.0017975568771362305
+  ],
+  [
+    "blocks.10.attn.hook_result[[:, :, 11]]",
+    "blocks.10.hook_mlp_in[[:]]",
+    0.0026845932006835938
+  ],
+  [
+    "blocks.10.attn.hook_result[[:, :, 5]]",
+    "blocks.10.hook_mlp_in[[:]]",
+    0.0017243623733520508
+  ],
+  [
+    "blocks.10.attn.hook_result[[:, :, 3]]",
+    "blocks.10.hook_mlp_in[[:]]",
+    0.0041582584381103516
+  ],
+  [
+    "blocks.10.attn.hook_result[[:, :, 1]]",
+    "blocks.10.hook_mlp_in[[:]]",
+    0.0011888742446899414
+  ],
+  [
+    "blocks.10.attn.hook_result[[:, :, 0]]",
+    "blocks.10.hook_mlp_in[[:]]",
+    0.006148695945739746
+  ],
+  [
+    "blocks.9.hook_mlp_out[[:]]",
+    "blocks.10.hook_mlp_in[[:]]",
+    0.005504012107849121
+  ],
+  [
+    "blocks.9.attn.hook_result[[:, :, 9]]",
+    "blocks.10.hook_mlp_in[[:]]",
+    0.001062631607055664
+  ],
+  [
+    "blocks.9.attn.hook_result[[:, :, 4]]",
+    "blocks.10.hook_mlp_in[[:]]",
+    0.03742015361785889
+  ],
+  [
+    "blocks.9.attn.hook_result[[:, :, 2]]",
+    "blocks.10.hook_mlp_in[[:]]",
+    0.002428889274597168
+  ],
+  [
+    "blocks.8.hook_mlp_out[[:]]",
+    "blocks.10.hook_mlp_in[[:]]",
+    0.0019778013229370117
+  ],
+  [
+    "blocks.8.attn.hook_result[[:, :, 1]]",
+    "blocks.10.hook_mlp_in[[:]]",
+    0.008203983306884766
+  ],
+  [
+    "blocks.8.attn.hook_result[[:, :, 0]]",
+    "blocks.10.hook_mlp_in[[:]]",
+    0.0026209354400634766
+  ],
+  [
+    "blocks.7.hook_mlp_out[[:]]",
+    "blocks.10.hook_mlp_in[[:]]",
+    0.0017186403274536133
+  ],
+  [
+    "blocks.10.hook_q_input[[:, :, 11]]",
+    "blocks.10.attn.hook_q[[:, :, 11]]",
+    0.010862112045288086
+  ],
+  [
+    "blocks.10.hook_q_input[[:, :, 10]]",
+    "blocks.10.attn.hook_q[[:, :, 10]]",
+    0.02227628231048584
+  ],
+  [
+    "blocks.10.hook_q_input[[:, :, 9]]",
+    "blocks.10.attn.hook_q[[:, :, 9]]",
+    0.005775094032287598
+  ],
+  [
+    "blocks.10.hook_q_input[[:, :, 8]]",
+    "blocks.10.attn.hook_q[[:, :, 8]]",
+    0.0014187097549438477
+  ],
+  [
+    "blocks.10.hook_q_input[[:, :, 7]]",
+    "blocks.10.attn.hook_q[[:, :, 7]]",
+    0.009090423583984375
+  ],
+  [
+    "blocks.10.hook_q_input[[:, :, 6]]",
+    "blocks.10.attn.hook_q[[:, :, 6]]",
+    0.00905156135559082
+  ],
+  [
+    "blocks.10.hook_q_input[[:, :, 5]]",
+    "blocks.10.attn.hook_q[[:, :, 5]]",
+    0.010036110877990723
+  ],
+  [
+    "blocks.10.hook_q_input[[:, :, 3]]",
+    "blocks.10.attn.hook_q[[:, :, 3]]",
+    0.02436649799346924
+  ],
+  [
+    "blocks.10.hook_q_input[[:, :, 2]]",
+    "blocks.10.attn.hook_q[[:, :, 2]]",
+    0.005490422248840332
+  ],
+  [
+    "blocks.10.hook_q_input[[:, :, 1]]",
+    "blocks.10.attn.hook_q[[:, :, 1]]",
+    0.009675264358520508
+  ],
+  [
+    "blocks.10.hook_q_input[[:, :, 0]]",
+    "blocks.10.attn.hook_q[[:, :, 0]]",
+    0.031041264533996582
+  ],
+  [
+    "blocks.10.hook_k_input[[:, :, 2]]",
+    "blocks.10.attn.hook_k[[:, :, 2]]",
+    0.0021039247512817383
+  ],
+  [
+    "blocks.10.hook_v_input[[:, :, 10]]",
+    "blocks.10.attn.hook_v[[:, :, 10]]",
+    0.0037306547164916992
+  ],
+  [
+    "blocks.10.hook_v_input[[:, :, 7]]",
+    "blocks.10.attn.hook_v[[:, :, 7]]",
+    0.0069397687911987305
+  ],
+  [
+    "blocks.9.hook_mlp_out[[:]]",
+    "blocks.10.hook_q_input[[:, :, 11]]",
+    0.0011671781539916992
+  ],
+  [
+    "blocks.9.attn.hook_result[[:, :, 4]]",
+    "blocks.10.hook_q_input[[:, :, 11]]",
+    0.007682204246520996
+  ],
+  [
+    "blocks.7.attn.hook_result[[:, :, 10]]",
+    "blocks.10.hook_q_input[[:, :, 11]]",
+    0.0034453868865966797
+  ],
+  [
+    "blocks.9.hook_mlp_out[[:]]",
+    "blocks.10.hook_q_input[[:, :, 10]]",
+    0.04972255229949951
+  ],
+  [
+    "blocks.9.attn.hook_result[[:, :, 1]]",
+    "blocks.10.hook_q_input[[:, :, 10]]",
+    0.0032460689544677734
+  ],
+  [
+    "blocks.9.attn.hook_result[[:, :, 0]]",
+    "blocks.10.hook_q_input[[:, :, 10]]",
+    0.0016983747482299805
+  ],
+  [
+    "blocks.8.hook_mlp_out[[:]]",
+    "blocks.10.hook_q_input[[:, :, 10]]",
+    0.0031250715255737305
+  ],
+  [
+    "blocks.8.attn.hook_result[[:, :, 7]]",
+    "blocks.10.hook_q_input[[:, :, 10]]",
+    0.002880573272705078
+  ],
+  [
+    "blocks.8.attn.hook_result[[:, :, 6]]",
+    "blocks.10.hook_q_input[[:, :, 10]]",
+    0.0032875537872314453
+  ],
+  [
+    "blocks.8.attn.hook_result[[:, :, 5]]",
+    "blocks.10.hook_q_input[[:, :, 10]]",
+    0.00165557861328125
+  ],
+  [
+    "blocks.7.hook_mlp_out[[:]]",
+    "blocks.10.hook_q_input[[:, :, 10]]",
+    0.0027426481246948242
+  ],
+  [
+    "blocks.7.attn.hook_result[[:, :, 11]]",
+    "blocks.10.hook_q_input[[:, :, 10]]",
+    0.004674553871154785
+  ],
+  [
+    "blocks.7.attn.hook_result[[:, :, 10]]",
+    "blocks.10.hook_q_input[[:, :, 10]]",
+    0.0037802457809448242
+  ],
+  [
+    "blocks.7.attn.hook_result[[:, :, 8]]",
+    "blocks.10.hook_q_input[[:, :, 10]]",
+    0.0025986433029174805
+  ],
+  [
+    "blocks.7.attn.hook_result[[:, :, 7]]",
+    "blocks.10.hook_q_input[[:, :, 10]]",
+    0.0013009309768676758
+  ],
+  [
+    "blocks.7.attn.hook_result[[:, :, 6]]",
+    "blocks.10.hook_q_input[[:, :, 10]]",
+    0.0013763904571533203
+  ],
+  [
+    "blocks.7.attn.hook_result[[:, :, 0]]",
+    "blocks.10.hook_q_input[[:, :, 10]]",
+    0.001415848731994629
+  ],
+  [
+    "blocks.6.attn.hook_result[[:, :, 11]]",
+    "blocks.10.hook_q_input[[:, :, 10]]",
+    0.0029931068420410156
+  ],
+  [
+    "blocks.6.attn.hook_result[[:, :, 10]]",
+    "blocks.10.hook_q_input[[:, :, 10]]",
+    0.0018224716186523438
+  ],
+  [
+    "blocks.5.attn.hook_result[[:, :, 11]]",
+    "blocks.10.hook_q_input[[:, :, 10]]",
+    0.0011483430862426758
+  ],
+  [
+    "blocks.5.attn.hook_result[[:, :, 1]]",
+    "blocks.10.hook_q_input[[:, :, 10]]",
+    0.0033626556396484375
+  ],
+  [
+    "blocks.4.hook_mlp_out[[:]]",
+    "blocks.10.hook_q_input[[:, :, 10]]",
+    0.001102447509765625
+  ],
+  [
+    "blocks.3.hook_mlp_out[[:]]",
+    "blocks.10.hook_q_input[[:, :, 10]]",
+    0.001008152961730957
+  ],
+  [
+    "blocks.1.attn.hook_result[[:, :, 6]]",
+    "blocks.10.hook_q_input[[:, :, 10]]",
+    0.0012252330780029297
+  ],
+  [
+    "blocks.1.attn.hook_result[[:, :, 0]]",
+    "blocks.10.hook_q_input[[:, :, 10]]",
+    0.002709627151489258
+  ],
+  [
+    "blocks.9.attn.hook_result[[:, :, 4]]",
+    "blocks.10.hook_q_input[[:, :, 9]]",
+    0.0024573802947998047
+  ],
+  [
+    "blocks.9.attn.hook_result[[:, :, 4]]",
+    "blocks.10.hook_q_input[[:, :, 7]]",
+    0.005590915679931641
+  ],
+  [
+    "blocks.9.attn.hook_result[[:, :, 2]]",
+    "blocks.10.hook_q_input[[:, :, 7]]",
+    0.0013134479522705078
+  ],
+  [
+    "blocks.9.attn.hook_result[[:, :, 0]]",
+    "blocks.10.hook_q_input[[:, :, 7]]",
+    0.00156402587890625
+  ],
+  [
+    "blocks.8.attn.hook_result[[:, :, 6]]",
+    "blocks.10.hook_q_input[[:, :, 7]]",
+    0.0015094280242919922
+  ],
+  [
+    "blocks.7.hook_mlp_out[[:]]",
+    "blocks.10.hook_q_input[[:, :, 7]]",
+    0.0023467540740966797
+  ],
+  [
+    "blocks.5.attn.hook_result[[:, :, 1]]",
+    "blocks.10.hook_q_input[[:, :, 7]]",
+    0.0013848543167114258
+  ],
+  [
+    "blocks.9.attn.hook_result[[:, :, 4]]",
+    "blocks.10.hook_q_input[[:, :, 6]]",
+    0.0055255889892578125
+  ],
+  [
+    "blocks.7.attn.hook_result[[:, :, 10]]",
+    "blocks.10.hook_q_input[[:, :, 6]]",
+    0.0026437044143676758
+  ],
+  [
+    "blocks.9.hook_mlp_out[[:]]",
+    "blocks.10.hook_q_input[[:, :, 5]]",
+    0.0012922286987304688
+  ],
+  [
+    "blocks.9.attn.hook_result[[:, :, 4]]",
+    "blocks.10.hook_q_input[[:, :, 5]]",
+    0.0063323974609375
+  ],
+  [
+    "blocks.7.attn.hook_result[[:, :, 10]]",
+    "blocks.10.hook_q_input[[:, :, 5]]",
+    0.0024868249893188477
+  ],
+  [
+    "blocks.9.hook_mlp_out[[:]]",
+    "blocks.10.hook_q_input[[:, :, 3]]",
+    0.0024483203887939453
+  ],
+  [
+    "blocks.9.attn.hook_result[[:, :, 4]]",
+    "blocks.10.hook_q_input[[:, :, 3]]",
+    0.012909531593322754
+  ],
+  [
+    "blocks.8.hook_mlp_out[[:]]",
+    "blocks.10.hook_q_input[[:, :, 3]]",
+    0.0020546913146972656
+  ],
+  [
+    "blocks.7.attn.hook_result[[:, :, 10]]",
+    "blocks.10.hook_q_input[[:, :, 3]]",
+    0.004902839660644531
+  ],
+  [
+    "blocks.9.hook_mlp_out[[:]]",
+    "blocks.10.hook_q_input[[:, :, 2]]",
+    0.0037740468978881836
+  ],
+  [
+    "blocks.9.attn.hook_result[[:, :, 4]]",
+    "blocks.10.hook_q_input[[:, :, 2]]",
+    0.0033330917358398438
+  ],
+  [
+    "blocks.9.attn.hook_result[[:, :, 4]]",
+    "blocks.10.hook_q_input[[:, :, 1]]",
+    0.005823254585266113
+  ],
+  [
+    "blocks.7.attn.hook_result[[:, :, 10]]",
+    "blocks.10.hook_q_input[[:, :, 1]]",
+    0.002558588981628418
+  ],
+  [
+    "blocks.9.hook_mlp_out[[:]]",
+    "blocks.10.hook_q_input[[:, :, 0]]",
+    0.0037332773208618164
+  ],
+  [
+    "blocks.9.attn.hook_result[[:, :, 4]]",
+    "blocks.10.hook_q_input[[:, :, 0]]",
+    0.015590190887451172
+  ],
+  [
+    "blocks.9.attn.hook_result[[:, :, 2]]",
+    "blocks.10.hook_q_input[[:, :, 0]]",
+    0.0011143684387207031
+  ],
+  [
+    "blocks.8.hook_mlp_out[[:]]",
+    "blocks.10.hook_q_input[[:, :, 0]]",
+    0.002844572067260742
+  ],
+  [
+    "blocks.8.attn.hook_result[[:, :, 6]]",
+    "blocks.10.hook_q_input[[:, :, 0]]",
+    0.0011322498321533203
+  ],
+  [
+    "blocks.8.attn.hook_result[[:, :, 4]]",
+    "blocks.10.hook_q_input[[:, :, 0]]",
+    0.0012897253036499023
+  ],
+  [
+    "blocks.7.attn.hook_result[[:, :, 10]]",
+    "blocks.10.hook_q_input[[:, :, 0]]",
+    0.008690834045410156
+  ],
+  [
+    "blocks.7.attn.hook_result[[:, :, 0]]",
+    "blocks.10.hook_q_input[[:, :, 0]]",
+    0.0014147758483886719
+  ],
+  [
+    "blocks.9.hook_mlp_out[[:]]",
+    "blocks.10.hook_k_input[[:, :, 2]]",
+    0.0010077953338623047
+  ],
+  [
+    "blocks.9.hook_mlp_out[[:]]",
+    "blocks.10.hook_v_input[[:, :, 10]]",
+    0.004726290702819824
+  ],
+  [
+    "blocks.8.hook_mlp_out[[:]]",
+    "blocks.10.hook_v_input[[:, :, 7]]",
+    0.001150965690612793
+  ],
+  [
+    "blocks.7.hook_mlp_out[[:]]",
+    "blocks.10.hook_v_input[[:, :, 7]]",
+    0.001000523567199707
+  ],
+  [
+    "blocks.0.hook_mlp_out[[:]]",
+    "blocks.10.hook_v_input[[:, :, 7]]",
+    0.001296401023864746
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 7]]",
+    "blocks.10.hook_v_input[[:, :, 7]]",
+    0.0011782646179199219
+  ],
+  [
+    "blocks.9.attn.hook_result[[:, :, 10]]",
+    "blocks.9.hook_mlp_in[[:]]",
+    0.0012933015823364258
+  ],
+  [
+    "blocks.9.attn.hook_result[[:, :, 9]]",
+    "blocks.9.hook_mlp_in[[:]]",
+    0.002314448356628418
+  ],
+  [
+    "blocks.9.attn.hook_result[[:, :, 8]]",
+    "blocks.9.hook_mlp_in[[:]]",
+    0.0017673969268798828
+  ],
+  [
+    "blocks.9.attn.hook_result[[:, :, 4]]",
+    "blocks.9.hook_mlp_in[[:]]",
+    0.04926192760467529
+  ],
+  [
+    "blocks.9.attn.hook_result[[:, :, 1]]",
+    "blocks.9.hook_mlp_in[[:]]",
+    0.0013377666473388672
+  ],
+  [
+    "blocks.9.attn.hook_result[[:, :, 0]]",
+    "blocks.9.hook_mlp_in[[:]]",
+    0.0043506622314453125
+  ],
+  [
+    "blocks.8.attn.hook_result[[:, :, 10]]",
+    "blocks.9.hook_mlp_in[[:]]",
+    0.013057231903076172
+  ],
+  [
+    "blocks.8.attn.hook_result[[:, :, 9]]",
+    "blocks.9.hook_mlp_in[[:]]",
+    0.005057692527770996
+  ],
+  [
+    "blocks.8.attn.hook_result[[:, :, 4]]",
+    "blocks.9.hook_mlp_in[[:]]",
+    0.0011105537414550781
+  ],
+  [
+    "blocks.8.attn.hook_result[[:, :, 1]]",
+    "blocks.9.hook_mlp_in[[:]]",
+    0.001828312873840332
+  ],
+  [
+    "blocks.8.attn.hook_result[[:, :, 0]]",
+    "blocks.9.hook_mlp_in[[:]]",
+    0.00657808780670166
+  ],
+  [
+    "blocks.7.hook_mlp_out[[:]]",
+    "blocks.9.hook_mlp_in[[:]]",
+    0.006746768951416016
+  ],
+  [
+    "blocks.7.attn.hook_result[[:, :, 0]]",
+    "blocks.9.hook_mlp_in[[:]]",
+    0.0024684667587280273
+  ],
+  [
+    "blocks.6.hook_mlp_out[[:]]",
+    "blocks.9.hook_mlp_in[[:]]",
+    0.004781842231750488
+  ],
+  [
+    "blocks.6.attn.hook_result[[:, :, 2]]",
+    "blocks.9.hook_mlp_in[[:]]",
+    0.0014643669128417969
+  ],
+  [
+    "blocks.5.attn.hook_result[[:, :, 1]]",
+    "blocks.9.hook_mlp_in[[:]]",
+    0.008700132369995117
+  ],
+  [
+    "blocks.9.hook_q_input[[:, :, 9]]",
+    "blocks.9.attn.hook_q[[:, :, 9]]",
+    0.008218765258789062
+  ],
+  [
+    "blocks.9.hook_q_input[[:, :, 2]]",
+    "blocks.9.attn.hook_q[[:, :, 2]]",
+    0.015613675117492676
+  ],
+  [
+    "blocks.9.hook_k_input[[:, :, 6]]",
+    "blocks.9.attn.hook_k[[:, :, 6]]",
+    0.00251007080078125
+  ],
+  [
+    "blocks.9.hook_k_input[[:, :, 1]]",
+    "blocks.9.attn.hook_k[[:, :, 1]]",
+    0.004329323768615723
+  ],
+  [
+    "blocks.9.hook_v_input[[:, :, 11]]",
+    "blocks.9.attn.hook_v[[:, :, 11]]",
+    0.0011059045791625977
+  ],
+  [
+    "blocks.9.hook_v_input[[:, :, 10]]",
+    "blocks.9.attn.hook_v[[:, :, 10]]",
+    0.0013799667358398438
+  ],
+  [
+    "blocks.9.hook_v_input[[:, :, 4]]",
+    "blocks.9.attn.hook_v[[:, :, 4]]",
+    0.36115777492523193
+  ],
+  [
+    "blocks.9.hook_v_input[[:, :, 1]]",
+    "blocks.9.attn.hook_v[[:, :, 1]]",
+    0.006659150123596191
+  ],
+  [
+    "blocks.9.hook_v_input[[:, :, 0]]",
+    "blocks.9.attn.hook_v[[:, :, 0]]",
+    0.008403539657592773
+  ],
+  [
+    "blocks.8.attn.hook_result[[:, :, 6]]",
+    "blocks.9.hook_q_input[[:, :, 9]]",
+    0.0017184019088745117
+  ],
+  [
+    "blocks.7.attn.hook_result[[:, :, 10]]",
+    "blocks.9.hook_q_input[[:, :, 9]]",
+    0.006140470504760742
+  ],
+  [
+    "blocks.8.hook_mlp_out[[:]]",
+    "blocks.9.hook_q_input[[:, :, 2]]",
+    0.0020415782928466797
+  ],
+  [
+    "blocks.8.attn.hook_result[[:, :, 6]]",
+    "blocks.9.hook_q_input[[:, :, 2]]",
+    0.0011116266250610352
+  ],
+  [
+    "blocks.7.attn.hook_result[[:, :, 10]]",
+    "blocks.9.hook_q_input[[:, :, 2]]",
+    0.015430808067321777
+  ],
+  [
+    "blocks.7.attn.hook_result[[:, :, 8]]",
+    "blocks.9.hook_q_input[[:, :, 2]]",
+    0.0014507770538330078
+  ],
+  [
+    "blocks.7.attn.hook_result[[:, :, 0]]",
+    "blocks.9.hook_q_input[[:, :, 2]]",
+    0.0017038583755493164
+  ],
+  [
+    "blocks.5.attn.hook_result[[:, :, 7]]",
+    "blocks.9.hook_k_input[[:, :, 6]]",
+    0.0013115406036376953
+  ],
+  [
+    "blocks.1.hook_mlp_out[[:]]",
+    "blocks.9.hook_k_input[[:, :, 6]]",
+    0.0014767646789550781
+  ],
+  [
+    "blocks.0.hook_mlp_out[[:]]",
+    "blocks.9.hook_k_input[[:, :, 6]]",
+    0.003365635871887207
+  ],
+  [
+    "blocks.7.hook_mlp_out[[:]]",
+    "blocks.9.hook_k_input[[:, :, 1]]",
+    0.0011180639266967773
+  ],
+  [
+    "blocks.0.hook_mlp_out[[:]]",
+    "blocks.9.hook_k_input[[:, :, 1]]",
+    0.001908421516418457
+  ],
+  [
+    "blocks.7.hook_mlp_out[[:]]",
+    "blocks.9.hook_v_input[[:, :, 10]]",
+    0.0012058019638061523
+  ],
+  [
+    "blocks.5.attn.hook_result[[:, :, 1]]",
+    "blocks.9.hook_v_input[[:, :, 10]]",
+    0.0014609098434448242
+  ],
+  [
+    "blocks.8.hook_mlp_out[[:]]",
+    "blocks.9.hook_v_input[[:, :, 4]]",
+    0.03185462951660156
+  ],
+  [
+    "blocks.7.hook_mlp_out[[:]]",
+    "blocks.9.hook_v_input[[:, :, 4]]",
+    0.01820528507232666
+  ],
+  [
+    "blocks.6.hook_mlp_out[[:]]",
+    "blocks.9.hook_v_input[[:, :, 4]]",
+    0.007064223289489746
+  ],
+  [
+    "blocks.6.attn.hook_result[[:, :, 11]]",
+    "blocks.9.hook_v_input[[:, :, 4]]",
+    0.0018067359924316406
+  ],
+  [
+    "blocks.6.attn.hook_result[[:, :, 4]]",
+    "blocks.9.hook_v_input[[:, :, 4]]",
+    0.0013146400451660156
+  ],
+  [
+    "blocks.6.attn.hook_result[[:, :, 1]]",
+    "blocks.9.hook_v_input[[:, :, 4]]",
+    0.002960801124572754
+  ],
+  [
+    "blocks.5.hook_mlp_out[[:]]",
+    "blocks.9.hook_v_input[[:, :, 4]]",
+    0.003643035888671875
+  ],
+  [
+    "blocks.5.attn.hook_result[[:, :, 10]]",
+    "blocks.9.hook_v_input[[:, :, 4]]",
+    0.0024439096450805664
+  ],
+  [
+    "blocks.5.attn.hook_result[[:, :, 1]]",
+    "blocks.9.hook_v_input[[:, :, 4]]",
+    0.0048787593841552734
+  ],
+  [
+    "blocks.4.hook_mlp_out[[:]]",
+    "blocks.9.hook_v_input[[:, :, 4]]",
+    0.011212587356567383
+  ],
+  [
+    "blocks.4.attn.hook_result[[:, :, 11]]",
+    "blocks.9.hook_v_input[[:, :, 4]]",
+    0.006314873695373535
+  ],
+  [
+    "blocks.4.attn.hook_result[[:, :, 6]]",
+    "blocks.9.hook_v_input[[:, :, 4]]",
+    0.0032008886337280273
+  ],
+  [
+    "blocks.4.attn.hook_result[[:, :, 4]]",
+    "blocks.9.hook_v_input[[:, :, 4]]",
+    0.002379775047302246
+  ],
+  [
+    "blocks.3.attn.hook_result[[:, :, 11]]",
+    "blocks.9.hook_v_input[[:, :, 4]]",
+    0.0031213760375976562
+  ],
+  [
+    "blocks.3.attn.hook_result[[:, :, 1]]",
+    "blocks.9.hook_v_input[[:, :, 4]]",
+    0.0010211467742919922
+  ],
+  [
+    "blocks.1.hook_mlp_out[[:]]",
+    "blocks.9.hook_v_input[[:, :, 4]]",
+    0.004584312438964844
+  ],
+  [
+    "blocks.0.hook_mlp_out[[:]]",
+    "blocks.9.hook_v_input[[:, :, 4]]",
+    0.028365612030029297
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 11]]",
+    "blocks.9.hook_v_input[[:, :, 4]]",
+    0.009908437728881836
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 9]]",
+    "blocks.9.hook_v_input[[:, :, 4]]",
+    0.0019397735595703125
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 7]]",
+    "blocks.9.hook_v_input[[:, :, 4]]",
+    0.008702874183654785
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 6]]",
+    "blocks.9.hook_v_input[[:, :, 4]]",
+    0.007738471031188965
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 5]]",
+    "blocks.9.hook_v_input[[:, :, 4]]",
+    0.008556842803955078
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 3]]",
+    "blocks.9.hook_v_input[[:, :, 4]]",
+    0.004804491996765137
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 2]]",
+    "blocks.9.hook_v_input[[:, :, 4]]",
+    0.009519696235656738
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 0]]",
+    "blocks.9.hook_v_input[[:, :, 4]]",
+    0.0017447471618652344
+  ],
+  [
+    "blocks.8.hook_mlp_out[[:]]",
+    "blocks.9.hook_v_input[[:, :, 1]]",
+    0.002003192901611328
+  ],
+  [
+    "blocks.0.hook_mlp_out[[:]]",
+    "blocks.9.hook_v_input[[:, :, 1]]",
+    0.0017865896224975586
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 7]]",
+    "blocks.9.hook_v_input[[:, :, 1]]",
+    0.0012420415878295898
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 5]]",
+    "blocks.9.hook_v_input[[:, :, 1]]",
+    0.0011489391326904297
+  ],
+  [
+    "blocks.8.hook_mlp_out[[:]]",
+    "blocks.9.hook_v_input[[:, :, 0]]",
+    0.0027962923049926758
+  ],
+  [
+    "blocks.7.hook_mlp_out[[:]]",
+    "blocks.9.hook_v_input[[:, :, 0]]",
+    0.0012046098709106445
+  ],
+  [
+    "blocks.6.hook_mlp_out[[:]]",
+    "blocks.9.hook_v_input[[:, :, 0]]",
+    0.0013349056243896484
+  ],
+  [
+    "blocks.8.attn.hook_result[[:, :, 11]]",
+    "blocks.8.hook_mlp_in[[:]]",
+    0.0010724067687988281
+  ],
+  [
+    "blocks.8.attn.hook_result[[:, :, 10]]",
+    "blocks.8.hook_mlp_in[[:]]",
+    0.008018016815185547
+  ],
+  [
+    "blocks.8.attn.hook_result[[:, :, 9]]",
+    "blocks.8.hook_mlp_in[[:]]",
+    0.005055069923400879
+  ],
+  [
+    "blocks.8.attn.hook_result[[:, :, 6]]",
+    "blocks.8.hook_mlp_in[[:]]",
+    0.006912827491760254
+  ],
+  [
+    "blocks.8.attn.hook_result[[:, :, 0]]",
+    "blocks.8.hook_mlp_in[[:]]",
+    0.004506587982177734
+  ],
+  [
+    "blocks.7.attn.hook_result[[:, :, 6]]",
+    "blocks.8.hook_mlp_in[[:]]",
+    0.0014929771423339844
+  ],
+  [
+    "blocks.7.attn.hook_result[[:, :, 5]]",
+    "blocks.8.hook_mlp_in[[:]]",
+    0.001955270767211914
+  ],
+  [
+    "blocks.7.attn.hook_result[[:, :, 3]]",
+    "blocks.8.hook_mlp_in[[:]]",
+    0.0012056827545166016
+  ],
+  [
+    "blocks.7.attn.hook_result[[:, :, 0]]",
+    "blocks.8.hook_mlp_in[[:]]",
+    0.002391338348388672
+  ],
+  [
+    "blocks.6.hook_mlp_out[[:]]",
+    "blocks.8.hook_mlp_in[[:]]",
+    0.0049114227294921875
+  ],
+  [
+    "blocks.6.attn.hook_result[[:, :, 4]]",
+    "blocks.8.hook_mlp_in[[:]]",
+    0.0041158199310302734
+  ],
+  [
+    "blocks.6.attn.hook_result[[:, :, 2]]",
+    "blocks.8.hook_mlp_in[[:]]",
+    0.0016837120056152344
+  ],
+  [
+    "blocks.5.hook_mlp_out[[:]]",
+    "blocks.8.hook_mlp_in[[:]]",
+    0.003918290138244629
+  ],
+  [
+    "blocks.5.attn.hook_result[[:, :, 1]]",
+    "blocks.8.hook_mlp_in[[:]]",
+    0.018336892127990723
+  ],
+  [
+    "blocks.4.attn.hook_result[[:, :, 11]]",
+    "blocks.8.hook_mlp_in[[:]]",
+    0.0014172792434692383
+  ],
+  [
+    "blocks.1.hook_mlp_out[[:]]",
+    "blocks.8.hook_mlp_in[[:]]",
+    0.0011626482009887695
+  ],
+  [
+    "blocks.0.hook_mlp_out[[:]]",
+    "blocks.8.hook_mlp_in[[:]]",
+    0.0054819583892822266
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 11]]",
+    "blocks.8.hook_mlp_in[[:]]",
+    0.002121448516845703
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 10]]",
+    "blocks.8.hook_mlp_in[[:]]",
+    0.0018974542617797852
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 7]]",
+    "blocks.8.hook_mlp_in[[:]]",
+    0.0023311376571655273
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 6]]",
+    "blocks.8.hook_mlp_in[[:]]",
+    0.0029665231704711914
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 5]]",
+    "blocks.8.hook_mlp_in[[:]]",
+    0.0021685361862182617
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 2]]",
+    "blocks.8.hook_mlp_in[[:]]",
+    0.0018798112869262695
+  ],
+  [
+    "blocks.8.hook_q_input[[:, :, 11]]",
+    "blocks.8.attn.hook_q[[:, :, 11]]",
+    0.002287149429321289
+  ],
+  [
+    "blocks.8.hook_q_input[[:, :, 10]]",
+    "blocks.8.attn.hook_q[[:, :, 10]]",
+    0.022551536560058594
+  ],
+  [
+    "blocks.8.hook_q_input[[:, :, 9]]",
+    "blocks.8.attn.hook_q[[:, :, 9]]",
+    0.018752574920654297
+  ],
+  [
+    "blocks.8.hook_q_input[[:, :, 5]]",
+    "blocks.8.attn.hook_q[[:, :, 5]]",
+    0.0016603469848632812
+  ],
+  [
+    "blocks.8.hook_q_input[[:, :, 1]]",
+    "blocks.8.attn.hook_q[[:, :, 1]]",
+    0.021427631378173828
+  ],
+  [
+    "blocks.8.hook_q_input[[:, :, 0]]",
+    "blocks.8.attn.hook_q[[:, :, 0]]",
+    0.01842212677001953
+  ],
+  [
+    "blocks.8.hook_k_input[[:, :, 6]]",
+    "blocks.8.attn.hook_k[[:, :, 6]]",
+    0.001905202865600586
+  ],
+  [
+    "blocks.8.hook_v_input[[:, :, 8]]",
+    "blocks.8.attn.hook_v[[:, :, 8]]",
+    0.002651691436767578
+  ],
+  [
+    "blocks.8.hook_v_input[[:, :, 7]]",
+    "blocks.8.attn.hook_v[[:, :, 7]]",
+    0.002537250518798828
+  ],
+  [
+    "blocks.8.hook_v_input[[:, :, 6]]",
+    "blocks.8.attn.hook_v[[:, :, 6]]",
+    0.09318351745605469
+  ],
+  [
+    "blocks.8.hook_v_input[[:, :, 5]]",
+    "blocks.8.attn.hook_v[[:, :, 5]]",
+    0.004239082336425781
+  ],
+  [
+    "blocks.8.hook_v_input[[:, :, 4]]",
+    "blocks.8.attn.hook_v[[:, :, 4]]",
+    0.0038995742797851562
+  ],
+  [
+    "blocks.7.attn.hook_result[[:, :, 10]]",
+    "blocks.8.hook_q_input[[:, :, 11]]",
+    0.0015273094177246094
+  ],
+  [
+    "blocks.7.attn.hook_result[[:, :, 10]]",
+    "blocks.8.hook_q_input[[:, :, 10]]",
+    0.017437219619750977
+  ],
+  [
+    "blocks.5.hook_mlp_out[[:]]",
+    "blocks.8.hook_q_input[[:, :, 10]]",
+    0.0010516643524169922
+  ],
+  [
+    "blocks.7.attn.hook_result[[:, :, 10]]",
+    "blocks.8.hook_q_input[[:, :, 9]]",
+    0.014642715454101562
+  ],
+  [
+    "blocks.6.hook_mlp_out[[:]]",
+    "blocks.8.hook_q_input[[:, :, 9]]",
+    0.0034084320068359375
+  ],
+  [
+    "blocks.6.attn.hook_result[[:, :, 11]]",
+    "blocks.8.hook_q_input[[:, :, 9]]",
+    0.0023086071014404297
+  ],
+  [
+    "blocks.6.attn.hook_result[[:, :, 10]]",
+    "blocks.8.hook_q_input[[:, :, 9]]",
+    0.003816366195678711
+  ],
+  [
+    "blocks.5.attn.hook_result[[:, :, 6]]",
+    "blocks.8.hook_q_input[[:, :, 9]]",
+    0.0013587474822998047
+  ],
+  [
+    "blocks.5.attn.hook_result[[:, :, 1]]",
+    "blocks.8.hook_q_input[[:, :, 9]]",
+    0.0073926448822021484
+  ],
+  [
+    "blocks.7.attn.hook_result[[:, :, 10]]",
+    "blocks.8.hook_q_input[[:, :, 5]]",
+    0.0022928714752197266
+  ],
+  [
+    "blocks.6.attn.hook_result[[:, :, 9]]",
+    "blocks.8.hook_q_input[[:, :, 5]]",
+    0.0023148059844970703
+  ],
+  [
+    "blocks.5.hook_mlp_out[[:]]",
+    "blocks.8.hook_q_input[[:, :, 5]]",
+    0.001961946487426758
+  ],
+  [
+    "blocks.7.attn.hook_result[[:, :, 10]]",
+    "blocks.8.hook_q_input[[:, :, 1]]",
+    0.017135143280029297
+  ],
+  [
+    "blocks.7.attn.hook_result[[:, :, 0]]",
+    "blocks.8.hook_q_input[[:, :, 1]]",
+    0.0011138916015625
+  ],
+  [
+    "blocks.7.attn.hook_result[[:, :, 10]]",
+    "blocks.8.hook_q_input[[:, :, 0]]",
+    0.012517690658569336
+  ],
+  [
+    "blocks.7.hook_mlp_out[[:]]",
+    "blocks.8.hook_k_input[[:, :, 6]]",
+    0.0015766620635986328
+  ],
+  [
+    "blocks.4.hook_mlp_out[[:]]",
+    "blocks.8.hook_k_input[[:, :, 6]]",
+    0.0014603137969970703
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 6]]",
+    "blocks.8.hook_k_input[[:, :, 6]]",
+    0.0015902519226074219
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 3]]",
+    "blocks.8.hook_k_input[[:, :, 6]]",
+    0.0011372566223144531
+  ],
+  [
+    "blocks.6.hook_mlp_out[[:]]",
+    "blocks.8.hook_v_input[[:, :, 7]]",
+    0.0032575130462646484
+  ],
+  [
+    "blocks.7.attn.hook_result[[:, :, 9]]",
+    "blocks.8.hook_v_input[[:, :, 6]]",
+    0.0012402534484863281
+  ],
+  [
+    "blocks.6.hook_mlp_out[[:]]",
+    "blocks.8.hook_v_input[[:, :, 6]]",
+    0.004761695861816406
+  ],
+  [
+    "blocks.6.attn.hook_result[[:, :, 11]]",
+    "blocks.8.hook_v_input[[:, :, 6]]",
+    0.0012519359588623047
+  ],
+  [
+    "blocks.6.attn.hook_result[[:, :, 4]]",
+    "blocks.8.hook_v_input[[:, :, 6]]",
+    0.002588987350463867
+  ],
+  [
+    "blocks.6.attn.hook_result[[:, :, 1]]",
+    "blocks.8.hook_v_input[[:, :, 6]]",
+    0.0014147758483886719
+  ],
+  [
+    "blocks.5.attn.hook_result[[:, :, 7]]",
+    "blocks.8.hook_v_input[[:, :, 6]]",
+    0.0035276412963867188
+  ],
+  [
+    "blocks.4.hook_mlp_out[[:]]",
+    "blocks.8.hook_v_input[[:, :, 6]]",
+    0.005833148956298828
+  ],
+  [
+    "blocks.4.attn.hook_result[[:, :, 5]]",
+    "blocks.8.hook_v_input[[:, :, 6]]",
+    0.0011715888977050781
+  ],
+  [
+    "blocks.3.attn.hook_result[[:, :, 11]]",
+    "blocks.8.hook_v_input[[:, :, 6]]",
+    0.001947641372680664
+  ],
+  [
+    "blocks.1.attn.hook_result[[:, :, 8]]",
+    "blocks.8.hook_v_input[[:, :, 6]]",
+    0.006558656692504883
+  ],
+  [
+    "blocks.0.hook_mlp_out[[:]]",
+    "blocks.8.hook_v_input[[:, :, 6]]",
+    0.009593725204467773
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 11]]",
+    "blocks.8.hook_v_input[[:, :, 6]]",
+    0.008048057556152344
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 10]]",
+    "blocks.8.hook_v_input[[:, :, 6]]",
+    0.005276203155517578
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 9]]",
+    "blocks.8.hook_v_input[[:, :, 6]]",
+    0.007299184799194336
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 7]]",
+    "blocks.8.hook_v_input[[:, :, 6]]",
+    0.009410619735717773
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 6]]",
+    "blocks.8.hook_v_input[[:, :, 6]]",
+    0.0031409263610839844
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 5]]",
+    "blocks.8.hook_v_input[[:, :, 6]]",
+    0.009497642517089844
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 3]]",
+    "blocks.8.hook_v_input[[:, :, 6]]",
+    0.010012149810791016
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 2]]",
+    "blocks.8.hook_v_input[[:, :, 6]]",
+    0.012493610382080078
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 0]]",
+    "blocks.8.hook_v_input[[:, :, 6]]",
+    0.006041526794433594
+  ],
+  [
+    "blocks.7.hook_mlp_out[[:]]",
+    "blocks.8.hook_v_input[[:, :, 5]]",
+    0.0027883052825927734
+  ],
+  [
+    "blocks.7.attn.hook_result[[:, :, 11]]",
+    "blocks.8.hook_v_input[[:, :, 5]]",
+    0.002663850784301758
+  ],
+  [
+    "blocks.7.attn.hook_result[[:, :, 10]]",
+    "blocks.8.hook_v_input[[:, :, 5]]",
+    0.006302595138549805
+  ],
+  [
+    "blocks.7.attn.hook_result[[:, :, 0]]",
+    "blocks.8.hook_v_input[[:, :, 5]]",
+    0.0026655197143554688
+  ],
+  [
+    "blocks.6.attn.hook_result[[:, :, 10]]",
+    "blocks.8.hook_v_input[[:, :, 5]]",
+    0.0011932849884033203
+  ],
+  [
+    "blocks.5.attn.hook_result[[:, :, 1]]",
+    "blocks.8.hook_v_input[[:, :, 5]]",
+    0.002740621566772461
+  ],
+  [
+    "blocks.5.attn.hook_result[[:, :, 0]]",
+    "blocks.8.hook_v_input[[:, :, 5]]",
+    0.0011775493621826172
+  ],
+  [
+    "blocks.3.hook_mlp_out[[:]]",
+    "blocks.8.hook_v_input[[:, :, 5]]",
+    0.0014185905456542969
+  ],
+  [
+    "blocks.0.hook_mlp_out[[:]]",
+    "blocks.8.hook_v_input[[:, :, 5]]",
+    0.0014941692352294922
+  ],
+  [
+    "blocks.7.attn.hook_result[[:, :, 9]]",
+    "blocks.7.hook_mlp_in[[:]]",
+    0.0024759769439697266
+  ],
+  [
+    "blocks.7.attn.hook_result[[:, :, 8]]",
+    "blocks.7.hook_mlp_in[[:]]",
+    0.0015118122100830078
+  ],
+  [
+    "blocks.7.attn.hook_result[[:, :, 7]]",
+    "blocks.7.hook_mlp_in[[:]]",
+    0.0030012130737304688
+  ],
+  [
+    "blocks.7.attn.hook_result[[:, :, 6]]",
+    "blocks.7.hook_mlp_in[[:]]",
+    0.003059864044189453
+  ],
+  [
+    "blocks.7.attn.hook_result[[:, :, 5]]",
+    "blocks.7.hook_mlp_in[[:]]",
+    0.0016374588012695312
+  ],
+  [
+    "blocks.7.attn.hook_result[[:, :, 4]]",
+    "blocks.7.hook_mlp_in[[:]]",
+    0.004496335983276367
+  ],
+  [
+    "blocks.7.attn.hook_result[[:, :, 3]]",
+    "blocks.7.hook_mlp_in[[:]]",
+    0.007294893264770508
+  ],
+  [
+    "blocks.7.attn.hook_result[[:, :, 1]]",
+    "blocks.7.hook_mlp_in[[:]]",
+    0.010528326034545898
+  ],
+  [
+    "blocks.6.hook_mlp_out[[:]]",
+    "blocks.7.hook_mlp_in[[:]]",
+    0.02298426628112793
+  ],
+  [
+    "blocks.6.attn.hook_result[[:, :, 9]]",
+    "blocks.7.hook_mlp_in[[:]]",
+    0.002134084701538086
+  ],
+  [
+    "blocks.6.attn.hook_result[[:, :, 6]]",
+    "blocks.7.hook_mlp_in[[:]]",
+    0.0011250972747802734
+  ],
+  [
+    "blocks.6.attn.hook_result[[:, :, 4]]",
+    "blocks.7.hook_mlp_in[[:]]",
+    0.0034906864166259766
+  ],
+  [
+    "blocks.5.attn.hook_result[[:, :, 11]]",
+    "blocks.7.hook_mlp_in[[:]]",
+    0.001489877700805664
+  ],
+  [
+    "blocks.5.attn.hook_result[[:, :, 10]]",
+    "blocks.7.hook_mlp_in[[:]]",
+    0.0040836334228515625
+  ],
+  [
+    "blocks.5.attn.hook_result[[:, :, 9]]",
+    "blocks.7.hook_mlp_in[[:]]",
+    0.003042936325073242
+  ],
+  [
+    "blocks.5.attn.hook_result[[:, :, 7]]",
+    "blocks.7.hook_mlp_in[[:]]",
+    0.003161191940307617
+  ],
+  [
+    "blocks.5.attn.hook_result[[:, :, 4]]",
+    "blocks.7.hook_mlp_in[[:]]",
+    0.0016171932220458984
+  ],
+  [
+    "blocks.5.attn.hook_result[[:, :, 3]]",
+    "blocks.7.hook_mlp_in[[:]]",
+    0.0016129016876220703
+  ],
+  [
+    "blocks.5.attn.hook_result[[:, :, 2]]",
+    "blocks.7.hook_mlp_in[[:]]",
+    0.0012936592102050781
+  ],
+  [
+    "blocks.4.hook_mlp_out[[:]]",
+    "blocks.7.hook_mlp_in[[:]]",
+    0.0010366439819335938
+  ],
+  [
+    "blocks.4.attn.hook_result[[:, :, 11]]",
+    "blocks.7.hook_mlp_in[[:]]",
+    0.001397848129272461
+  ],
+  [
+    "blocks.4.attn.hook_result[[:, :, 4]]",
+    "blocks.7.hook_mlp_in[[:]]",
+    0.001331329345703125
+  ],
+  [
+    "blocks.4.attn.hook_result[[:, :, 2]]",
+    "blocks.7.hook_mlp_in[[:]]",
+    0.0018963813781738281
+  ],
+  [
+    "blocks.3.attn.hook_result[[:, :, 7]]",
+    "blocks.7.hook_mlp_in[[:]]",
+    0.0013566017150878906
+  ],
+  [
+    "blocks.2.hook_mlp_out[[:]]",
+    "blocks.7.hook_mlp_in[[:]]",
+    0.0013477802276611328
+  ],
+  [
+    "blocks.2.attn.hook_result[[:, :, 2]]",
+    "blocks.7.hook_mlp_in[[:]]",
+    0.0010542869567871094
+  ],
+  [
+    "blocks.0.hook_mlp_out[[:]]",
+    "blocks.7.hook_mlp_in[[:]]",
+    0.002599000930786133
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 9]]",
+    "blocks.7.hook_mlp_in[[:]]",
+    0.001310586929321289
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 7]]",
+    "blocks.7.hook_mlp_in[[:]]",
+    0.0018625259399414062
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 5]]",
+    "blocks.7.hook_mlp_in[[:]]",
+    0.0018720626831054688
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 3]]",
+    "blocks.7.hook_mlp_in[[:]]",
+    0.0023109912872314453
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 2]]",
+    "blocks.7.hook_mlp_in[[:]]",
+    0.0031409263610839844
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 0]]",
+    "blocks.7.hook_mlp_in[[:]]",
+    0.0010371208190917969
+  ],
+  [
+    "blocks.7.hook_q_input[[:, :, 11]]",
+    "blocks.7.attn.hook_q[[:, :, 11]]",
+    0.0015823841094970703
+  ],
+  [
+    "blocks.7.hook_q_input[[:, :, 10]]",
+    "blocks.7.attn.hook_q[[:, :, 10]]",
+    0.013053417205810547
+  ],
+  [
+    "blocks.7.hook_q_input[[:, :, 9]]",
+    "blocks.7.attn.hook_q[[:, :, 9]]",
+    0.0010492801666259766
+  ],
+  [
+    "blocks.7.hook_q_input[[:, :, 3]]",
+    "blocks.7.attn.hook_q[[:, :, 3]]",
+    0.0011997222900390625
+  ],
+  [
+    "blocks.7.hook_q_input[[:, :, 1]]",
+    "blocks.7.attn.hook_q[[:, :, 1]]",
+    0.0012500286102294922
+  ],
+  [
+    "blocks.7.hook_k_input[[:, :, 11]]",
+    "blocks.7.attn.hook_k[[:, :, 11]]",
+    0.0010981559753417969
+  ],
+  [
+    "blocks.7.hook_k_input[[:, :, 10]]",
+    "blocks.7.attn.hook_k[[:, :, 10]]",
+    0.005879402160644531
+  ],
+  [
+    "blocks.7.hook_k_input[[:, :, 7]]",
+    "blocks.7.attn.hook_k[[:, :, 7]]",
+    0.002393007278442383
+  ],
+  [
+    "blocks.7.hook_k_input[[:, :, 6]]",
+    "blocks.7.attn.hook_k[[:, :, 6]]",
+    0.0019626617431640625
+  ],
+  [
+    "blocks.7.hook_k_input[[:, :, 4]]",
+    "blocks.7.attn.hook_k[[:, :, 4]]",
+    0.001931905746459961
+  ],
+  [
+    "blocks.7.hook_k_input[[:, :, 1]]",
+    "blocks.7.attn.hook_k[[:, :, 1]]",
+    0.0023369789123535156
+  ],
+  [
+    "blocks.7.hook_v_input[[:, :, 11]]",
+    "blocks.7.attn.hook_v[[:, :, 11]]",
+    0.006539821624755859
+  ],
+  [
+    "blocks.7.hook_v_input[[:, :, 10]]",
+    "blocks.7.attn.hook_v[[:, :, 10]]",
+    0.1191720962524414
+  ],
+  [
+    "blocks.7.hook_v_input[[:, :, 9]]",
+    "blocks.7.attn.hook_v[[:, :, 9]]",
+    0.001458883285522461
+  ],
+  [
+    "blocks.7.hook_v_input[[:, :, 8]]",
+    "blocks.7.attn.hook_v[[:, :, 8]]",
+    0.007174015045166016
+  ],
+  [
+    "blocks.7.hook_v_input[[:, :, 7]]",
+    "blocks.7.attn.hook_v[[:, :, 7]]",
+    0.005331754684448242
+  ],
+  [
+    "blocks.7.hook_v_input[[:, :, 6]]",
+    "blocks.7.attn.hook_v[[:, :, 6]]",
+    0.0040874481201171875
+  ],
+  [
+    "blocks.7.hook_v_input[[:, :, 5]]",
+    "blocks.7.attn.hook_v[[:, :, 5]]",
+    0.005730867385864258
+  ],
+  [
+    "blocks.7.hook_v_input[[:, :, 4]]",
+    "blocks.7.attn.hook_v[[:, :, 4]]",
+    0.002504587173461914
+  ],
+  [
+    "blocks.7.hook_v_input[[:, :, 3]]",
+    "blocks.7.attn.hook_v[[:, :, 3]]",
+    0.010251998901367188
+  ],
+  [
+    "blocks.7.hook_v_input[[:, :, 2]]",
+    "blocks.7.attn.hook_v[[:, :, 2]]",
+    0.001711130142211914
+  ],
+  [
+    "blocks.7.hook_v_input[[:, :, 1]]",
+    "blocks.7.attn.hook_v[[:, :, 1]]",
+    0.009440898895263672
+  ],
+  [
+    "blocks.7.hook_v_input[[:, :, 0]]",
+    "blocks.7.attn.hook_v[[:, :, 0]]",
+    0.016040802001953125
+  ],
+  [
+    "blocks.6.hook_mlp_out[[:]]",
+    "blocks.7.hook_q_input[[:, :, 10]]",
+    0.005781888961791992
+  ],
+  [
+    "blocks.6.attn.hook_result[[:, :, 11]]",
+    "blocks.7.hook_q_input[[:, :, 10]]",
+    0.0015480518341064453
+  ],
+  [
+    "blocks.6.attn.hook_result[[:, :, 8]]",
+    "blocks.7.hook_q_input[[:, :, 10]]",
+    0.002918720245361328
+  ],
+  [
+    "blocks.6.attn.hook_result[[:, :, 4]]",
+    "blocks.7.hook_q_input[[:, :, 10]]",
+    0.002218961715698242
+  ],
+  [
+    "blocks.6.attn.hook_result[[:, :, 2]]",
+    "blocks.7.hook_q_input[[:, :, 10]]",
+    0.0021834373474121094
+  ],
+  [
+    "blocks.4.hook_mlp_out[[:]]",
+    "blocks.7.hook_q_input[[:, :, 10]]",
+    0.002546072006225586
+  ],
+  [
+    "blocks.6.attn.hook_result[[:, :, 4]]",
+    "blocks.7.hook_q_input[[:, :, 1]]",
+    0.0010578632354736328
+  ],
+  [
+    "blocks.5.hook_mlp_out[[:]]",
+    "blocks.7.hook_q_input[[:, :, 1]]",
+    0.0013108253479003906
+  ],
+  [
+    "blocks.6.attn.hook_result[[:, :, 11]]",
+    "blocks.7.hook_k_input[[:, :, 11]]",
+    0.001018524169921875
+  ],
+  [
+    "blocks.6.hook_mlp_out[[:]]",
+    "blocks.7.hook_k_input[[:, :, 10]]",
+    0.022448301315307617
+  ],
+  [
+    "blocks.6.attn.hook_result[[:, :, 10]]",
+    "blocks.7.hook_k_input[[:, :, 10]]",
+    0.0013036727905273438
+  ],
+  [
+    "blocks.6.attn.hook_result[[:, :, 1]]",
+    "blocks.7.hook_k_input[[:, :, 10]]",
+    0.005451202392578125
+  ],
+  [
+    "blocks.5.hook_mlp_out[[:]]",
+    "blocks.7.hook_k_input[[:, :, 10]]",
+    0.01347970962524414
+  ],
+  [
+    "blocks.5.attn.hook_result[[:, :, 7]]",
+    "blocks.7.hook_k_input[[:, :, 10]]",
+    0.007426738739013672
+  ],
+  [
+    "blocks.5.attn.hook_result[[:, :, 6]]",
+    "blocks.7.hook_k_input[[:, :, 10]]",
+    0.0017242431640625
+  ],
+  [
+    "blocks.5.attn.hook_result[[:, :, 1]]",
+    "blocks.7.hook_k_input[[:, :, 10]]",
+    0.0066051483154296875
+  ],
+  [
+    "blocks.4.attn.hook_result[[:, :, 10]]",
+    "blocks.7.hook_k_input[[:, :, 10]]",
+    0.0019958019256591797
+  ],
+  [
+    "blocks.4.attn.hook_result[[:, :, 6]]",
+    "blocks.7.hook_k_input[[:, :, 10]]",
+    0.0073986053466796875
+  ],
+  [
+    "blocks.4.attn.hook_result[[:, :, 0]]",
+    "blocks.7.hook_k_input[[:, :, 10]]",
+    0.0017516613006591797
+  ],
+  [
+    "blocks.2.hook_mlp_out[[:]]",
+    "blocks.7.hook_k_input[[:, :, 10]]",
+    0.005071878433227539
+  ],
+  [
+    "blocks.2.attn.hook_result[[:, :, 11]]",
+    "blocks.7.hook_k_input[[:, :, 10]]",
+    0.0017461776733398438
+  ],
+  [
+    "blocks.2.attn.hook_result[[:, :, 7]]",
+    "blocks.7.hook_k_input[[:, :, 10]]",
+    0.0013895034790039062
+  ],
+  [
+    "blocks.2.attn.hook_result[[:, :, 5]]",
+    "blocks.7.hook_k_input[[:, :, 10]]",
+    0.001436471939086914
+  ],
+  [
+    "blocks.2.attn.hook_result[[:, :, 1]]",
+    "blocks.7.hook_k_input[[:, :, 10]]",
+    0.0030846595764160156
+  ],
+  [
+    "blocks.1.attn.hook_result[[:, :, 8]]",
+    "blocks.7.hook_k_input[[:, :, 10]]",
+    0.002109050750732422
+  ],
+  [
+    "blocks.0.hook_mlp_out[[:]]",
+    "blocks.7.hook_k_input[[:, :, 10]]",
+    0.019989728927612305
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 5]]",
+    "blocks.7.hook_k_input[[:, :, 10]]",
+    0.007611751556396484
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 2]]",
+    "blocks.7.hook_k_input[[:, :, 10]]",
+    0.011998414993286133
+  ],
+  [
+    "blocks.6.hook_mlp_out[[:]]",
+    "blocks.7.hook_k_input[[:, :, 7]]",
+    0.0015940666198730469
+  ],
+  [
+    "blocks.6.hook_mlp_out[[:]]",
+    "blocks.7.hook_k_input[[:, :, 6]]",
+    0.0017180442810058594
+  ],
+  [
+    "blocks.6.attn.hook_result[[:, :, 4]]",
+    "blocks.7.hook_k_input[[:, :, 4]]",
+    0.002550840377807617
+  ],
+  [
+    "blocks.5.hook_mlp_out[[:]]",
+    "blocks.7.hook_k_input[[:, :, 4]]",
+    0.0015075206756591797
+  ],
+  [
+    "blocks.6.hook_mlp_out[[:]]",
+    "blocks.7.hook_k_input[[:, :, 1]]",
+    0.0026428699493408203
+  ],
+  [
+    "blocks.5.attn.hook_result[[:, :, 7]]",
+    "blocks.7.hook_k_input[[:, :, 1]]",
+    0.0012516975402832031
+  ],
+  [
+    "blocks.4.attn.hook_result[[:, :, 11]]",
+    "blocks.7.hook_k_input[[:, :, 1]]",
+    0.0011746883392333984
+  ],
+  [
+    "blocks.3.hook_mlp_out[[:]]",
+    "blocks.7.hook_k_input[[:, :, 1]]",
+    0.0021560192108154297
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 10]]",
+    "blocks.7.hook_k_input[[:, :, 1]]",
+    0.0018069744110107422
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 7]]",
+    "blocks.7.hook_k_input[[:, :, 1]]",
+    0.0012996196746826172
+  ],
+  [
+    "blocks.6.attn.hook_result[[:, :, 10]]",
+    "blocks.7.hook_v_input[[:, :, 11]]",
+    0.0013613700866699219
+  ],
+  [
+    "blocks.6.attn.hook_result[[:, :, 9]]",
+    "blocks.7.hook_v_input[[:, :, 11]]",
+    0.0024785995483398438
+  ],
+  [
+    "blocks.5.hook_mlp_out[[:]]",
+    "blocks.7.hook_v_input[[:, :, 11]]",
+    0.0024023056030273438
+  ],
+  [
+    "blocks.6.attn.hook_result[[:, :, 11]]",
+    "blocks.7.hook_v_input[[:, :, 10]]",
+    0.008475542068481445
+  ],
+  [
+    "blocks.6.attn.hook_result[[:, :, 8]]",
+    "blocks.7.hook_v_input[[:, :, 10]]",
+    0.0013871192932128906
+  ],
+  [
+    "blocks.6.attn.hook_result[[:, :, 6]]",
+    "blocks.7.hook_v_input[[:, :, 10]]",
+    0.01563715934753418
+  ],
+  [
+    "blocks.6.attn.hook_result[[:, :, 2]]",
+    "blocks.7.hook_v_input[[:, :, 10]]",
+    0.0016283988952636719
+  ],
+  [
+    "blocks.6.attn.hook_result[[:, :, 1]]",
+    "blocks.7.hook_v_input[[:, :, 10]]",
+    0.03458595275878906
+  ],
+  [
+    "blocks.5.attn.hook_result[[:, :, 7]]",
+    "blocks.7.hook_v_input[[:, :, 10]]",
+    0.00620579719543457
+  ],
+  [
+    "blocks.5.attn.hook_result[[:, :, 1]]",
+    "blocks.7.hook_v_input[[:, :, 10]]",
+    0.0024967193603515625
+  ],
+  [
+    "blocks.4.attn.hook_result[[:, :, 8]]",
+    "blocks.7.hook_v_input[[:, :, 10]]",
+    0.003551483154296875
+  ],
+  [
+    "blocks.4.attn.hook_result[[:, :, 5]]",
+    "blocks.7.hook_v_input[[:, :, 10]]",
+    0.0015077590942382812
+  ],
+  [
+    "blocks.4.attn.hook_result[[:, :, 4]]",
+    "blocks.7.hook_v_input[[:, :, 10]]",
+    0.0012445449829101562
+  ],
+  [
+    "blocks.3.attn.hook_result[[:, :, 7]]",
+    "blocks.7.hook_v_input[[:, :, 10]]",
+    0.0011570453643798828
+  ],
+  [
+    "blocks.3.attn.hook_result[[:, :, 5]]",
+    "blocks.7.hook_v_input[[:, :, 10]]",
+    0.0011761188507080078
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 9]]",
+    "blocks.7.hook_v_input[[:, :, 10]]",
+    0.003401517868041992
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 7]]",
+    "blocks.7.hook_v_input[[:, :, 10]]",
+    0.0016083717346191406
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 3]]",
+    "blocks.7.hook_v_input[[:, :, 10]]",
+    0.007164955139160156
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 2]]",
+    "blocks.7.hook_v_input[[:, :, 10]]",
+    0.003449678421020508
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 0]]",
+    "blocks.7.hook_v_input[[:, :, 10]]",
+    0.007799386978149414
+  ],
+  [
+    "blocks.4.hook_mlp_out[[:]]",
+    "blocks.7.hook_v_input[[:, :, 9]]",
+    0.001621246337890625
+  ],
+  [
+    "blocks.3.hook_mlp_out[[:]]",
+    "blocks.7.hook_v_input[[:, :, 9]]",
+    0.001161336898803711
+  ],
+  [
+    "blocks.6.hook_mlp_out[[:]]",
+    "blocks.7.hook_v_input[[:, :, 8]]",
+    0.0015468597412109375
+  ],
+  [
+    "blocks.6.attn.hook_result[[:, :, 11]]",
+    "blocks.7.hook_v_input[[:, :, 8]]",
+    0.0014674663543701172
+  ],
+  [
+    "blocks.6.attn.hook_result[[:, :, 6]]",
+    "blocks.7.hook_v_input[[:, :, 8]]",
+    0.0014247894287109375
+  ],
+  [
+    "blocks.6.attn.hook_result[[:, :, 4]]",
+    "blocks.7.hook_v_input[[:, :, 8]]",
+    0.0010533332824707031
+  ],
+  [
+    "blocks.6.attn.hook_result[[:, :, 1]]",
+    "blocks.7.hook_v_input[[:, :, 8]]",
+    0.002116680145263672
+  ],
+  [
+    "blocks.5.attn.hook_result[[:, :, 7]]",
+    "blocks.7.hook_v_input[[:, :, 8]]",
+    0.0015301704406738281
+  ],
+  [
+    "blocks.5.attn.hook_result[[:, :, 1]]",
+    "blocks.7.hook_v_input[[:, :, 8]]",
+    0.003082275390625
+  ],
+  [
+    "blocks.2.hook_mlp_out[[:]]",
+    "blocks.7.hook_v_input[[:, :, 8]]",
+    0.0013432502746582031
+  ],
+  [
+    "blocks.0.hook_mlp_out[[:]]",
+    "blocks.7.hook_v_input[[:, :, 8]]",
+    0.0014026165008544922
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 2]]",
+    "blocks.7.hook_v_input[[:, :, 8]]",
+    0.0012729167938232422
+  ],
+  [
+    "blocks.6.hook_mlp_out[[:]]",
+    "blocks.7.hook_v_input[[:, :, 7]]",
+    0.0055141448974609375
+  ],
+  [
+    "blocks.5.attn.hook_result[[:, :, 1]]",
+    "blocks.7.hook_v_input[[:, :, 7]]",
+    0.003435850143432617
+  ],
+  [
+    "blocks.2.hook_mlp_out[[:]]",
+    "blocks.7.hook_v_input[[:, :, 7]]",
+    0.0012722015380859375
+  ],
+  [
+    "blocks.6.hook_mlp_out[[:]]",
+    "blocks.7.hook_v_input[[:, :, 6]]",
+    0.0013191699981689453
+  ],
+  [
+    "blocks.6.attn.hook_result[[:, :, 4]]",
+    "blocks.7.hook_v_input[[:, :, 6]]",
+    0.0018401145935058594
+  ],
+  [
+    "blocks.5.hook_mlp_out[[:]]",
+    "blocks.7.hook_v_input[[:, :, 6]]",
+    0.00128936767578125
+  ],
+  [
+    "blocks.6.hook_mlp_out[[:]]",
+    "blocks.7.hook_v_input[[:, :, 5]]",
+    0.002757549285888672
+  ],
+  [
+    "blocks.5.hook_mlp_out[[:]]",
+    "blocks.7.hook_v_input[[:, :, 5]]",
+    0.0021467208862304688
+  ],
+  [
+    "blocks.2.hook_mlp_out[[:]]",
+    "blocks.7.hook_v_input[[:, :, 5]]",
+    0.0010030269622802734
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 9]]",
+    "blocks.7.hook_v_input[[:, :, 5]]",
+    0.0034406185150146484
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 3]]",
+    "blocks.7.hook_v_input[[:, :, 5]]",
+    0.0016946792602539062
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 2]]",
+    "blocks.7.hook_v_input[[:, :, 5]]",
+    0.001024484634399414
+  ],
+  [
+    "blocks.6.hook_mlp_out[[:]]",
+    "blocks.7.hook_v_input[[:, :, 4]]",
+    0.001649618148803711
+  ],
+  [
+    "blocks.6.attn.hook_result[[:, :, 4]]",
+    "blocks.7.hook_v_input[[:, :, 4]]",
+    0.0013053417205810547
+  ],
+  [
+    "blocks.5.hook_mlp_out[[:]]",
+    "blocks.7.hook_v_input[[:, :, 4]]",
+    0.0019729137420654297
+  ],
+  [
+    "blocks.6.attn.hook_result[[:, :, 9]]",
+    "blocks.7.hook_v_input[[:, :, 3]]",
+    0.0022847652435302734
+  ],
+  [
+    "blocks.5.hook_mlp_out[[:]]",
+    "blocks.7.hook_v_input[[:, :, 3]]",
+    0.004961252212524414
+  ],
+  [
+    "blocks.4.attn.hook_result[[:, :, 8]]",
+    "blocks.7.hook_v_input[[:, :, 3]]",
+    0.0012564659118652344
+  ],
+  [
+    "blocks.1.hook_mlp_out[[:]]",
+    "blocks.7.hook_v_input[[:, :, 3]]",
+    0.0010805130004882812
+  ],
+  [
+    "blocks.0.hook_mlp_out[[:]]",
+    "blocks.7.hook_v_input[[:, :, 3]]",
+    0.003489255905151367
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 10]]",
+    "blocks.7.hook_v_input[[:, :, 3]]",
+    0.0010280609130859375
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 7]]",
+    "blocks.7.hook_v_input[[:, :, 3]]",
+    0.0011441707611083984
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 6]]",
+    "blocks.7.hook_v_input[[:, :, 3]]",
+    0.0015304088592529297
+  ],
+  [
+    "blocks.6.hook_mlp_out[[:]]",
+    "blocks.7.hook_v_input[[:, :, 1]]",
+    0.009870529174804688
+  ],
+  [
+    "blocks.5.hook_mlp_out[[:]]",
+    "blocks.7.hook_v_input[[:, :, 1]]",
+    0.003638744354248047
+  ],
+  [
+    "blocks.4.hook_mlp_out[[:]]",
+    "blocks.7.hook_v_input[[:, :, 1]]",
+    0.002922534942626953
+  ],
+  [
+    "blocks.3.hook_mlp_out[[:]]",
+    "blocks.7.hook_v_input[[:, :, 1]]",
+    0.0018842220306396484
+  ],
+  [
+    "blocks.2.hook_mlp_out[[:]]",
+    "blocks.7.hook_v_input[[:, :, 1]]",
+    0.004164934158325195
+  ],
+  [
+    "blocks.6.attn.hook_result[[:, :, 11]]",
+    "blocks.7.hook_v_input[[:, :, 0]]",
+    0.002135038375854492
+  ],
+  [
+    "blocks.6.attn.hook_result[[:, :, 6]]",
+    "blocks.7.hook_v_input[[:, :, 0]]",
+    0.002723217010498047
+  ],
+  [
+    "blocks.6.attn.hook_result[[:, :, 1]]",
+    "blocks.7.hook_v_input[[:, :, 0]]",
+    0.002487659454345703
+  ],
+  [
+    "blocks.1.hook_mlp_out[[:]]",
+    "blocks.7.hook_v_input[[:, :, 0]]",
+    0.0037419795989990234
+  ],
+  [
+    "blocks.0.hook_mlp_out[[:]]",
+    "blocks.7.hook_v_input[[:, :, 0]]",
+    0.0020940303802490234
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 9]]",
+    "blocks.7.hook_v_input[[:, :, 0]]",
+    0.001102447509765625
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 6]]",
+    "blocks.7.hook_v_input[[:, :, 0]]",
+    0.0028405189514160156
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 5]]",
+    "blocks.7.hook_v_input[[:, :, 0]]",
+    0.0018534660339355469
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 3]]",
+    "blocks.7.hook_v_input[[:, :, 0]]",
+    0.0016427040100097656
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 0]]",
+    "blocks.7.hook_v_input[[:, :, 0]]",
+    0.0014884471893310547
+  ],
+  [
+    "blocks.6.attn.hook_result[[:, :, 11]]",
+    "blocks.6.hook_mlp_in[[:]]",
+    0.005626678466796875
+  ],
+  [
+    "blocks.6.attn.hook_result[[:, :, 10]]",
+    "blocks.6.hook_mlp_in[[:]]",
+    0.003963470458984375
+  ],
+  [
+    "blocks.6.attn.hook_result[[:, :, 9]]",
+    "blocks.6.hook_mlp_in[[:]]",
+    0.006006717681884766
+  ],
+  [
+    "blocks.6.attn.hook_result[[:, :, 6]]",
+    "blocks.6.hook_mlp_in[[:]]",
+    0.005054473876953125
+  ],
+  [
+    "blocks.6.attn.hook_result[[:, :, 1]]",
+    "blocks.6.hook_mlp_in[[:]]",
+    0.006321430206298828
+  ],
+  [
+    "blocks.5.hook_mlp_out[[:]]",
+    "blocks.6.hook_mlp_in[[:]]",
+    0.010972976684570312
+  ],
+  [
+    "blocks.5.attn.hook_result[[:, :, 6]]",
+    "blocks.6.hook_mlp_in[[:]]",
+    0.0014383792877197266
+  ],
+  [
+    "blocks.5.attn.hook_result[[:, :, 5]]",
+    "blocks.6.hook_mlp_in[[:]]",
+    0.001482248306274414
+  ],
+  [
+    "blocks.5.attn.hook_result[[:, :, 3]]",
+    "blocks.6.hook_mlp_in[[:]]",
+    0.0016818046569824219
+  ],
+  [
+    "blocks.5.attn.hook_result[[:, :, 1]]",
+    "blocks.6.hook_mlp_in[[:]]",
+    0.015940427780151367
+  ],
+  [
+    "blocks.5.attn.hook_result[[:, :, 0]]",
+    "blocks.6.hook_mlp_in[[:]]",
+    0.002447366714477539
+  ],
+  [
+    "blocks.4.hook_mlp_out[[:]]",
+    "blocks.6.hook_mlp_in[[:]]",
+    0.005689859390258789
+  ],
+  [
+    "blocks.4.attn.hook_result[[:, :, 11]]",
+    "blocks.6.hook_mlp_in[[:]]",
+    0.0023412704467773438
+  ],
+  [
+    "blocks.4.attn.hook_result[[:, :, 9]]",
+    "blocks.6.hook_mlp_in[[:]]",
+    0.0021114349365234375
+  ],
+  [
+    "blocks.4.attn.hook_result[[:, :, 6]]",
+    "blocks.6.hook_mlp_in[[:]]",
+    0.002885580062866211
+  ],
+  [
+    "blocks.4.attn.hook_result[[:, :, 0]]",
+    "blocks.6.hook_mlp_in[[:]]",
+    0.003006458282470703
+  ],
+  [
+    "blocks.3.hook_mlp_out[[:]]",
+    "blocks.6.hook_mlp_in[[:]]",
+    0.010750293731689453
+  ],
+  [
+    "blocks.3.attn.hook_result[[:, :, 6]]",
+    "blocks.6.hook_mlp_in[[:]]",
+    0.0012581348419189453
+  ],
+  [
+    "blocks.3.attn.hook_result[[:, :, 3]]",
+    "blocks.6.hook_mlp_in[[:]]",
+    0.0013468265533447266
+  ],
+  [
+    "blocks.2.attn.hook_result[[:, :, 9]]",
+    "blocks.6.hook_mlp_in[[:]]",
+    0.0016260147094726562
+  ],
+  [
+    "blocks.2.attn.hook_result[[:, :, 4]]",
+    "blocks.6.hook_mlp_in[[:]]",
+    0.0019397735595703125
+  ],
+  [
+    "blocks.2.attn.hook_result[[:, :, 3]]",
+    "blocks.6.hook_mlp_in[[:]]",
+    0.0014827251434326172
+  ],
+  [
+    "blocks.2.attn.hook_result[[:, :, 2]]",
+    "blocks.6.hook_mlp_in[[:]]",
+    0.001943349838256836
+  ],
+  [
+    "blocks.1.hook_mlp_out[[:]]",
+    "blocks.6.hook_mlp_in[[:]]",
+    0.015799760818481445
+  ],
+  [
+    "blocks.1.attn.hook_result[[:, :, 10]]",
+    "blocks.6.hook_mlp_in[[:]]",
+    0.0012364387512207031
+  ],
+  [
+    "blocks.1.attn.hook_result[[:, :, 1]]",
+    "blocks.6.hook_mlp_in[[:]]",
+    0.0011494159698486328
+  ],
+  [
+    "blocks.0.hook_mlp_out[[:]]",
+    "blocks.6.hook_mlp_in[[:]]",
+    0.011148452758789062
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 11]]",
+    "blocks.6.hook_mlp_in[[:]]",
+    0.0031664371490478516
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 8]]",
+    "blocks.6.hook_mlp_in[[:]]",
+    0.0017194747924804688
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 6]]",
+    "blocks.6.hook_mlp_in[[:]]",
+    0.009175539016723633
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 5]]",
+    "blocks.6.hook_mlp_in[[:]]",
+    0.002226114273071289
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 2]]",
+    "blocks.6.hook_mlp_in[[:]]",
+    0.0036134719848632812
+  ],
+  [
+    "blocks.6.hook_q_input[[:, :, 11]]",
+    "blocks.6.attn.hook_q[[:, :, 11]]",
+    0.027173519134521484
+  ],
+  [
+    "blocks.6.hook_q_input[[:, :, 10]]",
+    "blocks.6.attn.hook_q[[:, :, 10]]",
+    0.001890420913696289
+  ],
+  [
+    "blocks.6.hook_q_input[[:, :, 8]]",
+    "blocks.6.attn.hook_q[[:, :, 8]]",
+    0.0016109943389892578
+  ],
+  [
+    "blocks.6.hook_q_input[[:, :, 6]]",
+    "blocks.6.attn.hook_q[[:, :, 6]]",
+    0.0274200439453125
+  ],
+  [
+    "blocks.6.hook_q_input[[:, :, 4]]",
+    "blocks.6.attn.hook_q[[:, :, 4]]",
+    0.004615068435668945
+  ],
+  [
+    "blocks.6.hook_q_input[[:, :, 2]]",
+    "blocks.6.attn.hook_q[[:, :, 2]]",
+    0.0011506080627441406
+  ],
+  [
+    "blocks.6.hook_q_input[[:, :, 1]]",
+    "blocks.6.attn.hook_q[[:, :, 1]]",
+    0.05397748947143555
+  ],
+  [
+    "blocks.6.hook_k_input[[:, :, 4]]",
+    "blocks.6.attn.hook_k[[:, :, 4]]",
+    0.0011916160583496094
+  ],
+  [
+    "blocks.6.hook_k_input[[:, :, 2]]",
+    "blocks.6.attn.hook_k[[:, :, 2]]",
+    0.003159046173095703
+  ],
+  [
+    "blocks.6.hook_v_input[[:, :, 11]]",
+    "blocks.6.attn.hook_v[[:, :, 11]]",
+    0.001550436019897461
+  ],
+  [
+    "blocks.6.hook_v_input[[:, :, 10]]",
+    "blocks.6.attn.hook_v[[:, :, 10]]",
+    0.009417533874511719
+  ],
+  [
+    "blocks.6.hook_v_input[[:, :, 9]]",
+    "blocks.6.attn.hook_v[[:, :, 9]]",
+    0.011708974838256836
+  ],
+  [
+    "blocks.6.hook_v_input[[:, :, 4]]",
+    "blocks.6.attn.hook_v[[:, :, 4]]",
+    0.01713418960571289
+  ],
+  [
+    "blocks.6.hook_v_input[[:, :, 2]]",
+    "blocks.6.attn.hook_v[[:, :, 2]]",
+    0.0034089088439941406
+  ],
+  [
+    "blocks.5.attn.hook_result[[:, :, 7]]",
+    "blocks.6.hook_q_input[[:, :, 11]]",
+    0.0019426345825195312
+  ],
+  [
+    "blocks.5.attn.hook_result[[:, :, 1]]",
+    "blocks.6.hook_q_input[[:, :, 11]]",
+    0.005224943161010742
+  ],
+  [
+    "blocks.4.attn.hook_result[[:, :, 6]]",
+    "blocks.6.hook_q_input[[:, :, 11]]",
+    0.0024607181549072266
+  ],
+  [
+    "blocks.4.attn.hook_result[[:, :, 0]]",
+    "blocks.6.hook_q_input[[:, :, 11]]",
+    0.0018343925476074219
+  ],
+  [
+    "blocks.3.hook_mlp_out[[:]]",
+    "blocks.6.hook_q_input[[:, :, 11]]",
+    0.008661508560180664
+  ],
+  [
+    "blocks.2.hook_mlp_out[[:]]",
+    "blocks.6.hook_q_input[[:, :, 11]]",
+    0.0017497539520263672
+  ],
+  [
+    "blocks.1.attn.hook_result[[:, :, 8]]",
+    "blocks.6.hook_q_input[[:, :, 11]]",
+    0.002361297607421875
+  ],
+  [
+    "blocks.0.hook_mlp_out[[:]]",
+    "blocks.6.hook_q_input[[:, :, 11]]",
+    0.0038099288940429688
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 7]]",
+    "blocks.6.hook_q_input[[:, :, 11]]",
+    0.0010492801666259766
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 5]]",
+    "blocks.6.hook_q_input[[:, :, 11]]",
+    0.0014495849609375
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 2]]",
+    "blocks.6.hook_q_input[[:, :, 11]]",
+    0.00360107421875
+  ],
+  [
+    "blocks.1.hook_mlp_out[[:]]",
+    "blocks.6.hook_q_input[[:, :, 10]]",
+    0.0013594627380371094
+  ],
+  [
+    "blocks.4.hook_mlp_out[[:]]",
+    "blocks.6.hook_q_input[[:, :, 8]]",
+    0.001013040542602539
+  ],
+  [
+    "blocks.4.attn.hook_result[[:, :, 11]]",
+    "blocks.6.hook_q_input[[:, :, 6]]",
+    0.002669811248779297
+  ],
+  [
+    "blocks.1.attn.hook_result[[:, :, 8]]",
+    "blocks.6.hook_q_input[[:, :, 6]]",
+    0.0019860267639160156
+  ],
+  [
+    "blocks.0.hook_mlp_out[[:]]",
+    "blocks.6.hook_q_input[[:, :, 6]]",
+    0.011632442474365234
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 11]]",
+    "blocks.6.hook_q_input[[:, :, 6]]",
+    0.0015904903411865234
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 7]]",
+    "blocks.6.hook_q_input[[:, :, 6]]",
+    0.0021588802337646484
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 6]]",
+    "blocks.6.hook_q_input[[:, :, 6]]",
+    0.002446413040161133
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 5]]",
+    "blocks.6.hook_q_input[[:, :, 6]]",
+    0.00471186637878418
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 2]]",
+    "blocks.6.hook_q_input[[:, :, 6]]",
+    0.0057373046875
+  ],
+  [
+    "blocks.5.attn.hook_result[[:, :, 7]]",
+    "blocks.6.hook_q_input[[:, :, 4]]",
+    0.00118255615234375
+  ],
+  [
+    "blocks.4.attn.hook_result[[:, :, 8]]",
+    "blocks.6.hook_q_input[[:, :, 4]]",
+    0.0010528564453125
+  ],
+  [
+    "blocks.5.hook_mlp_out[[:]]",
+    "blocks.6.hook_q_input[[:, :, 2]]",
+    0.0010967254638671875
+  ],
+  [
+    "blocks.5.attn.hook_result[[:, :, 7]]",
+    "blocks.6.hook_q_input[[:, :, 1]]",
+    0.014447212219238281
+  ],
+  [
+    "blocks.5.attn.hook_result[[:, :, 1]]",
+    "blocks.6.hook_q_input[[:, :, 1]]",
+    0.0028066635131835938
+  ],
+  [
+    "blocks.4.attn.hook_result[[:, :, 11]]",
+    "blocks.6.hook_q_input[[:, :, 1]]",
+    0.0015137195587158203
+  ],
+  [
+    "blocks.4.attn.hook_result[[:, :, 8]]",
+    "blocks.6.hook_q_input[[:, :, 1]]",
+    0.004460811614990234
+  ],
+  [
+    "blocks.4.attn.hook_result[[:, :, 6]]",
+    "blocks.6.hook_q_input[[:, :, 1]]",
+    0.002353668212890625
+  ],
+  [
+    "blocks.4.attn.hook_result[[:, :, 5]]",
+    "blocks.6.hook_q_input[[:, :, 1]]",
+    0.0010378360748291016
+  ],
+  [
+    "blocks.1.attn.hook_result[[:, :, 8]]",
+    "blocks.6.hook_q_input[[:, :, 1]]",
+    0.001691579818725586
+  ],
+  [
+    "blocks.0.hook_mlp_out[[:]]",
+    "blocks.6.hook_q_input[[:, :, 1]]",
+    0.020750761032104492
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 7]]",
+    "blocks.6.hook_q_input[[:, :, 1]]",
+    0.0012881755828857422
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 6]]",
+    "blocks.6.hook_q_input[[:, :, 1]]",
+    0.0031919479370117188
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 5]]",
+    "blocks.6.hook_q_input[[:, :, 1]]",
+    0.004258394241333008
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 2]]",
+    "blocks.6.hook_q_input[[:, :, 1]]",
+    0.005354166030883789
+  ],
+  [
+    "blocks.5.hook_mlp_out[[:]]",
+    "blocks.6.hook_k_input[[:, :, 2]]",
+    0.0016529560089111328
+  ],
+  [
+    "blocks.4.hook_mlp_out[[:]]",
+    "blocks.6.hook_k_input[[:, :, 2]]",
+    0.0014801025390625
+  ],
+  [
+    "blocks.5.attn.hook_result[[:, :, 1]]",
+    "blocks.6.hook_v_input[[:, :, 11]]",
+    0.0010342597961425781
+  ],
+  [
+    "blocks.5.hook_mlp_out[[:]]",
+    "blocks.6.hook_v_input[[:, :, 10]]",
+    0.0017180442810058594
+  ],
+  [
+    "blocks.5.attn.hook_result[[:, :, 1]]",
+    "blocks.6.hook_v_input[[:, :, 10]]",
+    0.004380702972412109
+  ],
+  [
+    "blocks.5.attn.hook_result[[:, :, 0]]",
+    "blocks.6.hook_v_input[[:, :, 10]]",
+    0.0024094581604003906
+  ],
+  [
+    "blocks.4.attn.hook_result[[:, :, 0]]",
+    "blocks.6.hook_v_input[[:, :, 10]]",
+    0.0023424625396728516
+  ],
+  [
+    "blocks.2.attn.hook_result[[:, :, 6]]",
+    "blocks.6.hook_v_input[[:, :, 10]]",
+    0.0011737346649169922
+  ],
+  [
+    "blocks.5.hook_mlp_out[[:]]",
+    "blocks.6.hook_v_input[[:, :, 9]]",
+    0.0016875267028808594
+  ],
+  [
+    "blocks.5.attn.hook_result[[:, :, 6]]",
+    "blocks.6.hook_v_input[[:, :, 9]]",
+    0.0026292800903320312
+  ],
+  [
+    "blocks.5.attn.hook_result[[:, :, 3]]",
+    "blocks.6.hook_v_input[[:, :, 9]]",
+    0.0023262500762939453
+  ],
+  [
+    "blocks.5.attn.hook_result[[:, :, 1]]",
+    "blocks.6.hook_v_input[[:, :, 9]]",
+    0.0031523704528808594
+  ],
+  [
+    "blocks.5.attn.hook_result[[:, :, 0]]",
+    "blocks.6.hook_v_input[[:, :, 9]]",
+    0.004528045654296875
+  ],
+  [
+    "blocks.4.attn.hook_result[[:, :, 2]]",
+    "blocks.6.hook_v_input[[:, :, 9]]",
+    0.0013175010681152344
+  ],
+  [
+    "blocks.4.attn.hook_result[[:, :, 0]]",
+    "blocks.6.hook_v_input[[:, :, 9]]",
+    0.0035474300384521484
+  ],
+  [
+    "blocks.2.attn.hook_result[[:, :, 6]]",
+    "blocks.6.hook_v_input[[:, :, 9]]",
+    0.0015065670013427734
+  ],
+  [
+    "blocks.2.attn.hook_result[[:, :, 2]]",
+    "blocks.6.hook_v_input[[:, :, 9]]",
+    0.0011005401611328125
+  ],
+  [
+    "blocks.5.attn.hook_result[[:, :, 8]]",
+    "blocks.6.hook_v_input[[:, :, 4]]",
+    0.0034475326538085938
+  ],
+  [
+    "blocks.5.attn.hook_result[[:, :, 6]]",
+    "blocks.6.hook_v_input[[:, :, 4]]",
+    0.0018177032470703125
+  ],
+  [
+    "blocks.5.attn.hook_result[[:, :, 1]]",
+    "blocks.6.hook_v_input[[:, :, 4]]",
+    0.019572019577026367
+  ],
+  [
+    "blocks.5.attn.hook_result[[:, :, 0]]",
+    "blocks.6.hook_v_input[[:, :, 4]]",
+    0.0013408660888671875
+  ],
+  [
+    "blocks.4.hook_mlp_out[[:]]",
+    "blocks.6.hook_v_input[[:, :, 4]]",
+    0.006046772003173828
+  ],
+  [
+    "blocks.4.attn.hook_result[[:, :, 0]]",
+    "blocks.6.hook_v_input[[:, :, 4]]",
+    0.0015239715576171875
+  ],
+  [
+    "blocks.3.hook_mlp_out[[:]]",
+    "blocks.6.hook_v_input[[:, :, 4]]",
+    0.002595663070678711
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 9]]",
+    "blocks.6.hook_v_input[[:, :, 4]]",
+    0.0016279220581054688
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 6]]",
+    "blocks.6.hook_v_input[[:, :, 4]]",
+    0.0011823177337646484
+  ],
+  [
+    "blocks.3.hook_mlp_out[[:]]",
+    "blocks.6.hook_v_input[[:, :, 2]]",
+    0.001268148422241211
+  ],
+  [
+    "blocks.5.attn.hook_result[[:, :, 11]]",
+    "blocks.5.hook_mlp_in[[:]]",
+    0.0022017955780029297
+  ],
+  [
+    "blocks.5.attn.hook_result[[:, :, 10]]",
+    "blocks.5.hook_mlp_in[[:]]",
+    0.003992319107055664
+  ],
+  [
+    "blocks.5.attn.hook_result[[:, :, 9]]",
+    "blocks.5.hook_mlp_in[[:]]",
+    0.001975536346435547
+  ],
+  [
+    "blocks.5.attn.hook_result[[:, :, 8]]",
+    "blocks.5.hook_mlp_in[[:]]",
+    0.004360675811767578
+  ],
+  [
+    "blocks.5.attn.hook_result[[:, :, 5]]",
+    "blocks.5.hook_mlp_in[[:]]",
+    0.0014491081237792969
+  ],
+  [
+    "blocks.5.attn.hook_result[[:, :, 3]]",
+    "blocks.5.hook_mlp_in[[:]]",
+    0.0029261112213134766
+  ],
+  [
+    "blocks.5.attn.hook_result[[:, :, 1]]",
+    "blocks.5.hook_mlp_in[[:]]",
+    0.016800880432128906
+  ],
+  [
+    "blocks.4.hook_mlp_out[[:]]",
+    "blocks.5.hook_mlp_in[[:]]",
+    0.008944988250732422
+  ],
+  [
+    "blocks.4.attn.hook_result[[:, :, 11]]",
+    "blocks.5.hook_mlp_in[[:]]",
+    0.004216194152832031
+  ],
+  [
+    "blocks.4.attn.hook_result[[:, :, 10]]",
+    "blocks.5.hook_mlp_in[[:]]",
+    0.001795053482055664
+  ],
+  [
+    "blocks.4.attn.hook_result[[:, :, 6]]",
+    "blocks.5.hook_mlp_in[[:]]",
+    0.0016002655029296875
+  ],
+  [
+    "blocks.4.attn.hook_result[[:, :, 5]]",
+    "blocks.5.hook_mlp_in[[:]]",
+    0.0021371841430664062
+  ],
+  [
+    "blocks.4.attn.hook_result[[:, :, 4]]",
+    "blocks.5.hook_mlp_in[[:]]",
+    0.0032186508178710938
+  ],
+  [
+    "blocks.4.attn.hook_result[[:, :, 1]]",
+    "blocks.5.hook_mlp_in[[:]]",
+    0.0012202262878417969
+  ],
+  [
+    "blocks.3.attn.hook_result[[:, :, 11]]",
+    "blocks.5.hook_mlp_in[[:]]",
+    0.0014834403991699219
+  ],
+  [
+    "blocks.3.attn.hook_result[[:, :, 9]]",
+    "blocks.5.hook_mlp_in[[:]]",
+    0.002421140670776367
+  ],
+  [
+    "blocks.3.attn.hook_result[[:, :, 6]]",
+    "blocks.5.hook_mlp_in[[:]]",
+    0.0013742446899414062
+  ],
+  [
+    "blocks.3.attn.hook_result[[:, :, 5]]",
+    "blocks.5.hook_mlp_in[[:]]",
+    0.0010247230529785156
+  ],
+  [
+    "blocks.2.hook_mlp_out[[:]]",
+    "blocks.5.hook_mlp_in[[:]]",
+    0.0025587081909179688
+  ],
+  [
+    "blocks.2.attn.hook_result[[:, :, 5]]",
+    "blocks.5.hook_mlp_in[[:]]",
+    0.0010428428649902344
+  ],
+  [
+    "blocks.1.hook_mlp_out[[:]]",
+    "blocks.5.hook_mlp_in[[:]]",
+    0.0022745132446289062
+  ],
+  [
+    "blocks.0.hook_mlp_out[[:]]",
+    "blocks.5.hook_mlp_in[[:]]",
+    0.003304004669189453
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 11]]",
+    "blocks.5.hook_mlp_in[[:]]",
+    0.001955747604370117
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 10]]",
+    "blocks.5.hook_mlp_in[[:]]",
+    0.004105091094970703
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 9]]",
+    "blocks.5.hook_mlp_in[[:]]",
+    0.0036163330078125
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 7]]",
+    "blocks.5.hook_mlp_in[[:]]",
+    0.0018758773803710938
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 6]]",
+    "blocks.5.hook_mlp_in[[:]]",
+    0.0015192031860351562
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 3]]",
+    "blocks.5.hook_mlp_in[[:]]",
+    0.002260446548461914
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 2]]",
+    "blocks.5.hook_mlp_in[[:]]",
+    0.0040395259857177734
+  ],
+  [
+    "blocks.5.hook_q_input[[:, :, 7]]",
+    "blocks.5.attn.hook_q[[:, :, 7]]",
+    0.013255834579467773
+  ],
+  [
+    "blocks.5.hook_q_input[[:, :, 5]]",
+    "blocks.5.attn.hook_q[[:, :, 5]]",
+    0.002504110336303711
+  ],
+  [
+    "blocks.5.hook_k_input[[:, :, 9]]",
+    "blocks.5.attn.hook_k[[:, :, 9]]",
+    0.0010290145874023438
+  ],
+  [
+    "blocks.5.hook_k_input[[:, :, 3]]",
+    "blocks.5.attn.hook_k[[:, :, 3]]",
+    0.0014393329620361328
+  ],
+  [
+    "blocks.5.hook_v_input[[:, :, 11]]",
+    "blocks.5.attn.hook_v[[:, :, 11]]",
+    0.0049097537994384766
+  ],
+  [
+    "blocks.5.hook_v_input[[:, :, 10]]",
+    "blocks.5.attn.hook_v[[:, :, 10]]",
+    0.00829935073852539
+  ],
+  [
+    "blocks.5.hook_v_input[[:, :, 9]]",
+    "blocks.5.attn.hook_v[[:, :, 9]]",
+    0.004393339157104492
+  ],
+  [
+    "blocks.5.hook_v_input[[:, :, 8]]",
+    "blocks.5.attn.hook_v[[:, :, 8]]",
+    0.012221097946166992
+  ],
+  [
+    "blocks.5.hook_v_input[[:, :, 7]]",
+    "blocks.5.attn.hook_v[[:, :, 7]]",
+    0.005257606506347656
+  ],
+  [
+    "blocks.5.hook_v_input[[:, :, 6]]",
+    "blocks.5.attn.hook_v[[:, :, 6]]",
+    0.00716853141784668
+  ],
+  [
+    "blocks.5.hook_v_input[[:, :, 4]]",
+    "blocks.5.attn.hook_v[[:, :, 4]]",
+    0.0015456676483154297
+  ],
+  [
+    "blocks.5.hook_v_input[[:, :, 3]]",
+    "blocks.5.attn.hook_v[[:, :, 3]]",
+    0.00691533088684082
+  ],
+  [
+    "blocks.5.hook_v_input[[:, :, 2]]",
+    "blocks.5.attn.hook_v[[:, :, 2]]",
+    0.001157999038696289
+  ],
+  [
+    "blocks.5.hook_v_input[[:, :, 1]]",
+    "blocks.5.attn.hook_v[[:, :, 1]]",
+    0.12005424499511719
+  ],
+  [
+    "blocks.5.hook_v_input[[:, :, 0]]",
+    "blocks.5.attn.hook_v[[:, :, 0]]",
+    0.012163400650024414
+  ],
+  [
+    "blocks.4.hook_mlp_out[[:]]",
+    "blocks.5.hook_q_input[[:, :, 7]]",
+    0.0016624927520751953
+  ],
+  [
+    "blocks.4.attn.hook_result[[:, :, 11]]",
+    "blocks.5.hook_q_input[[:, :, 7]]",
+    0.003435373306274414
+  ],
+  [
+    "blocks.3.hook_mlp_out[[:]]",
+    "blocks.5.hook_q_input[[:, :, 7]]",
+    0.0017206668853759766
+  ],
+  [
+    "blocks.0.hook_mlp_out[[:]]",
+    "blocks.5.hook_q_input[[:, :, 7]]",
+    0.003217935562133789
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 11]]",
+    "blocks.5.hook_q_input[[:, :, 7]]",
+    0.0018219947814941406
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 9]]",
+    "blocks.5.hook_q_input[[:, :, 7]]",
+    0.0014946460723876953
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 7]]",
+    "blocks.5.hook_q_input[[:, :, 7]]",
+    0.0011630058288574219
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 6]]",
+    "blocks.5.hook_q_input[[:, :, 7]]",
+    0.0018477439880371094
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 5]]",
+    "blocks.5.hook_q_input[[:, :, 7]]",
+    0.0021986961364746094
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 2]]",
+    "blocks.5.hook_q_input[[:, :, 7]]",
+    0.001909017562866211
+  ],
+  [
+    "blocks.4.hook_mlp_out[[:]]",
+    "blocks.5.hook_k_input[[:, :, 3]]",
+    0.0018839836120605469
+  ],
+  [
+    "blocks.1.hook_mlp_out[[:]]",
+    "blocks.5.hook_k_input[[:, :, 3]]",
+    0.001432180404663086
+  ],
+  [
+    "blocks.4.hook_mlp_out[[:]]",
+    "blocks.5.hook_v_input[[:, :, 11]]",
+    0.001676321029663086
+  ],
+  [
+    "blocks.4.attn.hook_result[[:, :, 0]]",
+    "blocks.5.hook_v_input[[:, :, 11]]",
+    0.0014576911926269531
+  ],
+  [
+    "blocks.2.attn.hook_result[[:, :, 6]]",
+    "blocks.5.hook_v_input[[:, :, 11]]",
+    0.0010683536529541016
+  ],
+  [
+    "blocks.4.attn.hook_result[[:, :, 9]]",
+    "blocks.5.hook_v_input[[:, :, 10]]",
+    0.0011091232299804688
+  ],
+  [
+    "blocks.2.hook_mlp_out[[:]]",
+    "blocks.5.hook_v_input[[:, :, 10]]",
+    0.0015232563018798828
+  ],
+  [
+    "blocks.2.attn.hook_result[[:, :, 6]]",
+    "blocks.5.hook_v_input[[:, :, 10]]",
+    0.003526926040649414
+  ],
+  [
+    "blocks.0.hook_mlp_out[[:]]",
+    "blocks.5.hook_v_input[[:, :, 10]]",
+    0.00414586067199707
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 7]]",
+    "blocks.5.hook_v_input[[:, :, 10]]",
+    0.0014889240264892578
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 6]]",
+    "blocks.5.hook_v_input[[:, :, 10]]",
+    0.0013911724090576172
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 2]]",
+    "blocks.5.hook_v_input[[:, :, 10]]",
+    0.0012998580932617188
+  ],
+  [
+    "blocks.4.attn.hook_result[[:, :, 0]]",
+    "blocks.5.hook_v_input[[:, :, 9]]",
+    0.002089977264404297
+  ],
+  [
+    "blocks.2.attn.hook_result[[:, :, 6]]",
+    "blocks.5.hook_v_input[[:, :, 9]]",
+    0.0015816688537597656
+  ],
+  [
+    "blocks.4.hook_mlp_out[[:]]",
+    "blocks.5.hook_v_input[[:, :, 8]]",
+    0.0015912055969238281
+  ],
+  [
+    "blocks.4.attn.hook_result[[:, :, 0]]",
+    "blocks.5.hook_v_input[[:, :, 8]]",
+    0.001077890396118164
+  ],
+  [
+    "blocks.1.hook_mlp_out[[:]]",
+    "blocks.5.hook_v_input[[:, :, 8]]",
+    0.002664327621459961
+  ],
+  [
+    "blocks.0.hook_mlp_out[[:]]",
+    "blocks.5.hook_v_input[[:, :, 8]]",
+    0.0012707710266113281
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 7]]",
+    "blocks.5.hook_v_input[[:, :, 8]]",
+    0.0021424293518066406
+  ],
+  [
+    "blocks.4.attn.hook_result[[:, :, 8]]",
+    "blocks.5.hook_v_input[[:, :, 7]]",
+    0.001857757568359375
+  ],
+  [
+    "blocks.4.attn.hook_result[[:, :, 4]]",
+    "blocks.5.hook_v_input[[:, :, 7]]",
+    0.001047372817993164
+  ],
+  [
+    "blocks.2.attn.hook_result[[:, :, 6]]",
+    "blocks.5.hook_v_input[[:, :, 7]]",
+    0.0011284351348876953
+  ],
+  [
+    "blocks.4.hook_mlp_out[[:]]",
+    "blocks.5.hook_v_input[[:, :, 6]]",
+    0.003396272659301758
+  ],
+  [
+    "blocks.4.attn.hook_result[[:, :, 0]]",
+    "blocks.5.hook_v_input[[:, :, 6]]",
+    0.0025098323822021484
+  ],
+  [
+    "blocks.4.hook_mlp_out[[:]]",
+    "blocks.5.hook_v_input[[:, :, 3]]",
+    0.0013585090637207031
+  ],
+  [
+    "blocks.4.attn.hook_result[[:, :, 11]]",
+    "blocks.5.hook_v_input[[:, :, 3]]",
+    0.0010955333709716797
+  ],
+  [
+    "blocks.4.attn.hook_result[[:, :, 2]]",
+    "blocks.5.hook_v_input[[:, :, 3]]",
+    0.0012400150299072266
+  ],
+  [
+    "blocks.4.attn.hook_result[[:, :, 0]]",
+    "blocks.5.hook_v_input[[:, :, 3]]",
+    0.001953125
+  ],
+  [
+    "blocks.2.attn.hook_result[[:, :, 6]]",
+    "blocks.5.hook_v_input[[:, :, 3]]",
+    0.0018894672393798828
+  ],
+  [
+    "blocks.0.hook_mlp_out[[:]]",
+    "blocks.5.hook_v_input[[:, :, 3]]",
+    0.0018603801727294922
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 10]]",
+    "blocks.5.hook_v_input[[:, :, 3]]",
+    0.0014278888702392578
+  ],
+  [
+    "blocks.4.hook_mlp_out[[:]]",
+    "blocks.5.hook_v_input[[:, :, 1]]",
+    0.025115489959716797
+  ],
+  [
+    "blocks.4.attn.hook_result[[:, :, 10]]",
+    "blocks.5.hook_v_input[[:, :, 1]]",
+    0.0037164688110351562
+  ],
+  [
+    "blocks.4.attn.hook_result[[:, :, 6]]",
+    "blocks.5.hook_v_input[[:, :, 1]]",
+    0.0011746883392333984
+  ],
+  [
+    "blocks.4.attn.hook_result[[:, :, 1]]",
+    "blocks.5.hook_v_input[[:, :, 1]]",
+    0.0013530254364013672
+  ],
+  [
+    "blocks.4.attn.hook_result[[:, :, 0]]",
+    "blocks.5.hook_v_input[[:, :, 1]]",
+    0.0020325183868408203
+  ],
+  [
+    "blocks.3.attn.hook_result[[:, :, 11]]",
+    "blocks.5.hook_v_input[[:, :, 1]]",
+    0.004489898681640625
+  ],
+  [
+    "blocks.2.attn.hook_result[[:, :, 11]]",
+    "blocks.5.hook_v_input[[:, :, 1]]",
+    0.0032470226287841797
+  ],
+  [
+    "blocks.2.attn.hook_result[[:, :, 3]]",
+    "blocks.5.hook_v_input[[:, :, 1]]",
+    0.0038971900939941406
+  ],
+  [
+    "blocks.2.attn.hook_result[[:, :, 1]]",
+    "blocks.5.hook_v_input[[:, :, 1]]",
+    0.005049228668212891
+  ],
+  [
+    "blocks.1.hook_mlp_out[[:]]",
+    "blocks.5.hook_v_input[[:, :, 1]]",
+    0.04175734519958496
+  ],
+  [
+    "blocks.0.hook_mlp_out[[:]]",
+    "blocks.5.hook_v_input[[:, :, 1]]",
+    0.03610849380493164
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 11]]",
+    "blocks.5.hook_v_input[[:, :, 1]]",
+    0.0107574462890625
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 10]]",
+    "blocks.5.hook_v_input[[:, :, 1]]",
+    0.007708072662353516
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 9]]",
+    "blocks.5.hook_v_input[[:, :, 1]]",
+    0.002382516860961914
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 8]]",
+    "blocks.5.hook_v_input[[:, :, 1]]",
+    0.002534151077270508
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 7]]",
+    "blocks.5.hook_v_input[[:, :, 1]]",
+    0.006821632385253906
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 3]]",
+    "blocks.5.hook_v_input[[:, :, 1]]",
+    0.004956722259521484
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 0]]",
+    "blocks.5.hook_v_input[[:, :, 1]]",
+    0.002719879150390625
+  ],
+  [
+    "blocks.4.attn.hook_result[[:, :, 11]]",
+    "blocks.5.hook_v_input[[:, :, 0]]",
+    0.001963376998901367
+  ],
+  [
+    "blocks.4.attn.hook_result[[:, :, 6]]",
+    "blocks.5.hook_v_input[[:, :, 0]]",
+    0.0013873577117919922
+  ],
+  [
+    "blocks.4.attn.hook_result[[:, :, 0]]",
+    "blocks.5.hook_v_input[[:, :, 0]]",
+    0.0034630298614501953
+  ],
+  [
+    "blocks.3.hook_mlp_out[[:]]",
+    "blocks.5.hook_v_input[[:, :, 0]]",
+    0.003122568130493164
+  ],
+  [
+    "blocks.2.attn.hook_result[[:, :, 6]]",
+    "blocks.5.hook_v_input[[:, :, 0]]",
+    0.0011682510375976562
+  ],
+  [
+    "blocks.1.attn.hook_result[[:, :, 8]]",
+    "blocks.5.hook_v_input[[:, :, 0]]",
+    0.0013043880462646484
+  ],
+  [
+    "blocks.0.hook_mlp_out[[:]]",
+    "blocks.5.hook_v_input[[:, :, 0]]",
+    0.0019364356994628906
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 10]]",
+    "blocks.5.hook_v_input[[:, :, 0]]",
+    0.0021588802337646484
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 2]]",
+    "blocks.5.hook_v_input[[:, :, 0]]",
+    0.0010104179382324219
+  ],
+  [
+    "blocks.4.attn.hook_result[[:, :, 9]]",
+    "blocks.4.hook_mlp_in[[:]]",
+    0.0025014877319335938
+  ],
+  [
+    "blocks.4.attn.hook_result[[:, :, 7]]",
+    "blocks.4.hook_mlp_in[[:]]",
+    0.0026946067810058594
+  ],
+  [
+    "blocks.4.attn.hook_result[[:, :, 6]]",
+    "blocks.4.hook_mlp_in[[:]]",
+    0.003151416778564453
+  ],
+  [
+    "blocks.4.attn.hook_result[[:, :, 3]]",
+    "blocks.4.hook_mlp_in[[:]]",
+    0.002965688705444336
+  ],
+  [
+    "blocks.4.attn.hook_result[[:, :, 0]]",
+    "blocks.4.hook_mlp_in[[:]]",
+    0.005796909332275391
+  ],
+  [
+    "blocks.3.hook_mlp_out[[:]]",
+    "blocks.4.hook_mlp_in[[:]]",
+    0.006478786468505859
+  ],
+  [
+    "blocks.3.attn.hook_result[[:, :, 11]]",
+    "blocks.4.hook_mlp_in[[:]]",
+    0.0018923282623291016
+  ],
+  [
+    "blocks.3.attn.hook_result[[:, :, 0]]",
+    "blocks.4.hook_mlp_in[[:]]",
+    0.0010211467742919922
+  ],
+  [
+    "blocks.2.attn.hook_result[[:, :, 11]]",
+    "blocks.4.hook_mlp_in[[:]]",
+    0.0011742115020751953
+  ],
+  [
+    "blocks.2.attn.hook_result[[:, :, 6]]",
+    "blocks.4.hook_mlp_in[[:]]",
+    0.004448890686035156
+  ],
+  [
+    "blocks.2.attn.hook_result[[:, :, 4]]",
+    "blocks.4.hook_mlp_in[[:]]",
+    0.003113269805908203
+  ],
+  [
+    "blocks.2.attn.hook_result[[:, :, 2]]",
+    "blocks.4.hook_mlp_in[[:]]",
+    0.0035240650177001953
+  ],
+  [
+    "blocks.1.attn.hook_result[[:, :, 10]]",
+    "blocks.4.hook_mlp_in[[:]]",
+    0.0013725757598876953
+  ],
+  [
+    "blocks.1.attn.hook_result[[:, :, 8]]",
+    "blocks.4.hook_mlp_in[[:]]",
+    0.008112192153930664
+  ],
+  [
+    "blocks.1.attn.hook_result[[:, :, 7]]",
+    "blocks.4.hook_mlp_in[[:]]",
+    0.0011868476867675781
+  ],
+  [
+    "blocks.0.hook_mlp_out[[:]]",
+    "blocks.4.hook_mlp_in[[:]]",
+    0.024588823318481445
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 11]]",
+    "blocks.4.hook_mlp_in[[:]]",
+    0.004444122314453125
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 10]]",
+    "blocks.4.hook_mlp_in[[:]]",
+    0.0010013580322265625
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 9]]",
+    "blocks.4.hook_mlp_in[[:]]",
+    0.005466461181640625
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 8]]",
+    "blocks.4.hook_mlp_in[[:]]",
+    0.0031151771545410156
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 7]]",
+    "blocks.4.hook_mlp_in[[:]]",
+    0.0071942806243896484
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 6]]",
+    "blocks.4.hook_mlp_in[[:]]",
+    0.004161357879638672
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 5]]",
+    "blocks.4.hook_mlp_in[[:]]",
+    0.008247137069702148
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 3]]",
+    "blocks.4.hook_mlp_in[[:]]",
+    0.005151033401489258
+  ],
+  [
+    "blocks.4.hook_q_input[[:, :, 8]]",
+    "blocks.4.attn.hook_q[[:, :, 8]]",
+    0.001728057861328125
+  ],
+  [
+    "blocks.4.hook_q_input[[:, :, 0]]",
+    "blocks.4.attn.hook_q[[:, :, 0]]",
+    0.001800537109375
+  ],
+  [
+    "blocks.4.hook_k_input[[:, :, 6]]",
+    "blocks.4.attn.hook_k[[:, :, 6]]",
+    0.0015556812286376953
+  ],
+  [
+    "blocks.4.hook_k_input[[:, :, 0]]",
+    "blocks.4.attn.hook_k[[:, :, 0]]",
+    0.005404949188232422
+  ],
+  [
+    "blocks.4.hook_v_input[[:, :, 11]]",
+    "blocks.4.attn.hook_v[[:, :, 11]]",
+    0.035494089126586914
+  ],
+  [
+    "blocks.4.hook_v_input[[:, :, 10]]",
+    "blocks.4.attn.hook_v[[:, :, 10]]",
+    0.005677461624145508
+  ],
+  [
+    "blocks.4.hook_v_input[[:, :, 9]]",
+    "blocks.4.attn.hook_v[[:, :, 9]]",
+    0.004799604415893555
+  ],
+  [
+    "blocks.4.hook_v_input[[:, :, 7]]",
+    "blocks.4.attn.hook_v[[:, :, 7]]",
+    0.0024585723876953125
+  ],
+  [
+    "blocks.4.hook_v_input[[:, :, 6]]",
+    "blocks.4.attn.hook_v[[:, :, 6]]",
+    0.01959514617919922
+  ],
+  [
+    "blocks.4.hook_v_input[[:, :, 5]]",
+    "blocks.4.attn.hook_v[[:, :, 5]]",
+    0.0050470829010009766
+  ],
+  [
+    "blocks.4.hook_v_input[[:, :, 4]]",
+    "blocks.4.attn.hook_v[[:, :, 4]]",
+    0.004893779754638672
+  ],
+  [
+    "blocks.4.hook_v_input[[:, :, 3]]",
+    "blocks.4.attn.hook_v[[:, :, 3]]",
+    0.002282381057739258
+  ],
+  [
+    "blocks.4.hook_v_input[[:, :, 2]]",
+    "blocks.4.attn.hook_v[[:, :, 2]]",
+    0.002767801284790039
+  ],
+  [
+    "blocks.4.hook_v_input[[:, :, 0]]",
+    "blocks.4.attn.hook_v[[:, :, 0]]",
+    0.0293426513671875
+  ],
+  [
+    "blocks.2.hook_mlp_out[[:]]",
+    "blocks.4.hook_q_input[[:, :, 0]]",
+    0.001482248306274414
+  ],
+  [
+    "blocks.2.attn.hook_result[[:, :, 6]]",
+    "blocks.4.hook_q_input[[:, :, 0]]",
+    0.0016326904296875
+  ],
+  [
+    "blocks.1.hook_mlp_out[[:]]",
+    "blocks.4.hook_q_input[[:, :, 0]]",
+    0.002064943313598633
+  ],
+  [
+    "blocks.0.hook_mlp_out[[:]]",
+    "blocks.4.hook_q_input[[:, :, 0]]",
+    0.001875162124633789
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 10]]",
+    "blocks.4.hook_q_input[[:, :, 0]]",
+    0.0010077953338623047
+  ],
+  [
+    "blocks.3.hook_mlp_out[[:]]",
+    "blocks.4.hook_k_input[[:, :, 0]]",
+    0.002485036849975586
+  ],
+  [
+    "blocks.1.hook_mlp_out[[:]]",
+    "blocks.4.hook_k_input[[:, :, 0]]",
+    0.004029273986816406
+  ],
+  [
+    "blocks.0.hook_mlp_out[[:]]",
+    "blocks.4.hook_k_input[[:, :, 0]]",
+    0.0027937889099121094
+  ],
+  [
+    "blocks.3.hook_mlp_out[[:]]",
+    "blocks.4.hook_v_input[[:, :, 11]]",
+    0.0013382434844970703
+  ],
+  [
+    "blocks.2.attn.hook_result[[:, :, 1]]",
+    "blocks.4.hook_v_input[[:, :, 11]]",
+    0.0010058879852294922
+  ],
+  [
+    "blocks.1.hook_mlp_out[[:]]",
+    "blocks.4.hook_v_input[[:, :, 11]]",
+    0.0010113716125488281
+  ],
+  [
+    "blocks.1.attn.hook_result[[:, :, 8]]",
+    "blocks.4.hook_v_input[[:, :, 11]]",
+    0.0024743080139160156
+  ],
+  [
+    "blocks.0.hook_mlp_out[[:]]",
+    "blocks.4.hook_v_input[[:, :, 11]]",
+    0.011169195175170898
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 11]]",
+    "blocks.4.hook_v_input[[:, :, 11]]",
+    0.001734018325805664
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 9]]",
+    "blocks.4.hook_v_input[[:, :, 11]]",
+    0.0023796558380126953
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 7]]",
+    "blocks.4.hook_v_input[[:, :, 11]]",
+    0.002799510955810547
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 6]]",
+    "blocks.4.hook_v_input[[:, :, 11]]",
+    0.001714468002319336
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 5]]",
+    "blocks.4.hook_v_input[[:, :, 11]]",
+    0.0024261474609375
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 2]]",
+    "blocks.4.hook_v_input[[:, :, 11]]",
+    0.008146286010742188
+  ],
+  [
+    "blocks.0.hook_mlp_out[[:]]",
+    "blocks.4.hook_v_input[[:, :, 10]]",
+    0.0032384395599365234
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 10]]",
+    "blocks.4.hook_v_input[[:, :, 10]]",
+    0.0014362335205078125
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 9]]",
+    "blocks.4.hook_v_input[[:, :, 10]]",
+    0.001438140869140625
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 5]]",
+    "blocks.4.hook_v_input[[:, :, 10]]",
+    0.0029363632202148438
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 3]]",
+    "blocks.4.hook_v_input[[:, :, 10]]",
+    0.0013909339904785156
+  ],
+  [
+    "blocks.3.hook_mlp_out[[:]]",
+    "blocks.4.hook_v_input[[:, :, 9]]",
+    0.0010998249053955078
+  ],
+  [
+    "blocks.1.hook_mlp_out[[:]]",
+    "blocks.4.hook_v_input[[:, :, 9]]",
+    0.0011615753173828125
+  ],
+  [
+    "blocks.0.hook_mlp_out[[:]]",
+    "blocks.4.hook_v_input[[:, :, 9]]",
+    0.0019104480743408203
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 11]]",
+    "blocks.4.hook_v_input[[:, :, 9]]",
+    0.0015649795532226562
+  ],
+  [
+    "blocks.1.hook_mlp_out[[:]]",
+    "blocks.4.hook_v_input[[:, :, 7]]",
+    0.0013232231140136719
+  ],
+  [
+    "blocks.1.hook_mlp_out[[:]]",
+    "blocks.4.hook_v_input[[:, :, 6]]",
+    0.0018317699432373047
+  ],
+  [
+    "blocks.1.attn.hook_result[[:, :, 8]]",
+    "blocks.4.hook_v_input[[:, :, 6]]",
+    0.002367258071899414
+  ],
+  [
+    "blocks.0.hook_mlp_out[[:]]",
+    "blocks.4.hook_v_input[[:, :, 6]]",
+    0.01047062873840332
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 11]]",
+    "blocks.4.hook_v_input[[:, :, 6]]",
+    0.0028314590454101562
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 7]]",
+    "blocks.4.hook_v_input[[:, :, 6]]",
+    0.0018775463104248047
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 2]]",
+    "blocks.4.hook_v_input[[:, :, 6]]",
+    0.004520893096923828
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 0]]",
+    "blocks.4.hook_v_input[[:, :, 6]]",
+    0.001226663589477539
+  ],
+  [
+    "blocks.0.hook_mlp_out[[:]]",
+    "blocks.4.hook_v_input[[:, :, 5]]",
+    0.003668069839477539
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 11]]",
+    "blocks.4.hook_v_input[[:, :, 5]]",
+    0.0010268688201904297
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 7]]",
+    "blocks.4.hook_v_input[[:, :, 5]]",
+    0.002268075942993164
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 3]]",
+    "blocks.4.hook_v_input[[:, :, 5]]",
+    0.0014715194702148438
+  ],
+  [
+    "blocks.3.hook_mlp_out[[:]]",
+    "blocks.4.hook_v_input[[:, :, 4]]",
+    0.0015723705291748047
+  ],
+  [
+    "blocks.0.hook_mlp_out[[:]]",
+    "blocks.4.hook_v_input[[:, :, 4]]",
+    0.0031290054321289062
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 10]]",
+    "blocks.4.hook_v_input[[:, :, 4]]",
+    0.001178741455078125
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 5]]",
+    "blocks.4.hook_v_input[[:, :, 4]]",
+    0.0017304420471191406
+  ],
+  [
+    "blocks.3.attn.hook_result[[:, :, 11]]",
+    "blocks.4.hook_v_input[[:, :, 3]]",
+    0.001130819320678711
+  ],
+  [
+    "blocks.3.attn.hook_result[[:, :, 11]]",
+    "blocks.4.hook_v_input[[:, :, 2]]",
+    0.0017504692077636719
+  ],
+  [
+    "blocks.1.attn.hook_result[[:, :, 8]]",
+    "blocks.4.hook_v_input[[:, :, 2]]",
+    0.0010387897491455078
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 9]]",
+    "blocks.4.hook_v_input[[:, :, 2]]",
+    0.0014917850494384766
+  ],
+  [
+    "blocks.3.hook_mlp_out[[:]]",
+    "blocks.4.hook_v_input[[:, :, 0]]",
+    0.014897346496582031
+  ],
+  [
+    "blocks.3.attn.hook_result[[:, :, 11]]",
+    "blocks.4.hook_v_input[[:, :, 0]]",
+    0.0032858848571777344
+  ],
+  [
+    "blocks.2.attn.hook_result[[:, :, 11]]",
+    "blocks.4.hook_v_input[[:, :, 0]]",
+    0.00513458251953125
+  ],
+  [
+    "blocks.2.attn.hook_result[[:, :, 6]]",
+    "blocks.4.hook_v_input[[:, :, 0]]",
+    0.004558086395263672
+  ],
+  [
+    "blocks.2.attn.hook_result[[:, :, 1]]",
+    "blocks.4.hook_v_input[[:, :, 0]]",
+    0.002849102020263672
+  ],
+  [
+    "blocks.2.attn.hook_result[[:, :, 0]]",
+    "blocks.4.hook_v_input[[:, :, 0]]",
+    0.0010554790496826172
+  ],
+  [
+    "blocks.1.hook_mlp_out[[:]]",
+    "blocks.4.hook_v_input[[:, :, 0]]",
+    0.0028018951416015625
+  ],
+  [
+    "blocks.1.attn.hook_result[[:, :, 8]]",
+    "blocks.4.hook_v_input[[:, :, 0]]",
+    0.00516200065612793
+  ],
+  [
+    "blocks.1.attn.hook_result[[:, :, 0]]",
+    "blocks.4.hook_v_input[[:, :, 0]]",
+    0.0010139942169189453
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 10]]",
+    "blocks.4.hook_v_input[[:, :, 0]]",
+    0.006707668304443359
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 8]]",
+    "blocks.4.hook_v_input[[:, :, 0]]",
+    0.002996206283569336
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 7]]",
+    "blocks.4.hook_v_input[[:, :, 0]]",
+    0.002198934555053711
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 4]]",
+    "blocks.4.hook_v_input[[:, :, 0]]",
+    0.0017027854919433594
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 3]]",
+    "blocks.4.hook_v_input[[:, :, 0]]",
+    0.005982398986816406
+  ],
+  [
+    "blocks.3.attn.hook_result[[:, :, 11]]",
+    "blocks.3.hook_mlp_in[[:]]",
+    0.005868196487426758
+  ],
+  [
+    "blocks.3.attn.hook_result[[:, :, 7]]",
+    "blocks.3.hook_mlp_in[[:]]",
+    0.002089262008666992
+  ],
+  [
+    "blocks.3.attn.hook_result[[:, :, 6]]",
+    "blocks.3.hook_mlp_in[[:]]",
+    0.0011038780212402344
+  ],
+  [
+    "blocks.3.attn.hook_result[[:, :, 5]]",
+    "blocks.3.hook_mlp_in[[:]]",
+    0.0013606548309326172
+  ],
+  [
+    "blocks.3.attn.hook_result[[:, :, 4]]",
+    "blocks.3.hook_mlp_in[[:]]",
+    0.0014843940734863281
+  ],
+  [
+    "blocks.2.hook_mlp_out[[:]]",
+    "blocks.3.hook_mlp_in[[:]]",
+    0.011330366134643555
+  ],
+  [
+    "blocks.2.attn.hook_result[[:, :, 6]]",
+    "blocks.3.hook_mlp_in[[:]]",
+    0.001104116439819336
+  ],
+  [
+    "blocks.2.attn.hook_result[[:, :, 2]]",
+    "blocks.3.hook_mlp_in[[:]]",
+    0.002355813980102539
+  ],
+  [
+    "blocks.1.hook_mlp_out[[:]]",
+    "blocks.3.hook_mlp_in[[:]]",
+    0.01785898208618164
+  ],
+  [
+    "blocks.1.attn.hook_result[[:, :, 11]]",
+    "blocks.3.hook_mlp_in[[:]]",
+    0.00341796875
+  ],
+  [
+    "blocks.1.attn.hook_result[[:, :, 6]]",
+    "blocks.3.hook_mlp_in[[:]]",
+    0.0017733573913574219
+  ],
+  [
+    "blocks.1.attn.hook_result[[:, :, 2]]",
+    "blocks.3.hook_mlp_in[[:]]",
+    0.0013010501861572266
+  ],
+  [
+    "blocks.1.attn.hook_result[[:, :, 1]]",
+    "blocks.3.hook_mlp_in[[:]]",
+    0.002232789993286133
+  ],
+  [
+    "blocks.0.hook_mlp_out[[:]]",
+    "blocks.3.hook_mlp_in[[:]]",
+    0.0018994808197021484
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 11]]",
+    "blocks.3.hook_mlp_in[[:]]",
+    0.006325721740722656
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 9]]",
+    "blocks.3.hook_mlp_in[[:]]",
+    0.0043680667877197266
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 6]]",
+    "blocks.3.hook_mlp_in[[:]]",
+    0.009083986282348633
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 3]]",
+    "blocks.3.hook_mlp_in[[:]]",
+    0.0021164417266845703
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 2]]",
+    "blocks.3.hook_mlp_in[[:]]",
+    0.0053806304931640625
+  ],
+  [
+    "blocks.0.hook_resid_pre[[:]]",
+    "blocks.3.hook_mlp_in[[:]]",
+    0.002331972122192383
+  ],
+  [
+    "blocks.3.hook_q_input[[:, :, 11]]",
+    "blocks.3.attn.hook_q[[:, :, 11]]",
+    0.001641988754272461
+  ],
+  [
+    "blocks.3.hook_q_input[[:, :, 6]]",
+    "blocks.3.attn.hook_q[[:, :, 6]]",
+    0.0024111270904541016
+  ],
+  [
+    "blocks.3.hook_q_input[[:, :, 3]]",
+    "blocks.3.attn.hook_q[[:, :, 3]]",
+    0.0015246868133544922
+  ],
+  [
+    "blocks.3.hook_k_input[[:, :, 11]]",
+    "blocks.3.attn.hook_k[[:, :, 11]]",
+    0.0027146339416503906
+  ],
+  [
+    "blocks.3.hook_k_input[[:, :, 6]]",
+    "blocks.3.attn.hook_k[[:, :, 6]]",
+    0.0011208057403564453
+  ],
+  [
+    "blocks.3.hook_v_input[[:, :, 11]]",
+    "blocks.3.attn.hook_v[[:, :, 11]]",
+    0.026577472686767578
+  ],
+  [
+    "blocks.3.hook_v_input[[:, :, 9]]",
+    "blocks.3.attn.hook_v[[:, :, 9]]",
+    0.001373291015625
+  ],
+  [
+    "blocks.3.hook_v_input[[:, :, 7]]",
+    "blocks.3.attn.hook_v[[:, :, 7]]",
+    0.003912687301635742
+  ],
+  [
+    "blocks.3.hook_v_input[[:, :, 6]]",
+    "blocks.3.attn.hook_v[[:, :, 6]]",
+    0.0022933483123779297
+  ],
+  [
+    "blocks.3.hook_v_input[[:, :, 5]]",
+    "blocks.3.attn.hook_v[[:, :, 5]]",
+    0.0032401084899902344
+  ],
+  [
+    "blocks.3.hook_v_input[[:, :, 4]]",
+    "blocks.3.attn.hook_v[[:, :, 4]]",
+    0.0025441646575927734
+  ],
+  [
+    "blocks.3.hook_v_input[[:, :, 0]]",
+    "blocks.3.attn.hook_v[[:, :, 0]]",
+    0.0025682449340820312
+  ],
+  [
+    "blocks.0.hook_mlp_out[[:]]",
+    "blocks.3.hook_q_input[[:, :, 11]]",
+    0.002009153366088867
+  ],
+  [
+    "blocks.1.hook_mlp_out[[:]]",
+    "blocks.3.hook_q_input[[:, :, 3]]",
+    0.001161336898803711
+  ],
+  [
+    "blocks.0.hook_mlp_out[[:]]",
+    "blocks.3.hook_k_input[[:, :, 11]]",
+    0.002563953399658203
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 9]]",
+    "blocks.3.hook_k_input[[:, :, 11]]",
+    0.002672910690307617
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 3]]",
+    "blocks.3.hook_k_input[[:, :, 11]]",
+    0.0014989376068115234
+  ],
+  [
+    "blocks.1.attn.hook_result[[:, :, 8]]",
+    "blocks.3.hook_v_input[[:, :, 11]]",
+    0.00481414794921875
+  ],
+  [
+    "blocks.1.attn.hook_result[[:, :, 4]]",
+    "blocks.3.hook_v_input[[:, :, 11]]",
+    0.0011017322540283203
+  ],
+  [
+    "blocks.0.hook_mlp_out[[:]]",
+    "blocks.3.hook_v_input[[:, :, 11]]",
+    0.003970146179199219
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 11]]",
+    "blocks.3.hook_v_input[[:, :, 11]]",
+    0.001901865005493164
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 9]]",
+    "blocks.3.hook_v_input[[:, :, 11]]",
+    0.0038907527923583984
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 7]]",
+    "blocks.3.hook_v_input[[:, :, 11]]",
+    0.001013040542602539
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 6]]",
+    "blocks.3.hook_v_input[[:, :, 11]]",
+    0.0017175674438476562
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 5]]",
+    "blocks.3.hook_v_input[[:, :, 11]]",
+    0.0034465789794921875
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 3]]",
+    "blocks.3.hook_v_input[[:, :, 11]]",
+    0.002618551254272461
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 2]]",
+    "blocks.3.hook_v_input[[:, :, 11]]",
+    0.002350330352783203
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 0]]",
+    "blocks.3.hook_v_input[[:, :, 11]]",
+    0.0020051002502441406
+  ],
+  [
+    "blocks.0.hook_mlp_out[[:]]",
+    "blocks.3.hook_v_input[[:, :, 9]]",
+    0.0012004375457763672
+  ],
+  [
+    "blocks.2.attn.hook_result[[:, :, 6]]",
+    "blocks.3.hook_v_input[[:, :, 7]]",
+    0.001331329345703125
+  ],
+  [
+    "blocks.2.hook_mlp_out[[:]]",
+    "blocks.3.hook_v_input[[:, :, 6]]",
+    0.0013647079467773438
+  ],
+  [
+    "blocks.2.attn.hook_result[[:, :, 6]]",
+    "blocks.3.hook_v_input[[:, :, 6]]",
+    0.002188444137573242
+  ],
+  [
+    "blocks.1.hook_mlp_out[[:]]",
+    "blocks.3.hook_v_input[[:, :, 6]]",
+    0.003488302230834961
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 9]]",
+    "blocks.3.hook_v_input[[:, :, 6]]",
+    0.0010116100311279297
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 6]]",
+    "blocks.3.hook_v_input[[:, :, 6]]",
+    0.0011255741119384766
+  ],
+  [
+    "blocks.2.attn.hook_result[[:, :, 6]]",
+    "blocks.3.hook_v_input[[:, :, 5]]",
+    0.0013403892517089844
+  ],
+  [
+    "blocks.1.hook_mlp_out[[:]]",
+    "blocks.3.hook_v_input[[:, :, 5]]",
+    0.001847982406616211
+  ],
+  [
+    "blocks.0.hook_mlp_out[[:]]",
+    "blocks.3.hook_v_input[[:, :, 5]]",
+    0.0011396408081054688
+  ],
+  [
+    "blocks.2.attn.hook_result[[:, :, 2]]",
+    "blocks.3.hook_v_input[[:, :, 0]]",
+    0.0011553764343261719
+  ],
+  [
+    "blocks.2.attn.hook_result[[:, :, 9]]",
+    "blocks.2.hook_mlp_in[[:]]",
+    0.0010936260223388672
+  ],
+  [
+    "blocks.2.attn.hook_result[[:, :, 7]]",
+    "blocks.2.hook_mlp_in[[:]]",
+    0.0015575885772705078
+  ],
+  [
+    "blocks.2.attn.hook_result[[:, :, 3]]",
+    "blocks.2.hook_mlp_in[[:]]",
+    0.0024118423461914062
+  ],
+  [
+    "blocks.1.hook_mlp_out[[:]]",
+    "blocks.2.hook_mlp_in[[:]]",
+    0.00494694709777832
+  ],
+  [
+    "blocks.1.attn.hook_result[[:, :, 10]]",
+    "blocks.2.hook_mlp_in[[:]]",
+    0.0023827552795410156
+  ],
+  [
+    "blocks.1.attn.hook_result[[:, :, 2]]",
+    "blocks.2.hook_mlp_in[[:]]",
+    0.0012657642364501953
+  ],
+  [
+    "blocks.0.hook_mlp_out[[:]]",
+    "blocks.2.hook_mlp_in[[:]]",
+    0.0033180713653564453
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 11]]",
+    "blocks.2.hook_mlp_in[[:]]",
+    0.0060787200927734375
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 10]]",
+    "blocks.2.hook_mlp_in[[:]]",
+    0.002100706100463867
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 9]]",
+    "blocks.2.hook_mlp_in[[:]]",
+    0.0010700225830078125
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 5]]",
+    "blocks.2.hook_mlp_in[[:]]",
+    0.005448818206787109
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 0]]",
+    "blocks.2.hook_mlp_in[[:]]",
+    0.004949331283569336
+  ],
+  [
+    "blocks.2.hook_q_input[[:, :, 11]]",
+    "blocks.2.attn.hook_q[[:, :, 11]]",
+    0.007806062698364258
+  ],
+  [
+    "blocks.2.hook_q_input[[:, :, 9]]",
+    "blocks.2.attn.hook_q[[:, :, 9]]",
+    0.002346515655517578
+  ],
+  [
+    "blocks.2.hook_q_input[[:, :, 7]]",
+    "blocks.2.attn.hook_q[[:, :, 7]]",
+    0.0012905597686767578
+  ],
+  [
+    "blocks.2.hook_q_input[[:, :, 5]]",
+    "blocks.2.attn.hook_q[[:, :, 5]]",
+    0.0016582012176513672
+  ],
+  [
+    "blocks.2.hook_q_input[[:, :, 3]]",
+    "blocks.2.attn.hook_q[[:, :, 3]]",
+    0.003090381622314453
+  ],
+  [
+    "blocks.2.hook_q_input[[:, :, 1]]",
+    "blocks.2.attn.hook_q[[:, :, 1]]",
+    0.015707969665527344
+  ],
+  [
+    "blocks.2.hook_q_input[[:, :, 0]]",
+    "blocks.2.attn.hook_q[[:, :, 0]]",
+    0.0010259151458740234
+  ],
+  [
+    "blocks.2.hook_k_input[[:, :, 7]]",
+    "blocks.2.attn.hook_k[[:, :, 7]]",
+    0.0030155181884765625
+  ],
+  [
+    "blocks.2.hook_k_input[[:, :, 6]]",
+    "blocks.2.attn.hook_k[[:, :, 6]]",
+    0.0030274391174316406
+  ],
+  [
+    "blocks.2.hook_k_input[[:, :, 5]]",
+    "blocks.2.attn.hook_k[[:, :, 5]]",
+    0.0023949146270751953
+  ],
+  [
+    "blocks.2.hook_k_input[[:, :, 4]]",
+    "blocks.2.attn.hook_k[[:, :, 4]]",
+    0.0015306472778320312
+  ],
+  [
+    "blocks.2.hook_k_input[[:, :, 3]]",
+    "blocks.2.attn.hook_k[[:, :, 3]]",
+    0.0013484954833984375
+  ],
+  [
+    "blocks.2.hook_v_input[[:, :, 11]]",
+    "blocks.2.attn.hook_v[[:, :, 11]]",
+    0.0027818679809570312
+  ],
+  [
+    "blocks.2.hook_v_input[[:, :, 6]]",
+    "blocks.2.attn.hook_v[[:, :, 6]]",
+    0.03185606002807617
+  ],
+  [
+    "blocks.2.hook_v_input[[:, :, 4]]",
+    "blocks.2.attn.hook_v[[:, :, 4]]",
+    0.002816915512084961
+  ],
+  [
+    "blocks.2.hook_v_input[[:, :, 3]]",
+    "blocks.2.attn.hook_v[[:, :, 3]]",
+    0.0022459030151367188
+  ],
+  [
+    "blocks.2.hook_v_input[[:, :, 2]]",
+    "blocks.2.attn.hook_v[[:, :, 2]]",
+    0.01036524772644043
+  ],
+  [
+    "blocks.1.attn.hook_result[[:, :, 8]]",
+    "blocks.2.hook_q_input[[:, :, 11]]",
+    0.0027878284454345703
+  ],
+  [
+    "blocks.0.hook_mlp_out[[:]]",
+    "blocks.2.hook_q_input[[:, :, 11]]",
+    0.010659933090209961
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 10]]",
+    "blocks.2.hook_q_input[[:, :, 11]]",
+    0.001367807388305664
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 0]]",
+    "blocks.2.hook_q_input[[:, :, 11]]",
+    0.001161813735961914
+  ],
+  [
+    "blocks.1.hook_mlp_out[[:]]",
+    "blocks.2.hook_q_input[[:, :, 9]]",
+    0.0011761188507080078
+  ],
+  [
+    "blocks.1.hook_mlp_out[[:]]",
+    "blocks.2.hook_q_input[[:, :, 3]]",
+    0.007052183151245117
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 7]]",
+    "blocks.2.hook_q_input[[:, :, 3]]",
+    0.0014216899871826172
+  ],
+  [
+    "blocks.1.hook_mlp_out[[:]]",
+    "blocks.2.hook_q_input[[:, :, 1]]",
+    0.01372385025024414
+  ],
+  [
+    "blocks.0.hook_mlp_out[[:]]",
+    "blocks.2.hook_q_input[[:, :, 1]]",
+    0.004555225372314453
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 11]]",
+    "blocks.2.hook_q_input[[:, :, 1]]",
+    0.001870870590209961
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 10]]",
+    "blocks.2.hook_q_input[[:, :, 1]]",
+    0.0029211044311523438
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 7]]",
+    "blocks.2.hook_q_input[[:, :, 1]]",
+    0.005684614181518555
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 6]]",
+    "blocks.2.hook_q_input[[:, :, 1]]",
+    0.004782199859619141
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 5]]",
+    "blocks.2.hook_q_input[[:, :, 1]]",
+    0.0017504692077636719
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 2]]",
+    "blocks.2.hook_q_input[[:, :, 1]]",
+    0.0025620460510253906
+  ],
+  [
+    "blocks.1.hook_mlp_out[[:]]",
+    "blocks.2.hook_q_input[[:, :, 0]]",
+    0.001004934310913086
+  ],
+  [
+    "blocks.0.hook_mlp_out[[:]]",
+    "blocks.2.hook_k_input[[:, :, 6]]",
+    0.003785848617553711
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 9]]",
+    "blocks.2.hook_k_input[[:, :, 6]]",
+    0.0024335384368896484
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 0]]",
+    "blocks.2.hook_k_input[[:, :, 6]]",
+    0.0010972023010253906
+  ],
+  [
+    "blocks.0.hook_mlp_out[[:]]",
+    "blocks.2.hook_k_input[[:, :, 4]]",
+    0.003976106643676758
+  ],
+  [
+    "blocks.1.hook_mlp_out[[:]]",
+    "blocks.2.hook_v_input[[:, :, 6]]",
+    0.018170595169067383
+  ],
+  [
+    "blocks.0.hook_mlp_out[[:]]",
+    "blocks.2.hook_v_input[[:, :, 6]]",
+    0.004378795623779297
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 9]]",
+    "blocks.2.hook_v_input[[:, :, 6]]",
+    0.008795738220214844
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 6]]",
+    "blocks.2.hook_v_input[[:, :, 6]]",
+    0.00325775146484375
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 3]]",
+    "blocks.2.hook_v_input[[:, :, 6]]",
+    0.004975557327270508
+  ],
+  [
+    "blocks.1.hook_mlp_out[[:]]",
+    "blocks.2.hook_v_input[[:, :, 4]]",
+    0.001638174057006836
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 9]]",
+    "blocks.2.hook_v_input[[:, :, 4]]",
+    0.0016527175903320312
+  ],
+  [
+    "blocks.1.hook_mlp_out[[:]]",
+    "blocks.2.hook_v_input[[:, :, 2]]",
+    0.004155158996582031
+  ],
+  [
+    "blocks.0.hook_mlp_out[[:]]",
+    "blocks.2.hook_v_input[[:, :, 2]]",
+    0.004110574722290039
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 9]]",
+    "blocks.2.hook_v_input[[:, :, 2]]",
+    0.002376556396484375
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 7]]",
+    "blocks.2.hook_v_input[[:, :, 2]]",
+    0.0020895004272460938
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 3]]",
+    "blocks.2.hook_v_input[[:, :, 2]]",
+    0.0021631717681884766
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 2]]",
+    "blocks.2.hook_v_input[[:, :, 2]]",
+    0.001394033432006836
+  ],
+  [
+    "blocks.1.attn.hook_result[[:, :, 9]]",
+    "blocks.1.hook_mlp_in[[:]]",
+    0.002063274383544922
+  ],
+  [
+    "blocks.1.attn.hook_result[[:, :, 8]]",
+    "blocks.1.hook_mlp_in[[:]]",
+    0.03241848945617676
+  ],
+  [
+    "blocks.1.attn.hook_result[[:, :, 6]]",
+    "blocks.1.hook_mlp_in[[:]]",
+    0.0016858577728271484
+  ],
+  [
+    "blocks.1.attn.hook_result[[:, :, 5]]",
+    "blocks.1.hook_mlp_in[[:]]",
+    0.0010983943939208984
+  ],
+  [
+    "blocks.1.attn.hook_result[[:, :, 4]]",
+    "blocks.1.hook_mlp_in[[:]]",
+    0.0012335777282714844
+  ],
+  [
+    "blocks.1.attn.hook_result[[:, :, 1]]",
+    "blocks.1.hook_mlp_in[[:]]",
+    0.002716541290283203
+  ],
+  [
+    "blocks.0.hook_mlp_out[[:]]",
+    "blocks.1.hook_mlp_in[[:]]",
+    0.0891714096069336
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 11]]",
+    "blocks.1.hook_mlp_in[[:]]",
+    0.003218412399291992
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 10]]",
+    "blocks.1.hook_mlp_in[[:]]",
+    0.005149364471435547
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 8]]",
+    "blocks.1.hook_mlp_in[[:]]",
+    0.001009225845336914
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 6]]",
+    "blocks.1.hook_mlp_in[[:]]",
+    0.007882118225097656
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 5]]",
+    "blocks.1.hook_mlp_in[[:]]",
+    0.0035390853881835938
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 2]]",
+    "blocks.1.hook_mlp_in[[:]]",
+    0.0033266544342041016
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 0]]",
+    "blocks.1.hook_mlp_in[[:]]",
+    0.005227088928222656
+  ],
+  [
+    "blocks.1.hook_q_input[[:, :, 11]]",
+    "blocks.1.attn.hook_q[[:, :, 11]]",
+    0.0024788379669189453
+  ],
+  [
+    "blocks.1.hook_q_input[[:, :, 9]]",
+    "blocks.1.attn.hook_q[[:, :, 9]]",
+    0.0024595260620117188
+  ],
+  [
+    "blocks.1.hook_q_input[[:, :, 8]]",
+    "blocks.1.attn.hook_q[[:, :, 8]]",
+    0.0714104175567627
+  ],
+  [
+    "blocks.1.hook_q_input[[:, :, 7]]",
+    "blocks.1.attn.hook_q[[:, :, 7]]",
+    0.00144195556640625
+  ],
+  [
+    "blocks.1.hook_q_input[[:, :, 4]]",
+    "blocks.1.attn.hook_q[[:, :, 4]]",
+    0.001169443130493164
+  ],
+  [
+    "blocks.1.hook_q_input[[:, :, 1]]",
+    "blocks.1.attn.hook_q[[:, :, 1]]",
+    0.0041961669921875
+  ],
+  [
+    "blocks.1.hook_k_input[[:, :, 10]]",
+    "blocks.1.attn.hook_k[[:, :, 10]]",
+    0.002452373504638672
+  ],
+  [
+    "blocks.1.hook_k_input[[:, :, 4]]",
+    "blocks.1.attn.hook_k[[:, :, 4]]",
+    0.00145721435546875
+  ],
+  [
+    "blocks.1.hook_v_input[[:, :, 11]]",
+    "blocks.1.attn.hook_v[[:, :, 11]]",
+    0.0012054443359375
+  ],
+  [
+    "blocks.1.hook_v_input[[:, :, 10]]",
+    "blocks.1.attn.hook_v[[:, :, 10]]",
+    0.0016779899597167969
+  ],
+  [
+    "blocks.1.hook_v_input[[:, :, 8]]",
+    "blocks.1.attn.hook_v[[:, :, 8]]",
+    0.006131410598754883
+  ],
+  [
+    "blocks.1.hook_v_input[[:, :, 6]]",
+    "blocks.1.attn.hook_v[[:, :, 6]]",
+    0.004540920257568359
+  ],
+  [
+    "blocks.1.hook_v_input[[:, :, 2]]",
+    "blocks.1.attn.hook_v[[:, :, 2]]",
+    0.0030367374420166016
+  ],
+  [
+    "blocks.1.hook_v_input[[:, :, 0]]",
+    "blocks.1.attn.hook_v[[:, :, 0]]",
+    0.004302024841308594
+  ],
+  [
+    "blocks.0.hook_mlp_out[[:]]",
+    "blocks.1.hook_q_input[[:, :, 11]]",
+    0.0012273788452148438
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 11]]",
+    "blocks.1.hook_q_input[[:, :, 9]]",
+    0.0010013580322265625
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 6]]",
+    "blocks.1.hook_q_input[[:, :, 9]]",
+    0.0012450218200683594
+  ],
+  [
+    "blocks.0.hook_mlp_out[[:]]",
+    "blocks.1.hook_q_input[[:, :, 8]]",
+    0.033350229263305664
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 9]]",
+    "blocks.1.hook_q_input[[:, :, 8]]",
+    0.0064830780029296875
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 6]]",
+    "blocks.1.hook_q_input[[:, :, 8]]",
+    0.0012662410736083984
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 5]]",
+    "blocks.1.hook_q_input[[:, :, 8]]",
+    0.006272792816162109
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 4]]",
+    "blocks.1.hook_q_input[[:, :, 8]]",
+    0.0031745433807373047
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 3]]",
+    "blocks.1.hook_q_input[[:, :, 8]]",
+    0.004116535186767578
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 1]]",
+    "blocks.1.hook_q_input[[:, :, 8]]",
+    0.0017147064208984375
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 0]]",
+    "blocks.1.hook_q_input[[:, :, 8]]",
+    0.0026297569274902344
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 11]]",
+    "blocks.1.hook_q_input[[:, :, 4]]",
+    0.0013117790222167969
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 5]]",
+    "blocks.1.hook_q_input[[:, :, 4]]",
+    0.0016827583312988281
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 9]]",
+    "blocks.1.hook_q_input[[:, :, 1]]",
+    0.0016994476318359375
+  ],
+  [
+    "blocks.0.hook_mlp_out[[:]]",
+    "blocks.1.hook_k_input[[:, :, 10]]",
+    0.0022962093353271484
+  ],
+  [
+    "blocks.0.hook_mlp_out[[:]]",
+    "blocks.1.hook_v_input[[:, :, 10]]",
+    0.0011184215545654297
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 8]]",
+    "blocks.1.hook_v_input[[:, :, 6]]",
+    0.002824544906616211
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 9]]",
+    "blocks.1.hook_v_input[[:, :, 0]]",
+    0.003778696060180664
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 8]]",
+    "blocks.1.hook_v_input[[:, :, 0]]",
+    0.0019927024841308594
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 0]]",
+    "blocks.1.hook_v_input[[:, :, 0]]",
+    0.0013742446899414062
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 11]]",
+    "blocks.0.hook_mlp_in[[:]]",
+    0.056301116943359375
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 10]]",
+    "blocks.0.hook_mlp_in[[:]]",
+    0.02537679672241211
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 9]]",
+    "blocks.0.hook_mlp_in[[:]]",
+    0.062059879302978516
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 7]]",
+    "blocks.0.hook_mlp_in[[:]]",
+    0.00214385986328125
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 6]]",
+    "blocks.0.hook_mlp_in[[:]]",
+    0.06732559204101562
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 5]]",
+    "blocks.0.hook_mlp_in[[:]]",
+    0.04483366012573242
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 3]]",
+    "blocks.0.hook_mlp_in[[:]]",
+    0.020128250122070312
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 2]]",
+    "blocks.0.hook_mlp_in[[:]]",
+    0.051360130310058594
+  ],
+  [
+    "blocks.0.attn.hook_result[[:, :, 0]]",
+    "blocks.0.hook_mlp_in[[:]]",
+    0.007746696472167969
+  ],
+  [
+    "blocks.0.hook_q_input[[:, :, 11]]",
+    "blocks.0.attn.hook_q[[:, :, 11]]",
+    0.049248695373535156
+  ],
+  [
+    "blocks.0.hook_q_input[[:, :, 10]]",
+    "blocks.0.attn.hook_q[[:, :, 10]]",
+    0.0246121883392334
+  ],
+  [
+    "blocks.0.hook_q_input[[:, :, 9]]",
+    "blocks.0.attn.hook_q[[:, :, 9]]",
+    0.07366323471069336
+  ],
+  [
+    "blocks.0.hook_q_input[[:, :, 7]]",
+    "blocks.0.attn.hook_q[[:, :, 7]]",
+    0.025908231735229492
+  ],
+  [
+    "blocks.0.hook_q_input[[:, :, 6]]",
+    "blocks.0.attn.hook_q[[:, :, 6]]",
+    0.0685114860534668
+  ],
+  [
+    "blocks.0.hook_q_input[[:, :, 5]]",
+    "blocks.0.attn.hook_q[[:, :, 5]]",
+    0.15680980682373047
+  ],
+  [
+    "blocks.0.hook_q_input[[:, :, 4]]",
+    "blocks.0.attn.hook_q[[:, :, 4]]",
+    0.004082918167114258
+  ],
+  [
+    "blocks.0.hook_q_input[[:, :, 3]]",
+    "blocks.0.attn.hook_q[[:, :, 3]]",
+    0.03219771385192871
+  ],
+  [
+    "blocks.0.hook_q_input[[:, :, 2]]",
+    "blocks.0.attn.hook_q[[:, :, 2]]",
+    0.08329343795776367
+  ],
+  [
+    "blocks.0.hook_q_input[[:, :, 1]]",
+    "blocks.0.attn.hook_q[[:, :, 1]]",
+    0.0010988712310791016
+  ],
+  [
+    "blocks.0.hook_q_input[[:, :, 0]]",
+    "blocks.0.attn.hook_q[[:, :, 0]]",
+    0.04031705856323242
+  ],
+  [
+    "blocks.0.hook_k_input[[:, :, 8]]",
+    "blocks.0.attn.hook_k[[:, :, 8]]",
+    0.0031108856201171875
+  ],
+  [
+    "blocks.0.hook_k_input[[:, :, 5]]",
+    "blocks.0.attn.hook_k[[:, :, 5]]",
+    0.19076800346374512
+  ],
+  [
+    "blocks.0.hook_k_input[[:, :, 0]]",
+    "blocks.0.attn.hook_k[[:, :, 0]]",
+    0.00231170654296875
+  ],
+  [
+    "blocks.0.hook_v_input[[:, :, 11]]",
+    "blocks.0.attn.hook_v[[:, :, 11]]",
+    0.06432414054870605
+  ],
+  [
+    "blocks.0.hook_v_input[[:, :, 10]]",
+    "blocks.0.attn.hook_v[[:, :, 10]]",
+    0.042449235916137695
+  ],
+  [
+    "blocks.0.hook_v_input[[:, :, 9]]",
+    "blocks.0.attn.hook_v[[:, :, 9]]",
+    0.044013023376464844
+  ],
+  [
+    "blocks.0.hook_v_input[[:, :, 8]]",
+    "blocks.0.attn.hook_v[[:, :, 8]]",
+    0.012514829635620117
+  ],
+  [
+    "blocks.0.hook_v_input[[:, :, 7]]",
+    "blocks.0.attn.hook_v[[:, :, 7]]",
+    0.04149651527404785
+  ],
+  [
+    "blocks.0.hook_v_input[[:, :, 6]]",
+    "blocks.0.attn.hook_v[[:, :, 6]]",
+    0.06034207344055176
+  ],
+  [
+    "blocks.0.hook_v_input[[:, :, 5]]",
+    "blocks.0.attn.hook_v[[:, :, 5]]",
+    0.1475372314453125
+  ],
+  [
+    "blocks.0.hook_v_input[[:, :, 3]]",
+    "blocks.0.attn.hook_v[[:, :, 3]]",
+    0.04211068153381348
+  ],
+  [
+    "blocks.0.hook_v_input[[:, :, 2]]",
+    "blocks.0.attn.hook_v[[:, :, 2]]",
+    0.04925346374511719
+  ],
+  [
+    "blocks.0.hook_v_input[[:, :, 0]]",
+    "blocks.0.attn.hook_v[[:, :, 0]]",
+    0.015266656875610352
+  ],
+  [
+    "blocks.0.hook_resid_pre[[:]]",
+    "blocks.0.hook_q_input[[:, :, 11]]",
+    0.12243914604187012
+  ],
+  [
+    "blocks.0.hook_resid_pre[[:]]",
+    "blocks.0.hook_q_input[[:, :, 10]]",
+    0.024600505828857422
+  ],
+  [
+    "blocks.0.hook_resid_pre[[:]]",
+    "blocks.0.hook_q_input[[:, :, 9]]",
+    0.07351899147033691
+  ],
+  [
+    "blocks.0.hook_resid_pre[[:]]",
+    "blocks.0.hook_q_input[[:, :, 7]]",
+    0.07166624069213867
+  ],
+  [
+    "blocks.0.hook_resid_pre[[:]]",
+    "blocks.0.hook_q_input[[:, :, 6]]",
+    0.12839889526367188
+  ],
+  [
+    "blocks.0.hook_resid_pre[[:]]",
+    "blocks.0.hook_q_input[[:, :, 5]]",
+    0.1568443775177002
+  ],
+  [
+    "blocks.0.hook_resid_pre[[:]]",
+    "blocks.0.hook_q_input[[:, :, 4]]",
+    0.0040853023529052734
+  ],
+  [
+    "blocks.0.hook_resid_pre[[:]]",
+    "blocks.0.hook_q_input[[:, :, 3]]",
+    0.032198429107666016
+  ],
+  [
+    "blocks.0.hook_resid_pre[[:]]",
+    "blocks.0.hook_q_input[[:, :, 2]]",
+    0.1326429843902588
+  ],
+  [
+    "blocks.0.hook_resid_pre[[:]]",
+    "blocks.0.hook_q_input[[:, :, 1]]",
+    0.0010986328125
+  ],
+  [
+    "blocks.0.hook_resid_pre[[:]]",
+    "blocks.0.hook_q_input[[:, :, 0]]",
+    0.04032278060913086
+  ],
+  [
+    "blocks.0.hook_resid_pre[[:]]",
+    "blocks.0.hook_k_input[[:, :, 8]]",
+    0.004648923873901367
+  ],
+  [
+    "blocks.0.hook_resid_pre[[:]]",
+    "blocks.0.hook_k_input[[:, :, 5]]",
+    0.04881691932678223
+  ],
+  [
+    "blocks.0.hook_resid_pre[[:]]",
+    "blocks.0.hook_k_input[[:, :, 0]]",
+    0.0022945404052734375
+  ],
+  [
+    "blocks.0.hook_resid_pre[[:]]",
+    "blocks.0.hook_v_input[[:, :, 10]]",
+    0.0014438629150390625
+  ],
+  [
+    "blocks.0.hook_resid_pre[[:]]",
+    "blocks.0.hook_v_input[[:, :, 9]]",
+    0.003507375717163086
+  ],
+  [
+    "blocks.0.hook_resid_pre[[:]]",
+    "blocks.0.hook_v_input[[:, :, 8]]",
+    0.013074159622192383
+  ],
+  [
+    "blocks.0.hook_resid_pre[[:]]",
+    "blocks.0.hook_v_input[[:, :, 5]]",
+    0.13166594505310059
+  ],
+  [
+    "blocks.0.hook_resid_pre[[:]]",
+    "blocks.0.hook_v_input[[:, :, 3]]",
+    0.0013344287872314453
+  ],
+  [
+    "blocks.0.hook_resid_pre[[:]]",
+    "blocks.0.hook_v_input[[:, :, 0]]",
+    0.016564607620239258
+  ]
+]
