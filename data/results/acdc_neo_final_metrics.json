@@ -92,5 +92,18 @@
     }
   ],
   "faithfulness_floor": 0.4701,
-  "note": "Faithfulness floor of 0.47 reflects MLP and residual stream contribution with all heads ablated. Circuits at tau>=0.002 are functionally empty."
+  "note": "Faithfulness floor of 0.47 reflects MLP and residual stream contribution with all heads ablated. Circuits at tau>=0.002 are functionally empty.",
+  "known_head_recovery": {
+    "overall": "21/26 (80.8%)",
+    "name_movers": "2/3 (66.7%)",
+    "backup_name_movers": "6/8 (75.0%)",
+    "negative_name_movers": "1/2 (50.0%)",
+    "s_inhibition": "4/4 (100.0%)",
+    "induction": "3/4 (75.0%)",
+    "duplicate_token": "3/3 (100.0%)",
+    "previous_token": "2/2 (100.0%)"
+  },
+  "dataset_note": "ACDC run on template_1 only (600 prompts, fixed seq_len=15). Full dataset mixed lengths caused ACDC corrupted cache misalignment.",
+  "clean_ld_t1": 3.4813,
+  "corrupted_ld_t1": -3.5565
 }
