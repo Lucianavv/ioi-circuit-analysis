@@ -2,7 +2,7 @@
 
 > *Do the same circuits that make GPT-2 understand indirect objects also exist in GPT-Neo? Let's find out.*
 
-🎓 Bachelor's thesis in Computer Science — Universidad San Francisco de Quito, 2025  
+🎓 Bachelor's thesis in Computer Science — Universidad San Francisco de Quito, 2026 
 
 ---
 
@@ -27,6 +27,9 @@ Two automated circuit discovery methods are compared head-to-head:
 
 **TL;DR:** Structurally analogous heads appear at the same layer positions in both models (9.9, 8.6, 5.8, 0.10 show up in GPT-Neo too 👀). ACDC recovers 100% of S-inhibition and duplicate token head classes. The evidence points toward *functional* universality — the circuit exists, but it's not a perfect structural copy.
 
+### 🔬 GPT-Neo 125M — EAP Minimal Circuit (110 edges, 32 heads)
+ 
+![GPT-Neo EAP Minimal Circuit](figures/neo_minimal_circuit_classified_eap.png)
 ---
 
 ## 🗂️ Repo Structure
